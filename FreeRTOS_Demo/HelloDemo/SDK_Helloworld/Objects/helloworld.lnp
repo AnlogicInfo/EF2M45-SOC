@@ -1,0 +1,19 @@
+--cpu Cortex-M3
+".\objects\main.o"
+".\objects\startup_elf2.o"
+".\objects\system_elf2.o"
+".\objects\list.o"
+".\objects\queue.o"
+".\objects\tasks.o"
+".\objects\timers.o"
+".\objects\port.o"
+".\objects\heap_4.o"
+"..\..\..\ELF2_BSP\Driver\ELF2_CM3_Lib.lib"
+".\objects\log.o"
+".\objects\debug.o"
+".\objects\segger_rtt.o"
+".\objects\segger_rtt_printf.o"
+--library_type=microlib --strict --scatter ".\elf2_example.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\helloworld.map" -o .\Objects\helloworld.axf

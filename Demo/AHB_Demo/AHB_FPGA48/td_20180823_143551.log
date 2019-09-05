@@ -1,0 +1,34 @@
+============================================================
+   Tang Dynasty, V4.2.285
+   Copyright:   Shanghai Anlogic Infotech Co., Ltd.
+                2011 - 2021
+   Executable = C:/Anlogic/TD4.2.285/bin/td.exe
+   Built at =   11:19:28 Jul 25 2018
+   Run by =     Administrator
+   Run Date =   Thu Aug 23 14:35:51 2018
+
+   Run on =     Y1YBFM96WTED81W
+============================================================
+CMD-004 : start command "import_device ef2_4.db -package EF2L45LG144B -basic"
+CMD-004 : start command "read_verilog -file F:/SVN_ELF2_SOC/trunk/Basic_Demo/BRAM_Demo/exchange_FPGA144/al_ip/bram256kbit.v"
+VLG-002 : analyze verilog file F:/SVN_ELF2_SOC/trunk/Basic_Demo/BRAM_Demo/exchange_FPGA144/al_ip/bram256kbit.v
+VLG-004 : elaborate module bram256kbit in F:/SVN_ELF2_SOC/trunk/Basic_Demo/BRAM_Demo/exchange_FPGA144/al_ip/bram256kbit.v(14)
+VLG-004 : elaborate module EF2_PHY_BRAM256K(REGMODE_A="OUTREG",REGMODE_B="OUTREG",INIT_FILE="NONE") in C:/Anlogic/TD4.2.285/arch/ef2_macro.v(823)
+RTL-100 : Current top model is bram256kbit
+RAM-300 : Inferred 0 RAMs.
+CMD-004 : start command "optimize_rtl"
+RUN-001 : Open license file C:/Anlogic/TD4.2.285/license/Anlogic.lic
+SNT-300 : SanityCheck: Model "bram256kbit"
+FLT-300 : Flatten model bram256kbit
+OPT-300 : Optimize round 1
+RTL-100 : 172/0 useful/useless nets, 1/0 useful/useless insts
+MUX-301 : Optimized 0 mux instances.
+OPT-301 : Optimize round 1, 0 better
+CMD-004 : start command "map_macro -nopad"
+GAT-100 : Processed 0 LOGIC_BUF instances.
+RTL-100 : Optimize round 1
+RTL-100 : 172/2 useful/useless nets, 2/2 useful/useless insts
+RTL-100 : Optimize round 1, 0 better
+RTL-100 : 172/2 useful/useless nets, 2/2 useful/useless insts
+CMD-004 : start command "write_verilog F:/SVN_ELF2_SOC/trunk/Basic_Demo/BRAM_Demo/exchange_FPGA144/al_ip/bram256kbit_sim.v"
+RTL-100 : write out verilog file F:/SVN_ELF2_SOC/trunk/Basic_Demo/BRAM_Demo/exchange_FPGA144/al_ip/bram256kbit_sim.v

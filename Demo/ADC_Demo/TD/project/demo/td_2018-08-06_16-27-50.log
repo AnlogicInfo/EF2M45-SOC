@@ -1,0 +1,23 @@
+============================================================
+   Tang Dynasty, V4.2.217
+   Copyright:   Shanghai Anlogic Infotech Co., Ltd.
+                2011 - 2021
+   Executable = D:/TD4.2.217/bin/td.exe
+   Built at =   10:05:48 Jul 16 2018
+   Run by =     Administrator
+   Run Date =   Mon Aug  6 16:27:50 2018
+
+   Run on =     USER-20180530KQ
+============================================================
+CMD-004 : start command "import_device ef2_4.db -package EF2M45LG48B"
+CMD-004 : start command "open_project E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.al"
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/mcu.v
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/pll.v
+CMD-005 : finish command "import_device ef2_4.db -package EF2M45LG48B" in  1.317504s wall, 1.419609s user + 0.187201s system = 1.606810s CPU (122.0%)
+
+CMD-006 : used memory is 106 MB, reserved memory is 83 MB, peak memory is 106 MB
+RUN-003 ERROR: USB device open error, please re-connect the USB cable!
+RUN-003 ERROR: USB device open error, please re-connect the USB cable!
+RUN-003 ERROR: USB device open error, please re-connect the USB cable!
+RUN-003 ERROR: USB device open error, please re-connect the USB cable!

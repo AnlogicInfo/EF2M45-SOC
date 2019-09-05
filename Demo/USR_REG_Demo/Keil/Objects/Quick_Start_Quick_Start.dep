@@ -1,0 +1,66 @@
+Dependencies for Project 'Quick_Start', Target 'Quick_Start': (DO NOT MODIFY !)
+F (.\src\main.c)(0x5B69088C)(--c99 -c --cpu Cortex-M3 --li -g -O2 --apcs=interwork --split_sections -I..\..\..\ELF2_BSP -I..\..\..\ELF2_BSP\CMSIS\Core\Include -I..\..\..\ELF2_BSP\Debug -I..\..\..\ELF2_BSP\Debug\RTT -I..\..\..\ELF2_BSP\Driver -I..\..\..\ELF2_BSP\Driver\regmap -I..\..\..\ELF2_BSP\Device\ELF2\Include -I..\..\..\ELF2_BSP\Device\ELF2\Source\ARM-I F:\SVN_ELF2_SOC\trunk\Basic_Demo\USR_REG_Demo\Keil\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM3\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DARMCM3-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (..\..\..\ELF2_BSP\Debug\RTT\segger_rtt.h)(0x59B7A68B)
+I (..\..\..\ELF2_BSP\Debug\RTT\SEGGER_RTT_Conf.h)(0x59B7A68B)
+I (src\test_demo.h)(0x5B6908ED)
+F (.\src\test_demo.c)(0x5B7A6C99)(--c99 -c --cpu Cortex-M3 --li -g -O2 --apcs=interwork --split_sections -I..\..\..\ELF2_BSP -I..\..\..\ELF2_BSP\CMSIS\Core\Include -I..\..\..\ELF2_BSP\Debug -I..\..\..\ELF2_BSP\Debug\RTT -I..\..\..\ELF2_BSP\Driver -I..\..\..\ELF2_BSP\Driver\regmap -I..\..\..\ELF2_BSP\Device\ELF2\Include -I..\..\..\ELF2_BSP\Device\ELF2\Source\ARM-I F:\SVN_ELF2_SOC\trunk\Basic_Demo\USR_REG_Demo\Keil\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM3\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DARMCM3-o .\objects\test_demo.o --omf_browse .\objects\test_demo.crf --depend .\objects\test_demo.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\..\..\ELF2_BSP\Driver\gpio.h)(0x5AEC6569)
+I (..\..\..\ELF2_BSP\Driver\chip.h)(0x5A0DA885)
+I (..\..\..\ELF2_BSP\Driver\system.h)(0x5A0DABCD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x54C245B8)
+I (..\..\..\ELF2_BSP\Device\ELF2\Include\elf2.h)(0x5A6E7961)
+I (..\..\..\ELF2_BSP\CMSIS\Core\Include\core_cm3.h)(0x5A051EEE)
+I (..\..\..\ELF2_BSP\CMSIS\Core\Include\cmsis_version.h)(0x5A051EEE)
+I (..\..\..\ELF2_BSP\CMSIS\Core\Include\cmsis_compiler.h)(0x5A051EEE)
+I (..\..\..\ELF2_BSP\CMSIS\Core\Include\cmsis_armcc.h)(0x5A051EEE)
+I (..\..\..\ELF2_BSP\CMSIS\Core\Include\mpu_armv7.h)(0x5A051EEE)
+I (..\..\..\ELF2_BSP\Device\ELF2\Include\system_elf2.h)(0x5A051EEE)
+I (..\..\..\ELF2_BSP\Driver\intc.h)(0x5A27CB52)
+I (src\test_demo.h)(0x5B6908ED)
+I (..\..\..\ELF2_BSP\Driver\int_register.h)(0x5B6A613F)
+F (.\src\test_demo.h)(0x5B6908ED)()
+F (..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.s)(0x5B5831D1)(--cpu Cortex-M3 --li -g --apcs=interwork -I F:\SVN_ELF2_SOC\trunk\Basic_Demo\USR_REG_Demo\Keil\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM3\Include-I C:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 515" --pd "ARMCM3 SETA 1"--list .\listings\startup_elf2.lst --xref -o .\objects\startup_elf2.o --depend .\objects\startup_elf2.d)
+F (..\..\..\ELF2_BSP\Device\ELF2\Source\system_elf2.c)(0x5B690933)(--c99 -c --cpu Cortex-M3 --li -g -O2 --apcs=interwork --split_sections -I..\..\..\ELF2_BSP -I..\..\..\ELF2_BSP\CMSIS\Core\Include -I..\..\..\ELF2_BSP\Debug -I..\..\..\ELF2_BSP\Debug\RTT -I..\..\..\ELF2_BSP\Driver -I..\..\..\ELF2_BSP\Driver\regmap -I..\..\..\ELF2_BSP\Device\ELF2\Include -I..\..\..\ELF2_BSP\Device\ELF2\Source\ARM-I F:\SVN_ELF2_SOC\trunk\Basic_Demo\USR_REG_Demo\Keil\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM3\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DARMCM3-o .\objects\system_elf2.o --omf_browse .\objects\system_elf2.crf --depend .\objects\system_elf2.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\..\..\ELF2_BSP\Device\ELF2\Include\elf2.h)(0x5A6E7961)
+I (..\..\..\ELF2_BSP\CMSIS\Core\Include\core_cm3.h)(0x5A051EEE)
+I (..\..\..\ELF2_BSP\CMSIS\Core\Include\cmsis_version.h)(0x5A051EEE)
+I (..\..\..\ELF2_BSP\CMSIS\Core\Include\cmsis_compiler.h)(0x5A051EEE)
+I (..\..\..\ELF2_BSP\CMSIS\Core\Include\cmsis_armcc.h)(0x5A051EEE)
+I (..\..\..\ELF2_BSP\CMSIS\Core\Include\mpu_armv7.h)(0x5A051EEE)
+I (..\..\..\ELF2_BSP\Device\ELF2\Include\system_elf2.h)(0x5A051EEE)
+I (..\..\..\ELF2_BSP\platform.h)(0x5B690585)
+I (..\..\..\ELF2_BSP\Driver\syscon.h)(0x5B6BA814)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x54C245B8)
+F (..\..\..\ELF2_BSP\Driver\ELF2_CM3_Lib.lib)(0x5B0B57EC)()
+F (..\..\..\ELF2_BSP\Debug\log.c)(0x5A26B068)(--c99 -c --cpu Cortex-M3 --li -g -O2 --apcs=interwork --split_sections -I..\..\..\ELF2_BSP -I..\..\..\ELF2_BSP\CMSIS\Core\Include -I..\..\..\ELF2_BSP\Debug -I..\..\..\ELF2_BSP\Debug\RTT -I..\..\..\ELF2_BSP\Driver -I..\..\..\ELF2_BSP\Driver\regmap -I..\..\..\ELF2_BSP\Device\ELF2\Include -I..\..\..\ELF2_BSP\Device\ELF2\Source\ARM-I F:\SVN_ELF2_SOC\trunk\Basic_Demo\USR_REG_Demo\Keil\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM3\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DARMCM3-o .\objects\log.o --omf_browse .\objects\log.crf --depend .\objects\log.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\..\..\ELF2_BSP\Debug\log.h)(0x5AED7150)
+I (..\..\..\ELF2_BSP\platform.h)(0x5B690585)
+I (..\..\..\ELF2_BSP\Debug\RTT\SEGGER_RTT.h)(0x59B7A68B)
+I (..\..\..\ELF2_BSP\Debug\RTT\SEGGER_RTT_Conf.h)(0x59B7A68B)
+I (..\..\..\ELF2_BSP\Driver\uart.h)(0x5AEC651B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x54C245B8)
+F (..\..\..\ELF2_BSP\Debug\debug.c)(0x5A0DB9E7)(--c99 -c --cpu Cortex-M3 --li -g -O2 --apcs=interwork --split_sections -I..\..\..\ELF2_BSP -I..\..\..\ELF2_BSP\CMSIS\Core\Include -I..\..\..\ELF2_BSP\Debug -I..\..\..\ELF2_BSP\Debug\RTT -I..\..\..\ELF2_BSP\Driver -I..\..\..\ELF2_BSP\Driver\regmap -I..\..\..\ELF2_BSP\Device\ELF2\Include -I..\..\..\ELF2_BSP\Device\ELF2\Source\ARM-I F:\SVN_ELF2_SOC\trunk\Basic_Demo\USR_REG_Demo\Keil\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM3\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DARMCM3-o .\objects\debug.o --omf_browse .\objects\debug.crf --depend .\objects\debug.d)
+I (..\..\..\ELF2_BSP\Debug\log.h)(0x5AED7150)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
+I (..\..\..\ELF2_BSP\platform.h)(0x5B690585)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\..\..\ELF2_BSP\Debug\debug.h)(0x5A0EBC9C)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x54C245B8)
+F (..\..\..\ELF2_BSP\Debug\RTT\SEGGER_RTT_printf.c)(0x59B7A68B)(--c99 -c --cpu Cortex-M3 --li -g -O2 --apcs=interwork --split_sections -I..\..\..\ELF2_BSP -I..\..\..\ELF2_BSP\CMSIS\Core\Include -I..\..\..\ELF2_BSP\Debug -I..\..\..\ELF2_BSP\Debug\RTT -I..\..\..\ELF2_BSP\Driver -I..\..\..\ELF2_BSP\Driver\regmap -I..\..\..\ELF2_BSP\Device\ELF2\Include -I..\..\..\ELF2_BSP\Device\ELF2\Source\ARM-I F:\SVN_ELF2_SOC\trunk\Basic_Demo\USR_REG_Demo\Keil\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM3\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DARMCM3-o .\objects\segger_rtt_printf.o --omf_browse .\objects\segger_rtt_printf.crf --depend .\objects\segger_rtt_printf.d)
+I (..\..\..\ELF2_BSP\Debug\RTT\SEGGER_RTT.h)(0x59B7A68B)
+I (..\..\..\ELF2_BSP\Debug\RTT\SEGGER_RTT_Conf.h)(0x59B7A68B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
+F (..\..\..\ELF2_BSP\Debug\RTT\SEGGER_RTT.c)(0x59B7A68B)(--c99 -c --cpu Cortex-M3 --li -g -O2 --apcs=interwork --split_sections -I..\..\..\ELF2_BSP -I..\..\..\ELF2_BSP\CMSIS\Core\Include -I..\..\..\ELF2_BSP\Debug -I..\..\..\ELF2_BSP\Debug\RTT -I..\..\..\ELF2_BSP\Driver -I..\..\..\ELF2_BSP\Driver\regmap -I..\..\..\ELF2_BSP\Device\ELF2\Include -I..\..\..\ELF2_BSP\Device\ELF2\Source\ARM-I F:\SVN_ELF2_SOC\trunk\Basic_Demo\USR_REG_Demo\Keil\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM3\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DARMCM3-o .\objects\segger_rtt.o --omf_browse .\objects\segger_rtt.crf --depend .\objects\segger_rtt.d)
+I (..\..\..\ELF2_BSP\Debug\RTT\SEGGER_RTT.h)(0x59B7A68B)
+I (..\..\..\ELF2_BSP\Debug\RTT\SEGGER_RTT_Conf.h)(0x59B7A68B)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)

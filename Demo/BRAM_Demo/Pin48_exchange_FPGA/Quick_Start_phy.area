@@ -1,0 +1,37 @@
+standard
+IO Statistics
+#IO                     4
+  #input                2
+  #output               1
+  #inout                1
+
+Utilization Statistics
+#lut                  285   out of   4480    6.36%
+#reg                  292   out of   4480    6.52%
+#le                   431
+  #lut only           139   out of    431   32.25%
+  #reg only           146   out of    431   33.87%
+  #lut&reg            146   out of    431   33.87%
+#dsp                    0   out of     15    0.00%
+#bram                   5   out of     12   41.67%
+  #bram9k               5
+  #fifo9k               0
+#bram32k                0   out of      6    0.00%
+#bram256k               1   out of      1  100.00%
+#mcu                    1   out of      1  100.00%
+#pad                    4   out of     31   12.90%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    1   out of      1  100.00%
+#clknet                 4   out of     16   25.00%
+  #gclk                 2
+
+
+Detailed IO Report
+
+Name            Direction     Location     IOStandard     DriveStrength     
+fpga_clk_in     INPUT         P22          LVCMOS25       N/A               
+fpga_rst_n      INPUT         P21          LVCMOS25       N/A               
+hw_led          OUTPUT        P19          LVCMOS25       16                
+sw_led          INOUT         P18          LVCMOS25       16                

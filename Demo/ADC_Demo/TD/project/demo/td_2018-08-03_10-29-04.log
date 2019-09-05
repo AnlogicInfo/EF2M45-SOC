@@ -1,0 +1,2595 @@
+============================================================
+   Tang Dynasty, V4.2.217
+   Copyright:   Shanghai Anlogic Infotech Co., Ltd.
+                2011 - 2021
+   Executable = D:/TD4.2.217/bin/td.exe
+   Built at =   10:05:48 Jul 16 2018
+   Run by =     Administrator
+   Run Date =   Fri Aug  3 10:29:04 2018
+
+   Run on =     USER-20180530KQ
+============================================================
+CMD-004 : start command "import_device ef2_4.db -package EF2L45LG144B"
+CMD-004 : start command "open_project E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.al"
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/pll.v
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/mcu.v
+CMD-005 : finish command "import_device ef2_4.db -package EF2L45LG144B" in  1.257786s wall, 1.326008s user + 0.234002s system = 1.560010s CPU (124.0%)
+
+CMD-006 : used memory is 106 MB, reserved memory is 83 MB, peak memory is 106 MB
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/src/top.v
+VLG-174 ERROR: port connections cannot be mixed ordered and named in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/src/top.v(35)
+VLG-084 ERROR: ignore module top due to previous errors in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/src/top.v(49)
+VLG-495 : Verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/src/top.v ignored due to errors
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/src/top.v
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/pll.v
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/mcu.v
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/src/top.v
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/mcu.v
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/pll.v
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/src/top.v
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/mcu.v
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/pll.v
+CMD-004 : start command "elaborate -top top"
+VLG-939 WARNING: port gpio_h2_out remains unconnected for this instance in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35)
+VLG-004 : elaborate module top in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(2)
+VLG-004 : elaborate module pll in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/pll.v(23)
+VLG-004 : elaborate module EF2_LOGIC_BUFG in D:/TD4.2.217/arch/ef2_macro.v(8)
+VLG-004 : elaborate module EF2_PHY_PLL(FIN="50.000",REFCLK_DIV=3,FBCLK_DIV=12,CLKC0_DIV=5,CLKC1_DIV=20,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=5,CLKC1_CPHASE=20,GMC_GAIN=6,ICP_CURRENT=3,KVCO=6,LPF_RESISTOR=2,PLLRST_ENA="DISABLE",INTPI=3,HIGH_SPEED_EN="ENABLE",OFFSET_MODE="EXT",CLKC0_DUTY=0.5,CLKC1_DUTY=0.5,CLKC0_DUTY_INT=3,CLKC1_DUTY_INT=10) in D:/TD4.2.217/arch/ef2_macro.v(2644)
+VLG-939 WARNING: port ppm_clk remains unconnected for this instance in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/mcu.v(48)
+VLG-004 : elaborate module mcu in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/mcu.v(14)
+VLG-004 : elaborate module EF2_PHY_MCU(GPIO_L0="ENABLE",GPIO_L1="ENABLE") in D:/TD4.2.217/arch/ef2_macro.v(741)
+VIN-1013 WARNING: input port ppm_clk is not connected on this instance in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/mcu.v(48)
+VIN-1002 WARNING: net gpio_h0_in does not have a driver in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(13)
+VIN-1002 WARNING: net gpio_h1_in does not have a driver in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(16)
+VIN-1013 WARNING: input port gpio_h2_in is not connected on this instance in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35)
+RTL-100 : Current top model is top
+RAM-300 : Inferred 0 RAMs.
+CMD-004 : start command "optimize_rtl"
+RUN-001 : Open license file D:/TD4.2.217/license/Anlogic.lic
+SNT-300 : SanityCheck: Model "top"
+SNT-300 : SanityCheck: Model "mcu"
+SNT-300 : SanityCheck: Model "pll"
+RTL-100 : Mark pll as IO macro for instance bufg_feedback
+UDR-200 WARNING: Undriven pin: model "top" / inst "u_mcu" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35) / pin "gpio_h2_in"
+UDR-200 WARNING: Undriven pin: model "top" / inst "u_mcu" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35) / pin "gpio_h3_in"
+UDR-202 WARNING: Undriven net: model "top" / net "gpio_h0_in" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(13)
+UDR-203 WARNING: the net's pin: pin "gpio_h0_in" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35)
+UDR-202 WARNING: Undriven net: model "top" / net "gpio_h1_in" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(16)
+UDR-203 WARNING: the net's pin: pin "gpio_h1_in" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35)
+RTL-200 WARNING: Using 0 for all undriven pins and nets
+LAT-200 WARNING: Found latch in "top", name: "led_reg$0$", d: "gpio_h0_out", q: "led[0]" // E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(46)
+LAT-200 WARNING: Found latch in "top", name: "led_reg$1$", d: "gpio_h1_out", q: "led[1]" // E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(47)
+FLT-300 : Flatten model top
+FLT-300 : Flatten model mcu
+FLT-300 : Flatten model pll
+MRG-300 : Merged 2 instances.
+OPT-300 : Optimize round 1
+RTL-100 : 63/9 useful/useless nets, 34/2 useful/useless insts
+MUX-301 : Optimized 0 mux instances.
+OPT-301 : Optimize round 1, 13 better
+OPT-300 : Optimize round 2
+RTL-100 : 62/1 useful/useless nets, 33/0 useful/useless insts
+MUX-301 : Optimized 0 mux instances.
+OPT-301 : Optimize round 2, 0 better
+CMD-004 : start command "report_area -file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_rtl.area"
+standard
+IO Statistics
+#IO                     7
+  #input                3
+  #output               4
+  #inout                0
+#MACRO_ADD              1
+#MACRO_EQ               2
+
+CMD-004 : start command "read_sdc ../../constrs/ELF2M45.sdc"
+CMD-004 : start command "get_ports sys_clk"
+CMD-004 : start command "create_clock -name sys_clk -period 20 -waveform 0 10 "
+RUN-001 : create_clock: clock name: sys_clk, type: 0, period: 20000, rise: 0, fall 10000.
+RUN-001 : Import SDC file ../../constrs/ELF2M45.sdc finished, there are 0 nets kept by constraints.
+CMD-004 : start command "read_adc ../../constrs/ELF2M45.adc"
+CMD-004 : start command "set_pin_assignment sys_clk  LOCATION = P22;  "
+CMD-004 : start command "set_pin_assignment sys_rstn  LOCATION = P21;  "
+CMD-004 : start command "set_pin_assignment ppm_rstn  LOCATION = P24;  "
+CMD-004 : start command "set_pin_assignment led[3]  LOCATION = P19;   "
+CMD-004 : start command "set_pin_assignment led[2]  LOCATION = P18;   "
+USR-001 ERROR: Location P18 is for dedicated pin! Choose another pin for normal use.
+RUN-003 ERROR: Read ../../constrs/ELF2M45.adc error
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/src/top.v
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/mcu.v
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/pll.v
+CMD-004 : start command "import_device ef2_4.db -package EF2M45LG48B"
+CMD-005 : finish command "import_device ef2_4.db -package EF2M45LG48B" in  1.206253s wall, 1.216808s user + 0.031200s system = 1.248008s CPU (103.5%)
+
+CMD-006 : used memory is 140 MB, reserved memory is 99 MB, peak memory is 141 MB
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/src/top.v
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/mcu.v
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/pll.v
+CMD-004 : start command "elaborate -top top"
+VLG-939 WARNING: port gpio_h2_out remains unconnected for this instance in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35)
+VLG-004 : elaborate module top in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(2)
+VLG-004 : elaborate module pll in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/pll.v(23)
+VLG-004 : elaborate module EF2_LOGIC_BUFG in D:/TD4.2.217/arch/ef2_macro.v(8)
+VLG-004 : elaborate module EF2_PHY_PLL(FIN="50.000",REFCLK_DIV=3,FBCLK_DIV=12,CLKC0_DIV=5,CLKC1_DIV=20,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=5,CLKC1_CPHASE=20,GMC_GAIN=6,ICP_CURRENT=3,KVCO=6,LPF_RESISTOR=2,PLLRST_ENA="DISABLE",INTPI=3,HIGH_SPEED_EN="ENABLE",OFFSET_MODE="EXT",CLKC0_DUTY=0.5,CLKC1_DUTY=0.5,CLKC0_DUTY_INT=3,CLKC1_DUTY_INT=10) in D:/TD4.2.217/arch/ef2_macro.v(2644)
+VLG-939 WARNING: port ppm_clk remains unconnected for this instance in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/mcu.v(48)
+VLG-004 : elaborate module mcu in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/mcu.v(14)
+VLG-004 : elaborate module EF2_PHY_MCU(GPIO_L0="ENABLE",GPIO_L1="ENABLE") in D:/TD4.2.217/arch/ef2_macro.v(741)
+VIN-1013 WARNING: input port ppm_clk is not connected on this instance in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/mcu.v(48)
+VIN-1002 WARNING: net gpio_h0_in does not have a driver in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(13)
+VIN-1002 WARNING: net gpio_h1_in does not have a driver in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(16)
+VIN-1013 WARNING: input port gpio_h2_in is not connected on this instance in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35)
+RTL-100 : Current top model is top
+RAM-300 : Inferred 0 RAMs.
+CMD-004 : start command "optimize_rtl"
+RUN-001 : Open license file D:/TD4.2.217/license/Anlogic.lic
+SNT-300 : SanityCheck: Model "top"
+SNT-300 : SanityCheck: Model "mcu"
+SNT-300 : SanityCheck: Model "pll"
+RTL-100 : Mark pll as IO macro for instance bufg_feedback
+UDR-200 WARNING: Undriven pin: model "top" / inst "u_mcu" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35) / pin "gpio_h2_in"
+UDR-200 WARNING: Undriven pin: model "top" / inst "u_mcu" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35) / pin "gpio_h3_in"
+UDR-202 WARNING: Undriven net: model "top" / net "gpio_h0_in" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(13)
+UDR-203 WARNING: the net's pin: pin "gpio_h0_in" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35)
+UDR-202 WARNING: Undriven net: model "top" / net "gpio_h1_in" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(16)
+UDR-203 WARNING: the net's pin: pin "gpio_h1_in" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35)
+RTL-200 WARNING: Using 0 for all undriven pins and nets
+LAT-200 WARNING: Found latch in "top", name: "led_reg$0$", d: "gpio_h0_out", q: "led[0]" // E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(46)
+LAT-200 WARNING: Found latch in "top", name: "led_reg$1$", d: "gpio_h1_out", q: "led[1]" // E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(47)
+FLT-300 : Flatten model top
+FLT-300 : Flatten model mcu
+FLT-300 : Flatten model pll
+MRG-300 : Merged 2 instances.
+OPT-300 : Optimize round 1
+RTL-100 : 63/9 useful/useless nets, 34/2 useful/useless insts
+MUX-301 : Optimized 0 mux instances.
+OPT-301 : Optimize round 1, 13 better
+OPT-300 : Optimize round 2
+RTL-100 : 62/1 useful/useless nets, 33/0 useful/useless insts
+MUX-301 : Optimized 0 mux instances.
+OPT-301 : Optimize round 2, 0 better
+CMD-004 : start command "report_area -file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_rtl.area"
+standard
+IO Statistics
+#IO                     7
+  #input                3
+  #output               4
+  #inout                0
+#MACRO_ADD              1
+#MACRO_EQ               2
+
+CMD-004 : start command "read_sdc ../../constrs/ELF2M45.sdc"
+CMD-004 : start command "get_ports sys_clk"
+CMD-004 : start command "create_clock -name sys_clk -period 20 -waveform 0 10 "
+RUN-001 : create_clock: clock name: sys_clk, type: 0, period: 20000, rise: 0, fall 10000.
+RUN-001 : Import SDC file ../../constrs/ELF2M45.sdc finished, there are 0 nets kept by constraints.
+CMD-004 : start command "read_adc ../../constrs/ELF2M45.adc"
+CMD-004 : start command "set_pin_assignment sys_clk  LOCATION = P22;  "
+CMD-004 : start command "set_pin_assignment sys_rstn  LOCATION = P21;  "
+CMD-004 : start command "set_pin_assignment ppm_rstn  LOCATION = P24;  "
+CMD-004 : start command "set_pin_assignment led[3]  LOCATION = P19;   "
+CMD-004 : start command "set_pin_assignment led[2]  LOCATION = P18;   "
+CMD-004 : start command "set_pin_assignment led[1]  LOCATION = P16;   "
+CMD-004 : start command "set_pin_assignment led[0]  LOCATION = P15;   "
+CMD-004 : start command "export_db E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_rtl.db"
+RUN-001 : Exported /
+RUN-001 : Exported libs
+RUN-001 : Exported entities
+RUN-001 : Exported ports
+RUN-001 : Exported pins
+RUN-001 : Exported instances
+RUN-001 : Exported nets
+RUN-001 : Exported buses
+RUN-001 : Exported models
+RUN-001 : Exported congestions
+RUN-001 : Exported violations
+RUN-001 : Exported timing constraints
+RUN-001 : Exported IO constraints
+RUN-001 : Exported Inst constraints
+RUN-001 : Exported flow parameters
+CMD-004 : start command "map_macro"
+RTL-100 : Map 7 IOs to PADs
+GAT-100 : Processed 0 LOGIC_BUF instances.
+GAT-100 : 1 BUFG to GCLK
+RTL-100 : Optimize round 1
+RTL-100 : 67/0 useful/useless nets, 39/0 useful/useless insts
+RTL-100 : Optimize round 1, 2 better
+RTL-100 : Optimize round 2
+RTL-100 : 67/0 useful/useless nets, 39/0 useful/useless insts
+RTL-100 : Optimize round 2, 0 better
+RTL-100 : Map 1 macro adder
+RTL-100 : 137/46 useful/useless nets, 63/23 useful/useless insts
+CMD-004 : start command "map"
+CMD-004 : start command "start_timer -prepack"
+TMR-601 : Start building timing graph for model top
+TMR-601 : Build timing graph completely. Port num: 4, tpin num: 229, tnet num: 95, tinst num: 61, tnode num: 456, tedge num: 487.
+
+TMR-601 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-601 : Levelize timing graph completed, there are 54 levels in all.
+TMR-601 : Timing graph initialized successfully.
+
+TMR-601 : Start to update net delay, extr mode = 2.
+TMR-601 : Update delay of 95 nets completely.
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$0$_DO.F of inst led_reg$0$_DO
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$1$_DO.F of inst led_reg$1$_DO
+TMR-601 : Annotate delay to tedge completely, extr mode = 2.
+TMR-601 : Initiate 1 clocks from SDC
+TMR-601 : Start to map constraints to rules, there are 0 constraints in all.
+TMR-601 : Start to map report constraints to rules, there are 0 constraints in all.
+TMR-601 : Constraints initiated successfully.
+TMR-601 : Forward propagation: start to calculate arrival time...
+TMR-601 : Backward propagation: start to calculate required time...
+TMR-601 : Timing propagation completely!
+GAT-100 : Running gate level optimization.
+GAT-100 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+GAT-100 : Post LUT mapping optimization.
+GAT-100 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+GAT-100 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+GAT-100 : Logic optimization runtime opt =   0.00 sec, map =   0.00 sec
+GAT-100 : Mapper mapped 2 instances into 2 LUTs, name keeping = 100%.
+CMD-004 : start command "pack"
+GAT-100 : Packing top model "top" ...
+PAK-301 : Pack lib has 35 rtl pack models with 12 top pack blocks
+OPT-300 : Optimize round 1
+RTL-100 : 90/0 useful/useless nets, 62/0 useful/useless insts
+OPT-301 : Optimize round 1, 0 better
+PAK-SEQ-305 : Packing 23 DFF/LATCH to SEQ ...
+PAK-RLS : Pack 1 carry chain into lslice
+PAK-BLE-301 : Packing 0 adder to BLE ...
+PAK-BLE-302 : Packed 0 adder and 0 SEQ to BLE.
+PAK-BLE-301 : Packing 0 gate4 to BLE ...
+PAK-BLE-302 : Packed 0 gate4 and 0 SEQ to BLE.
+PAK-309 : Packed 0 FxMUX
+PAK-BLE-301 : Packing 0 MUX to BLE ...
+PAK-BLE-302 : Packed 0 MUX and 0 SEQ to BLE.
+PAK-BLE-301 : Packing 2 LUT to BLE ...
+PAK-BLE-302 : Packed 2 LUT and 0 SEQ to BLE.
+PAK-SEQ-301 : Packing 23 remaining SEQ's ...
+PAK-SEQ-302 : #0: Packed 0 SEQ (23 nodes)...
+PAK-SEQ-302 : #1: Packed 2 SEQ (23 nodes)...
+PAK-SEQ-303 : Packed 2 SEQ with LUT/SLICE
+PAK-SEQ-304 : 2 single LUT's are left
+PAK-SEQ-304 : 23 single SEQ's are left
+PAK-303 : Packing model "top" (AL_USER_NORMAL) with 23/42 primitive instances ...
+CLK-302 : Net u_pll/clk0_out driven by BUFG (0 clock/control pins, 1 other pins).
+CLK-311 : Net clk_25m is clkc1 of pll u_pll/pll_inst.
+CLK-304 : Net sys_clk_pad is refclk of pll u_pll/pll_inst.
+CLK-305 : Net sys_clk_pad is fbclk of pll u_pll/pll_inst.
+CLK-309 : Tag rtl::Net clk_25m as clock net
+CLK-309 : Tag rtl::Net sys_clk_pad as clock net
+CLK-309 : Tag rtl::Net u_pll/clk0_out as clock net
+CLK-310 : Tagged 3 rtl::Net as clock net
+CMD-004 : start command "report_area -file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_gate.area"
+standard
+IO Statistics
+#IO                     7
+  #input                3
+  #output               4
+  #inout                0
+
+Utilization Statistics
+#lut                    2   out of   4480    0.04%
+#reg                   23   out of   4480    0.51%
+#le                    25
+  #lut only             2   out of     25    8.00%
+  #reg only            23   out of     25   92.00%
+  #lut&reg              0   out of     25    0.00%
+#dsp                    0   out of     15    0.00%
+#bram                   0   out of     12    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of      6    0.00%
+#mcu                    1   out of      1  100.00%
+#pad                    7   out of     31   22.58%
+  #ireg                 0
+  #oreg                 2
+  #treg                 0
+#pll                    1   out of      1  100.00%
+#clknet                 3   out of     16   18.75%
+  #gclk                 1
+
+CMD-004 : start command "export_db E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_gate.db"
+RUN-001 : Exported /
+RUN-001 : Exported libs
+RUN-001 : Exported entities
+RUN-001 : Exported ports
+RUN-001 : Exported pins
+RUN-001 : Exported instances
+RUN-001 : Exported nets
+RUN-001 : Exported buses
+RUN-001 : Exported models
+RUN-001 : Exported congestions
+RUN-001 : Exported violations
+RUN-001 : Exported timing constraints
+RUN-001 : Exported IO constraints
+RUN-001 : Exported Inst constraints
+RUN-001 : Exported flow parameters
+CMD-004 : start command "start_timer"
+RUN-001 : There are total 31 instances
+RUN-001 : 9 mslices, 9 lslices, 7 pads, 0 brams, 0 dsps
+RUN-001 : There are total 72 nets
+RUN-001 : 66 nets have 2 pins
+RUN-001 : 2 nets have [3 - 5] pins
+RUN-001 : 3 nets have [11 - 20] pins
+RUN-001 : 1 nets have [21 - 99] pins
+TMR-601 : Start building timing graph for model top
+TMR-601 : Build timing graph completely. Port num: 4, tpin num: 164, tnet num: 70, tinst num: 28, tnode num: 215, tedge num: 272.
+
+TMR-601 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-601 : Levelize timing graph completed, there are 16 levels in all.
+TMR-601 : Timing graph initialized successfully.
+
+CMD-004 : start command "place"
+RUN-001 : Open license file D:/TD4.2.217/license/Anlogic.lic
+PLC-001 : Placer runs in 4 thread(s).
+PLC-001 : Initial placement ...
+PLC-001 : design contains 29 instances, 18 slices, 1 macros(6 instances)
+PLC-001 : Start timing update ...
+TMR-601 : Start to update net delay, extr mode = 2.
+TMR-601 : Update delay of 70 nets completely.
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$0$_DO.F of inst led_reg$0$_DO
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$1$_DO.F of inst led_reg$1$_DO
+TMR-601 : Annotate delay to tedge completely, extr mode = 2.
+TMR-601 : Initiate 1 clocks from SDC
+TMR-601 : Start to map constraints to rules, there are 0 constraints in all.
+TMR-601 : Start to map report constraints to rules, there are 0 constraints in all.
+TMR-601 : Constraints initiated successfully.
+TMR-601 : Forward propagation: start to calculate arrival time...
+TMR-601 : Backward propagation: start to calculate required time...
+TMR-601 : Timing propagation completely!
+PLC-001 : End timing update;  0.002369s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PLC-001 : Global placement ...
+PLC-001 : Initial: Len = 8227
+PLC-001 : Run with size of 3
+PLC-001 : Cell area utilization is 0%, beta_incr = 0.995179
+PLC-001 : :::0::: Try harder cell spreading with beta_ = 0
+PLC-004 : Step(1): len = 4934.1, overlap = 0
+PLC-004 : Step(2): len = 3088.2, overlap = 0
+PLC-004 : Step(3): len = 2695.5, overlap = 0
+PLC-004 : Step(4): len = 2434.3, overlap = 0
+PLC-004 : Step(5): len = 2498.9, overlap = 0
+PLC-004 : Step(6): len = 2569.2, overlap = 0
+PLC-004 : Step(7): len = 2471.4, overlap = 0
+PLC-004 : Step(8): len = 2407.7, overlap = 0
+PLC-004 : Step(9): len = 2164.7, overlap = 0
+PLC-004 : Step(10): len = 2020.7, overlap = 0
+PLC-004 : Step(11): len = 2010.2, overlap = 0
+PLC-004 : Step(12): len = 1962.9, overlap = 0
+PLC-004 : Step(13): len = 1962.9, overlap = 0
+PLC-004 : Step(14): len = 1907.5, overlap = 0
+PLC-004 : Step(15): len = 1907.5, overlap = 0
+PLC-004 : Step(16): len = 1907.5, overlap = 0
+PLC-001 : Legalization ...
+PLC-001 : Run with size of 3
+PLC-001 : Cell area utilization is 1%, beta_incr = 0.995179
+PLC-001 : :::0::: Try harder cell spreading with beta_ = 0
+PLC-004 : Step(17): len = 1887.6, overlap = 0
+PLC-004 : Step(18): len = 1933, overlap = 0
+PLC-004 : Step(19): len = 1957.2, overlap = 0
+PLC-004 : Step(20): len = 1942, overlap = 0
+PLC-004 : Step(21): len = 1942, overlap = 0
+PLC-004 : Step(22): len = 1826.5, overlap = 0
+PLC-004 : Step(23): len = 1826.5, overlap = 0
+PLC-004 : Step(24): len = 1824, overlap = 0
+PLC-001 : :::1::: Try harder cell spreading with beta_ = 3.92103
+PLC-004 : Step(25): len = 1825.5, overlap = 0
+PLC-004 : Step(26): len = 1825.5, overlap = 0
+PLC-001 : :::2::: Try harder cell spreading with beta_ = 7.84206
+PLC-004 : Step(27): len = 1825.3, overlap = 0
+PLC-004 : Step(28): len = 1825.3, overlap = 0
+PLC-001 : Run with size of 1
+PLC-001 : Cell area utilization is 1%, beta_incr = 0.995179
+PLC-001 : :::0::: Try harder cell spreading with beta_ = 3.73541e-05
+PLC-004 : Step(29): len = 1817, overlap = 1.25
+PLC-004 : Step(30): len = 1826, overlap = 1.25
+PLC-004 : Step(31): len = 1826, overlap = 1.25
+PLC-001 : :::1::: Try harder cell spreading with beta_ = 7.47083e-05
+PLC-004 : Step(32): len = 1832.8, overlap = 1.25
+PLC-004 : Step(33): len = 1841.1, overlap = 1.25
+PLC-001 : :::2::: Try harder cell spreading with beta_ = 0.000149417
+PLC-004 : Step(34): len = 1839.3, overlap = 1.25
+PLC-004 : Step(35): len = 1854.3, overlap = 1.25
+PLC-001 : :::3::: Try harder cell spreading with beta_ = 0.000298833
+PLC-004 : Step(36): len = 1876.6, overlap = 1.25
+PLC-004 : Step(37): len = 1880.8, overlap = 0.75
+PLC-001 : Legalization ...
+PLC-001 : Run with size of 1
+PLC-001 : Cell area utilization is 1%, beta_incr = 0.995179
+PLC-001 : :::0::: Try harder cell spreading with beta_ = 0
+PLC-004 : Step(38): len = 1822, overlap = 1.75
+PLC-004 : Step(39): len = 1817.6, overlap = 1.75
+PLC-004 : Step(40): len = 1817.6, overlap = 1.75
+PLC-001 : :::1::: Try harder cell spreading with beta_ = 2.745e-05
+PLC-004 : Step(41): len = 1813.7, overlap = 1.75
+PLC-004 : Step(42): len = 1813.7, overlap = 1.75
+PLC-001 : :::2::: Try harder cell spreading with beta_ = 5.49001e-05
+PLC-004 : Step(43): len = 1831.8, overlap = 1.75
+PLC-004 : Step(44): len = 1831.8, overlap = 1.75
+PLC-001 : :::3::: Try harder cell spreading with beta_ = 0.0001098
+PLC-004 : Step(45): len = 1852.8, overlap = 1.5
+PLC-004 : Step(46): len = 1852.8, overlap = 1.5
+PLC-001 : :::4::: Try harder cell spreading with beta_ = 0.0002196
+PLC-004 : Step(47): len = 1881.6, overlap = 1.5
+PLC-004 : Step(48): len = 1881.6, overlap = 1.5
+PLC-001 : :::5::: Try harder cell spreading with beta_ = 0.000439201
+PLC-004 : Step(49): len = 1885.8, overlap = 1.5
+PLC-004 : Step(50): len = 1888.6, overlap = 1.25
+PLC-001 : Legalization ...
+PLC-001 : Legalized: Len = 2028, Over = 0
+PLC-001 : Final: Len = 2028, Over = 0
+PLC-001 : Improving timing with driver duplication.
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$0$_DO.F of inst led_reg$0$_DO
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$1$_DO.F of inst led_reg$1$_DO
+CMD-004 : start command "route"
+RUN-001 : Open license file D:/TD4.2.217/license/Anlogic.lic
+RUN-001 : Pin swapping for better routability
+RUN-001 : Pin misalignment score is improved from 4 to 4
+RUN-001 : Pin local connectivity score is improved from 1 to 1
+RUN-001 : Pin misalignment score is improved from 4 to 4
+RUN-001 : Pin local connectivity score is improved from 1 to 1
+RTE-301 : End pin swap;  0.002034s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+RTE-301 : Route runs in 4 thread(s)
+RUN-001 : There are total 31 instances
+RUN-001 : 9 mslices, 9 lslices, 7 pads, 0 brams, 0 dsps
+RUN-001 : There are total 72 nets
+RUN-001 : 66 nets have 2 pins
+RUN-001 : 2 nets have [3 - 5] pins
+RUN-001 : 3 nets have [11 - 20] pins
+RUN-001 : 1 nets have [21 - 99] pins
+RTE-301 : Start global routing ...
+RTE-301 : Generate routing grids ...
+RTE-301 : Initialize routing nets ...
+RTE-301 : Ripup & Reroute ...
+RTE-302 : len = 2072, over cnt = 1(0%), over = 1, worst = 1
+RTE-302 : len = 2072, over cnt = 0(0%), over = 0, worst = 0
+RTE-301 : Timing updates.
+TMR-601 : Start to update net delay, extr mode = 5.
+TMR-601 : Update delay of 70 nets completely.
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$0$_DO.F of inst led_reg$0$_DO
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$1$_DO.F of inst led_reg$1$_DO
+TMR-601 : Annotate delay to tedge completely, extr mode = 5.
+TMR-601 : Start to map report constraints to rules, there are 0 constraints in all.
+TMR-601 : Forward propagation: start to calculate arrival time...
+TMR-601 : Backward propagation: start to calculate required time...
+TMR-601 : Timing propagation completely!
+RTE-301 : Optimize timing.
+RTE-301 : End global routing;  0.010529s wall, 0.015600s user + 0.015600s system = 0.031200s CPU (296.3%)
+
+RTE-301 : Start detail routing ...
+RTE-301 : Generate detailed routing grids ...
+RTE-301 : Generate nets ...
+RTE-301 : net clk_25m will be routed on clock mesh
+RTE-301 : net sys_clk_pad will be routed on clock mesh
+RTE-301 : clock net u_pll/clk0_out will be merged with clock u_pll/clk0_buf
+RTE-301 : Detail Route ...
+RTE-301 : ===== Initial DR =====
+RTE-301 : Routed 63% nets. 
+RTE-301 : Routed 65% nets. 
+RTE-301 : Routed 68% nets. 
+RTE-301 : Routed 68% nets. 
+RTE-301 : Routed 73% nets. 
+RTE-301 : Routed 73% nets. 
+RTE-301 : Routed 73% nets. 
+RTE-301 : Routed 75% nets. 
+RTE-301 :  0.040211s wall, 0.062400s user + 0.046800s system = 0.109201s CPU (271.6%)
+
+RTE-302 : len = 4272, over cnt = 7(0%), over = 7, worst = 1
+RTE-301 : ===== DR Iter 1 =====
+RTE-301 :  0.007959s wall, 0.015600s user + 0.015600s system = 0.031200s CPU (392.0%)
+
+RTE-302 : len = 4248, over cnt = 0(0%), over = 0, worst = 0
+RTE-303 : Routed, final wirelength = 4248
+RTE-301 : 0 feed throughs used by 0 nets
+RTE-301 : Generate detailed routing grids ...
+RTE-301 : Generate nets ...
+RTE-301 : net clk_25m will be routed on clock mesh
+RTE-301 : net sys_clk_pad will be routed on clock mesh
+RTE-301 : clock net u_pll/clk0_out will be merged with clock u_pll/clk0_buf
+RTE-301 : eco open net = 0
+RTE-301 : End detail routing;  1.121101s wall, 1.029607s user + 0.171601s system = 1.201208s CPU (107.1%)
+
+RTE-301 : Routing violations:
+RTE-301 : End of Routing Violations.
+CMD-005 : finish command "route" in  1.177960s wall, 1.092007s user + 0.202801s system = 1.294808s CPU (109.9%)
+
+CMD-006 : used memory is 181 MB, reserved memory is 142 MB, peak memory is 258 MB
+CMD-004 : start command "report_area -io_info -file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_phy.area"
+standard
+IO Statistics
+#IO                     7
+  #input                3
+  #output               4
+  #inout                0
+
+Utilization Statistics
+#lut                    2   out of   4480    0.04%
+#reg                   23   out of   4480    0.51%
+#le                    25
+  #lut only             2   out of     25    8.00%
+  #reg only            23   out of     25   92.00%
+  #lut&reg              0   out of     25    0.00%
+#dsp                    0   out of     15    0.00%
+#bram                   0   out of     12    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of      6    0.00%
+#mcu                    1   out of      1  100.00%
+#pad                    7   out of     31   22.58%
+  #ireg                 0
+  #oreg                 2
+  #treg                 0
+#pll                    1   out of      1  100.00%
+#clknet                 3   out of     16   18.75%
+  #gclk                 1
+
+CMD-004 : start command "export_db E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_pr.db"
+RUN-001 : Exported /
+RUN-001 : Exported libs
+RUN-001 : Exported entities
+RUN-001 : Exported ports
+RUN-001 : Exported pins
+RUN-001 : Exported instances
+RUN-001 : Exported nets
+RUN-001 : Exported buses
+RUN-001 : Exported models
+RUN-001 : Exported congestions
+RUN-001 : Exported violations
+RUN-001 : Exported timing constraints
+RUN-001 : Exported IO constraints
+RUN-001 : Exported Inst constraints
+RUN-001 : Exported flow parameters
+CMD-004 : start command "start_timer"
+TMR-601 : Start building timing graph for model top
+TMR-601 : Build timing graph completely. Port num: 4, tpin num: 164, tnet num: 70, tinst num: 28, tnode num: 215, tedge num: 272.
+
+TMR-601 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-601 : Levelize timing graph completed, there are 16 levels in all.
+TMR-601 : Timing graph initialized successfully.
+
+CMD-004 : start command "report_timing -mode FINAL -net_info -ep_num 3 -path_num 3 -file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_phy.timing"
+TMR-601 : Start to update net delay, extr mode = 6.
+RTE-301 : Generate detailed routing grids ...
+RTE-301 : Generate nets ...
+RTE-301 : net clk_25m will be routed on clock mesh
+RTE-301 : net sys_clk_pad will be routed on clock mesh
+RTE-301 : clock net u_pll/clk0_out will be merged with clock u_pll/clk0_buf
+RTE-301 : eco open net = 0
+TMR-601 : Update delay of 70 nets completely.
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$0$_DO.F of inst led_reg$0$_DO
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$1$_DO.F of inst led_reg$1$_DO
+TMR-601 : Annotate delay to tedge completely, extr mode = 6.
+TMR-601 : Initiate 1 clocks from SDC
+TMR-601 : Start to map constraints to rules, there are 0 constraints in all.
+TMR-601 : Start to map report constraints to rules, there are 0 constraints in all.
+TMR-601 : Constraints initiated successfully.
+TMR-601 : Forward propagation: start to calculate arrival time...
+TMR-601 : Backward propagation: start to calculate required time...
+TMR-601 : Timing propagation completely!
+TMR-601 : Start to generate timing report: 
+TMR-601 : clock_nets size = 3, clk_num = 1.
+TMR-611 WARNING: There is 1 clock net without clock constraint.
+TMR-601 : Export timing summary!
+TMR-601 : Timing report generated successfully in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_phy.timing, timing summay in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_phy.tsm. 
+
+CMD-004 : start command "bitgen -bit E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.bit -version 0X00 -svf E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.svf -svf_comment_on -128 E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/KEIL/demo.bin -g ucode:00000000000000000000000000000000 -c -f E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.btc"
+BIT-701 : Start to generate bitstream. 
+BIT-701 : Init instances with 4 threads.
+BIT-701 : Init instances completely, inst num: 31
+BIT-701 : Init pips with 4 threads.
+BIT-701 : Init pips completely, net num: 72, pip num: 437
+BIT-701 : Multithreading accelaration with 4 threads.
+BIT-701 : Generate bitstream completely, there are 134 valid insts, and 1094 bits set as '1'.
+BIT-701 : Generate bits file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.bit.
+BIT-701 : Generate svf file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_sram.svf.
+BIT-701 : Generate tde file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_sram.tde
+BIT-701 : Generate tde file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_spi_bk.tde
+BIT-701 : Generate tde file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_spi_norefresh_bk.tde
+BIT-701 : Generate tde file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_refresh.tde
+BIT-701 : Generate tde file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_erase_spi.tde
+BIT-701 : Generate tde file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_readstatus.tde
+CMD-005 : finish command "bitgen -bit E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.bit -version 0X00 -svf E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.svf -svf_comment_on -128 E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/KEIL/demo.bin -g ucode:00000000000000000000000000000000 -c -f E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.btc" in  2.574179s wall, 2.886019s user + 0.078001s system = 2.964019s CPU (115.1%)
+
+CMD-006 : used memory is 188 MB, reserved memory is 145 MB, peak memory is 261 MB
+CMD-004 : start command "download -bit E:\ELF2_SOC\trunk\Basic_Demo\RESET_Demo\TD\project\demo\demo.bit -mode jtag -wait 20 -spd 6 -sec 64 -cable 0"
+RUN-001 : Chip validation success: EF2M45B
+CMD-004 : start command "bit_to_vec -chip EF2M45B -m jtag -bit E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.bit"
+RUN-001 : BIT2VEC::JtagBitstream: completed! line_num = 810, frame_num = 765
+CMD-004 : start command "program -cable 0 -spd 6"
+CMD-005 : finish command "program -cable 0 -spd 6" in  1.390813s wall, 0.124801s user + 0.031200s system = 0.156001s CPU (11.2%)
+
+CMD-006 : used memory is 249 MB, reserved memory is 195 MB, peak memory is 261 MB
+CMD-005 : finish command "download -bit E:\ELF2_SOC\trunk\Basic_Demo\RESET_Demo\TD\project\demo\demo.bit -mode jtag -wait 20 -spd 6 -sec 64 -cable 0" in  2.597370s wall, 0.686404s user + 0.046800s system = 0.733205s CPU (28.2%)
+
+CMD-006 : used memory is 219 MB, reserved memory is 165 MB, peak memory is 261 MB
+GUI-001 : Download success!
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/src/top.v
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/mcu.v
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/pll.v
+CMD-004 : start command "elaborate -top top"
+VLG-939 WARNING: port gpio_h2_out remains unconnected for this instance in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35)
+VLG-004 : elaborate module top in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(2)
+VLG-004 : elaborate module pll in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/pll.v(23)
+VLG-004 : elaborate module EF2_LOGIC_BUFG in D:/TD4.2.217/arch/ef2_macro.v(8)
+VLG-004 : elaborate module EF2_PHY_PLL(FIN="50.000",REFCLK_DIV=3,FBCLK_DIV=12,CLKC0_DIV=5,CLKC1_DIV=20,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=5,CLKC1_CPHASE=20,GMC_GAIN=6,ICP_CURRENT=3,KVCO=6,LPF_RESISTOR=2,PLLRST_ENA="DISABLE",INTPI=3,HIGH_SPEED_EN="ENABLE",OFFSET_MODE="EXT",CLKC0_DUTY=0.5,CLKC1_DUTY=0.5,CLKC0_DUTY_INT=3,CLKC1_DUTY_INT=10) in D:/TD4.2.217/arch/ef2_macro.v(2644)
+VLG-939 WARNING: port ppm_clk remains unconnected for this instance in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/mcu.v(48)
+VLG-004 : elaborate module mcu in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/mcu.v(14)
+VLG-004 : elaborate module EF2_PHY_MCU(GPIO_L0="ENABLE",GPIO_L1="ENABLE") in D:/TD4.2.217/arch/ef2_macro.v(741)
+VIN-1013 WARNING: input port ppm_clk is not connected on this instance in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/mcu.v(48)
+VIN-1002 WARNING: net gpio_h0_in does not have a driver in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(13)
+VIN-1002 WARNING: net gpio_h1_in does not have a driver in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(16)
+VIN-1013 WARNING: input port gpio_h2_in is not connected on this instance in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35)
+RTL-100 : Current top model is top
+RAM-300 : Inferred 0 RAMs.
+CMD-004 : start command "optimize_rtl"
+RUN-001 : Open license file D:/TD4.2.217/license/Anlogic.lic
+SNT-300 : SanityCheck: Model "top"
+SNT-300 : SanityCheck: Model "mcu"
+SNT-300 : SanityCheck: Model "pll"
+RTL-100 : Mark pll as IO macro for instance bufg_feedback
+UDR-200 WARNING: Undriven pin: model "top" / inst "u_mcu" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35) / pin "gpio_h2_in"
+UDR-200 WARNING: Undriven pin: model "top" / inst "u_mcu" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35) / pin "gpio_h3_in"
+UDR-202 WARNING: Undriven net: model "top" / net "gpio_h0_in" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(13)
+UDR-203 WARNING: the net's pin: pin "gpio_h0_in" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35)
+UDR-202 WARNING: Undriven net: model "top" / net "gpio_h1_in" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(16)
+UDR-203 WARNING: the net's pin: pin "gpio_h1_in" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35)
+RTL-200 WARNING: Using 0 for all undriven pins and nets
+LAT-200 WARNING: Found latch in "top", name: "led_reg$0$", d: "gpio_h0_out", q: "led[0]" // E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(46)
+LAT-200 WARNING: Found latch in "top", name: "led_reg$1$", d: "gpio_h1_out", q: "led[1]" // E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(47)
+FLT-300 : Flatten model top
+FLT-300 : Flatten model mcu
+FLT-300 : Flatten model pll
+MRG-300 : Merged 2 instances.
+OPT-300 : Optimize round 1
+RTL-100 : 63/9 useful/useless nets, 34/2 useful/useless insts
+MUX-301 : Optimized 0 mux instances.
+OPT-301 : Optimize round 1, 13 better
+OPT-300 : Optimize round 2
+RTL-100 : 62/1 useful/useless nets, 33/0 useful/useless insts
+MUX-301 : Optimized 0 mux instances.
+OPT-301 : Optimize round 2, 0 better
+CMD-004 : start command "report_area -file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_rtl.area"
+standard
+IO Statistics
+#IO                     7
+  #input                3
+  #output               4
+  #inout                0
+#MACRO_ADD              1
+#MACRO_EQ               2
+
+CMD-004 : start command "read_sdc ../../constrs/ELF2M45.sdc"
+CMD-004 : start command "get_ports sys_clk"
+CMD-004 : start command "create_clock -name sys_clk -period 20 -waveform 0 10 "
+RUN-001 : create_clock: clock name: sys_clk, type: 0, period: 20000, rise: 0, fall 10000.
+RUN-001 : Import SDC file ../../constrs/ELF2M45.sdc finished, there are 0 nets kept by constraints.
+CMD-004 : start command "read_adc ../../constrs/ELF2M45.adc"
+CMD-004 : start command "set_pin_assignment sys_clk  LOCATION = P22;  "
+CMD-004 : start command "set_pin_assignment sys_rstn  LOCATION = P21;  "
+CMD-004 : start command "set_pin_assignment ppm_rstn  LOCATION = P24;  "
+CMD-004 : start command "set_pin_assignment led[3]  LOCATION = P19;   "
+CMD-004 : start command "set_pin_assignment led[2]  LOCATION = P18;   "
+CMD-004 : start command "set_pin_assignment led[1]  LOCATION = P16;   "
+CMD-004 : start command "set_pin_assignment led[0]  LOCATION = P15;   "
+CMD-004 : start command "export_db E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_rtl.db"
+RUN-001 : Exported /
+RUN-001 : Exported libs
+RUN-001 : Exported entities
+RUN-001 : Exported ports
+RUN-001 : Exported pins
+RUN-001 : Exported instances
+RUN-001 : Exported nets
+RUN-001 : Exported buses
+RUN-001 : Exported models
+RUN-001 : Exported congestions
+RUN-001 : Exported violations
+RUN-001 : Exported timing constraints
+RUN-001 : Exported IO constraints
+RUN-001 : Exported Inst constraints
+RUN-001 : Exported flow parameters
+CMD-004 : start command "map_macro"
+RTL-100 : Map 7 IOs to PADs
+GAT-100 : Processed 0 LOGIC_BUF instances.
+GAT-100 : 1 BUFG to GCLK
+RTL-100 : Optimize round 1
+RTL-100 : 67/0 useful/useless nets, 39/0 useful/useless insts
+RTL-100 : Optimize round 1, 2 better
+RTL-100 : Optimize round 2
+RTL-100 : 67/0 useful/useless nets, 39/0 useful/useless insts
+RTL-100 : Optimize round 2, 0 better
+RTL-100 : Map 1 macro adder
+RTL-100 : 137/46 useful/useless nets, 63/23 useful/useless insts
+CMD-004 : start command "map"
+CMD-004 : start command "start_timer -prepack"
+TMR-601 : Start building timing graph for model top
+TMR-601 : Build timing graph completely. Port num: 4, tpin num: 229, tnet num: 95, tinst num: 61, tnode num: 456, tedge num: 487.
+
+TMR-601 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-601 : Levelize timing graph completed, there are 54 levels in all.
+TMR-601 : Timing graph initialized successfully.
+
+TMR-601 : Start to update net delay, extr mode = 2.
+TMR-601 : Update delay of 95 nets completely.
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$0$_DO.F of inst led_reg$0$_DO
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$1$_DO.F of inst led_reg$1$_DO
+TMR-601 : Annotate delay to tedge completely, extr mode = 2.
+TMR-601 : Initiate 1 clocks from SDC
+TMR-601 : Start to map constraints to rules, there are 0 constraints in all.
+TMR-601 : Start to map report constraints to rules, there are 0 constraints in all.
+TMR-601 : Constraints initiated successfully.
+TMR-601 : Forward propagation: start to calculate arrival time...
+TMR-601 : Backward propagation: start to calculate required time...
+TMR-601 : Timing propagation completely!
+GAT-100 : Running gate level optimization.
+GAT-100 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+GAT-100 : Post LUT mapping optimization.
+GAT-100 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+GAT-100 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+GAT-100 : Logic optimization runtime opt =   0.00 sec, map =   0.00 sec
+GAT-100 : Mapper mapped 2 instances into 2 LUTs, name keeping = 100%.
+CMD-004 : start command "pack"
+GAT-100 : Packing top model "top" ...
+PAK-301 : Pack lib has 35 rtl pack models with 12 top pack blocks
+OPT-300 : Optimize round 1
+RTL-100 : 90/0 useful/useless nets, 62/0 useful/useless insts
+OPT-301 : Optimize round 1, 0 better
+PAK-SEQ-305 : Packing 23 DFF/LATCH to SEQ ...
+PAK-RLS : Pack 1 carry chain into lslice
+PAK-BLE-301 : Packing 0 adder to BLE ...
+PAK-BLE-302 : Packed 0 adder and 0 SEQ to BLE.
+PAK-BLE-301 : Packing 0 gate4 to BLE ...
+PAK-BLE-302 : Packed 0 gate4 and 0 SEQ to BLE.
+PAK-309 : Packed 0 FxMUX
+PAK-BLE-301 : Packing 0 MUX to BLE ...
+PAK-BLE-302 : Packed 0 MUX and 0 SEQ to BLE.
+PAK-BLE-301 : Packing 2 LUT to BLE ...
+PAK-BLE-302 : Packed 2 LUT and 0 SEQ to BLE.
+PAK-SEQ-301 : Packing 23 remaining SEQ's ...
+PAK-SEQ-302 : #0: Packed 0 SEQ (23 nodes)...
+PAK-SEQ-302 : #1: Packed 2 SEQ (23 nodes)...
+PAK-SEQ-303 : Packed 2 SEQ with LUT/SLICE
+PAK-SEQ-304 : 2 single LUT's are left
+PAK-SEQ-304 : 23 single SEQ's are left
+PAK-303 : Packing model "top" (AL_USER_NORMAL) with 23/42 primitive instances ...
+CLK-302 : Net u_pll/clk0_out driven by BUFG (0 clock/control pins, 1 other pins).
+CLK-311 : Net clk_25m is clkc1 of pll u_pll/pll_inst.
+CLK-304 : Net sys_clk_pad is refclk of pll u_pll/pll_inst.
+CLK-305 : Net sys_clk_pad is fbclk of pll u_pll/pll_inst.
+CLK-309 : Tag rtl::Net clk_25m as clock net
+CLK-309 : Tag rtl::Net sys_clk_pad as clock net
+CLK-309 : Tag rtl::Net u_pll/clk0_out as clock net
+CLK-310 : Tagged 3 rtl::Net as clock net
+CMD-004 : start command "report_area -file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_gate.area"
+standard
+IO Statistics
+#IO                     7
+  #input                3
+  #output               4
+  #inout                0
+
+Utilization Statistics
+#lut                    2   out of   4480    0.04%
+#reg                   23   out of   4480    0.51%
+#le                    25
+  #lut only             2   out of     25    8.00%
+  #reg only            23   out of     25   92.00%
+  #lut&reg              0   out of     25    0.00%
+#dsp                    0   out of     15    0.00%
+#bram                   0   out of     12    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of      6    0.00%
+#mcu                    1   out of      1  100.00%
+#pad                    7   out of     31   22.58%
+  #ireg                 0
+  #oreg                 2
+  #treg                 0
+#pll                    1   out of      1  100.00%
+#clknet                 3   out of     16   18.75%
+  #gclk                 1
+
+CMD-004 : start command "export_db E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_gate.db"
+RUN-001 : Exported /
+RUN-001 : Exported libs
+RUN-001 : Exported entities
+RUN-001 : Exported ports
+RUN-001 : Exported pins
+RUN-001 : Exported instances
+RUN-001 : Exported nets
+RUN-001 : Exported buses
+RUN-001 : Exported models
+RUN-001 : Exported congestions
+RUN-001 : Exported violations
+RUN-001 : Exported timing constraints
+RUN-001 : Exported IO constraints
+RUN-001 : Exported Inst constraints
+RUN-001 : Exported flow parameters
+CMD-004 : start command "start_timer"
+RUN-001 : There are total 31 instances
+RUN-001 : 9 mslices, 9 lslices, 7 pads, 0 brams, 0 dsps
+RUN-001 : There are total 72 nets
+RUN-001 : 66 nets have 2 pins
+RUN-001 : 2 nets have [3 - 5] pins
+RUN-001 : 3 nets have [11 - 20] pins
+RUN-001 : 1 nets have [21 - 99] pins
+TMR-601 : Start building timing graph for model top
+TMR-601 : Build timing graph completely. Port num: 4, tpin num: 164, tnet num: 70, tinst num: 28, tnode num: 215, tedge num: 272.
+
+TMR-601 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-601 : Levelize timing graph completed, there are 16 levels in all.
+TMR-601 : Timing graph initialized successfully.
+
+CMD-004 : start command "place"
+RUN-001 : Open license file D:/TD4.2.217/license/Anlogic.lic
+PLC-001 : Placer runs in 4 thread(s).
+PLC-001 : Initial placement ...
+PLC-001 : design contains 29 instances, 18 slices, 1 macros(6 instances)
+PLC-001 : Start timing update ...
+TMR-601 : Start to update net delay, extr mode = 2.
+TMR-601 : Update delay of 70 nets completely.
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$0$_DO.F of inst led_reg$0$_DO
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$1$_DO.F of inst led_reg$1$_DO
+TMR-601 : Annotate delay to tedge completely, extr mode = 2.
+TMR-601 : Initiate 1 clocks from SDC
+TMR-601 : Start to map constraints to rules, there are 0 constraints in all.
+TMR-601 : Start to map report constraints to rules, there are 0 constraints in all.
+TMR-601 : Constraints initiated successfully.
+TMR-601 : Forward propagation: start to calculate arrival time...
+TMR-601 : Backward propagation: start to calculate required time...
+TMR-601 : Timing propagation completely!
+PLC-001 : End timing update;  0.001971s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PLC-001 : Global placement ...
+PLC-001 : Initial: Len = 8227
+PLC-001 : Run with size of 3
+PLC-001 : Cell area utilization is 0%, beta_incr = 0.995179
+PLC-001 : :::0::: Try harder cell spreading with beta_ = 0
+PLC-004 : Step(51): len = 4934.1, overlap = 0
+PLC-004 : Step(52): len = 3088.2, overlap = 0
+PLC-004 : Step(53): len = 2695.5, overlap = 0
+PLC-004 : Step(54): len = 2434.3, overlap = 0
+PLC-004 : Step(55): len = 2498.9, overlap = 0
+PLC-004 : Step(56): len = 2569.2, overlap = 0
+PLC-004 : Step(57): len = 2471.4, overlap = 0
+PLC-004 : Step(58): len = 2407.7, overlap = 0
+PLC-004 : Step(59): len = 2164.7, overlap = 0
+PLC-004 : Step(60): len = 2020.7, overlap = 0
+PLC-004 : Step(61): len = 2010.2, overlap = 0
+PLC-004 : Step(62): len = 1962.9, overlap = 0
+PLC-004 : Step(63): len = 1962.9, overlap = 0
+PLC-004 : Step(64): len = 1907.5, overlap = 0
+PLC-004 : Step(65): len = 1907.5, overlap = 0
+PLC-004 : Step(66): len = 1907.5, overlap = 0
+PLC-001 : Legalization ...
+PLC-001 : Run with size of 3
+PLC-001 : Cell area utilization is 1%, beta_incr = 0.995179
+PLC-001 : :::0::: Try harder cell spreading with beta_ = 0
+PLC-004 : Step(67): len = 1887.6, overlap = 0
+PLC-004 : Step(68): len = 1933, overlap = 0
+PLC-004 : Step(69): len = 1957.2, overlap = 0
+PLC-004 : Step(70): len = 1942, overlap = 0
+PLC-004 : Step(71): len = 1942, overlap = 0
+PLC-004 : Step(72): len = 1826.5, overlap = 0
+PLC-004 : Step(73): len = 1826.5, overlap = 0
+PLC-004 : Step(74): len = 1824, overlap = 0
+PLC-001 : :::1::: Try harder cell spreading with beta_ = 3.92103
+PLC-004 : Step(75): len = 1825.5, overlap = 0
+PLC-004 : Step(76): len = 1825.5, overlap = 0
+PLC-001 : :::2::: Try harder cell spreading with beta_ = 7.84206
+PLC-004 : Step(77): len = 1825.3, overlap = 0
+PLC-004 : Step(78): len = 1825.3, overlap = 0
+PLC-001 : Run with size of 1
+PLC-001 : Cell area utilization is 1%, beta_incr = 0.995179
+PLC-001 : :::0::: Try harder cell spreading with beta_ = 3.73541e-05
+PLC-004 : Step(79): len = 1817, overlap = 1.25
+PLC-004 : Step(80): len = 1826, overlap = 1.25
+PLC-004 : Step(81): len = 1826, overlap = 1.25
+PLC-001 : :::1::: Try harder cell spreading with beta_ = 7.47083e-05
+PLC-004 : Step(82): len = 1832.8, overlap = 1.25
+PLC-004 : Step(83): len = 1841.1, overlap = 1.25
+PLC-001 : :::2::: Try harder cell spreading with beta_ = 0.000149417
+PLC-004 : Step(84): len = 1839.3, overlap = 1.25
+PLC-004 : Step(85): len = 1854.3, overlap = 1.25
+PLC-001 : :::3::: Try harder cell spreading with beta_ = 0.000298833
+PLC-004 : Step(86): len = 1876.6, overlap = 1.25
+PLC-004 : Step(87): len = 1880.8, overlap = 0.75
+PLC-001 : Legalization ...
+PLC-001 : Run with size of 1
+PLC-001 : Cell area utilization is 1%, beta_incr = 0.995179
+PLC-001 : :::0::: Try harder cell spreading with beta_ = 0
+PLC-004 : Step(88): len = 1822, overlap = 1.75
+PLC-004 : Step(89): len = 1817.6, overlap = 1.75
+PLC-004 : Step(90): len = 1817.6, overlap = 1.75
+PLC-001 : :::1::: Try harder cell spreading with beta_ = 2.745e-05
+PLC-004 : Step(91): len = 1813.7, overlap = 1.75
+PLC-004 : Step(92): len = 1813.7, overlap = 1.75
+PLC-001 : :::2::: Try harder cell spreading with beta_ = 5.49001e-05
+PLC-004 : Step(93): len = 1831.8, overlap = 1.75
+PLC-004 : Step(94): len = 1831.8, overlap = 1.75
+PLC-001 : :::3::: Try harder cell spreading with beta_ = 0.0001098
+PLC-004 : Step(95): len = 1852.8, overlap = 1.5
+PLC-004 : Step(96): len = 1852.8, overlap = 1.5
+PLC-001 : :::4::: Try harder cell spreading with beta_ = 0.0002196
+PLC-004 : Step(97): len = 1881.6, overlap = 1.5
+PLC-004 : Step(98): len = 1881.6, overlap = 1.5
+PLC-001 : :::5::: Try harder cell spreading with beta_ = 0.000439201
+PLC-004 : Step(99): len = 1885.8, overlap = 1.5
+PLC-004 : Step(100): len = 1888.6, overlap = 1.25
+PLC-001 : Legalization ...
+PLC-001 : Legalized: Len = 2028, Over = 0
+PLC-001 : Final: Len = 2028, Over = 0
+PLC-001 : Improving timing with driver duplication.
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$0$_DO.F of inst led_reg$0$_DO
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$1$_DO.F of inst led_reg$1$_DO
+CMD-004 : start command "route"
+RUN-001 : Open license file D:/TD4.2.217/license/Anlogic.lic
+RUN-001 : Pin swapping for better routability
+RUN-001 : Pin misalignment score is improved from 4 to 4
+RUN-001 : Pin local connectivity score is improved from 1 to 1
+RUN-001 : Pin misalignment score is improved from 4 to 4
+RUN-001 : Pin local connectivity score is improved from 1 to 1
+RTE-301 : End pin swap;  0.002042s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+RTE-301 : Route runs in 4 thread(s)
+RUN-001 : There are total 31 instances
+RUN-001 : 9 mslices, 9 lslices, 7 pads, 0 brams, 0 dsps
+RUN-001 : There are total 72 nets
+RUN-001 : 66 nets have 2 pins
+RUN-001 : 2 nets have [3 - 5] pins
+RUN-001 : 3 nets have [11 - 20] pins
+RUN-001 : 1 nets have [21 - 99] pins
+RTE-301 : Start global routing ...
+RTE-301 : Generate routing grids ...
+RTE-301 : Initialize routing nets ...
+RTE-301 : Ripup & Reroute ...
+RTE-302 : len = 2072, over cnt = 1(0%), over = 1, worst = 1
+RTE-302 : len = 2072, over cnt = 0(0%), over = 0, worst = 0
+RTE-301 : Timing updates.
+TMR-601 : Start to update net delay, extr mode = 5.
+TMR-601 : Update delay of 70 nets completely.
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$0$_DO.F of inst led_reg$0$_DO
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$1$_DO.F of inst led_reg$1$_DO
+TMR-601 : Annotate delay to tedge completely, extr mode = 5.
+TMR-601 : Start to map report constraints to rules, there are 0 constraints in all.
+TMR-601 : Forward propagation: start to calculate arrival time...
+TMR-601 : Backward propagation: start to calculate required time...
+TMR-601 : Timing propagation completely!
+RTE-301 : Optimize timing.
+RTE-301 : End global routing;  0.010589s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+RTE-301 : Start detail routing ...
+RTE-301 : Generate detailed routing grids ...
+RTE-301 : Generate nets ...
+RTE-301 : net clk_25m will be routed on clock mesh
+RTE-301 : net sys_clk_pad will be routed on clock mesh
+RTE-301 : clock net u_pll/clk0_out will be merged with clock u_pll/clk0_buf
+RTE-301 : Detail Route ...
+RTE-301 : ===== Initial DR =====
+RTE-301 : Routed 63% nets. 
+RTE-301 : Routed 65% nets. 
+RTE-301 : Routed 68% nets. 
+RTE-301 : Routed 68% nets. 
+RTE-301 : Routed 73% nets. 
+RTE-301 : Routed 73% nets. 
+RTE-301 : Routed 73% nets. 
+RTE-301 : Routed 75% nets. 
+RTE-301 :  0.041959s wall, 0.031200s user + 0.000000s system = 0.031200s CPU (74.4%)
+
+RTE-302 : len = 4272, over cnt = 7(0%), over = 7, worst = 1
+RTE-301 : ===== DR Iter 1 =====
+RTE-301 :  0.008397s wall, 0.031200s user + 0.000000s system = 0.031200s CPU (371.6%)
+
+RTE-302 : len = 4248, over cnt = 0(0%), over = 0, worst = 0
+RTE-303 : Routed, final wirelength = 4248
+RTE-301 : 0 feed throughs used by 0 nets
+RTE-301 : Generate detailed routing grids ...
+RTE-301 : Generate nets ...
+RTE-301 : net clk_25m will be routed on clock mesh
+RTE-301 : net sys_clk_pad will be routed on clock mesh
+RTE-301 : clock net u_pll/clk0_out will be merged with clock u_pll/clk0_buf
+RTE-301 : eco open net = 0
+RTE-301 : End detail routing;  0.574234s wall, 0.577204s user + 0.046800s system = 0.624004s CPU (108.7%)
+
+RTE-301 : Routing violations:
+RTE-301 : End of Routing Violations.
+CMD-004 : start command "report_area -io_info -file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_phy.area"
+standard
+IO Statistics
+#IO                     7
+  #input                3
+  #output               4
+  #inout                0
+
+Utilization Statistics
+#lut                    2   out of   4480    0.04%
+#reg                   23   out of   4480    0.51%
+#le                    25
+  #lut only             2   out of     25    8.00%
+  #reg only            23   out of     25   92.00%
+  #lut&reg              0   out of     25    0.00%
+#dsp                    0   out of     15    0.00%
+#bram                   0   out of     12    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of      6    0.00%
+#mcu                    1   out of      1  100.00%
+#pad                    7   out of     31   22.58%
+  #ireg                 0
+  #oreg                 2
+  #treg                 0
+#pll                    1   out of      1  100.00%
+#clknet                 3   out of     16   18.75%
+  #gclk                 1
+
+CMD-004 : start command "export_db E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_pr.db"
+RUN-001 : Exported /
+RUN-001 : Exported libs
+RUN-001 : Exported entities
+RUN-001 : Exported ports
+RUN-001 : Exported pins
+RUN-001 : Exported instances
+RUN-001 : Exported nets
+RUN-001 : Exported buses
+RUN-001 : Exported models
+RUN-001 : Exported congestions
+RUN-001 : Exported violations
+RUN-001 : Exported timing constraints
+RUN-001 : Exported IO constraints
+RUN-001 : Exported Inst constraints
+RUN-001 : Exported flow parameters
+CMD-004 : start command "start_timer"
+TMR-601 : Start building timing graph for model top
+TMR-601 : Build timing graph completely. Port num: 4, tpin num: 164, tnet num: 70, tinst num: 28, tnode num: 215, tedge num: 272.
+
+TMR-601 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-601 : Levelize timing graph completed, there are 16 levels in all.
+TMR-601 : Timing graph initialized successfully.
+
+CMD-004 : start command "report_timing -mode FINAL -net_info -ep_num 3 -path_num 3 -file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_phy.timing"
+TMR-601 : Start to update net delay, extr mode = 6.
+RTE-301 : Generate detailed routing grids ...
+RTE-301 : Generate nets ...
+RTE-301 : net clk_25m will be routed on clock mesh
+RTE-301 : net sys_clk_pad will be routed on clock mesh
+RTE-301 : clock net u_pll/clk0_out will be merged with clock u_pll/clk0_buf
+RTE-301 : eco open net = 0
+TMR-601 : Update delay of 70 nets completely.
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$0$_DO.F of inst led_reg$0$_DO
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$1$_DO.F of inst led_reg$1$_DO
+TMR-601 : Annotate delay to tedge completely, extr mode = 6.
+TMR-601 : Initiate 1 clocks from SDC
+TMR-601 : Start to map constraints to rules, there are 0 constraints in all.
+TMR-601 : Start to map report constraints to rules, there are 0 constraints in all.
+TMR-601 : Constraints initiated successfully.
+TMR-601 : Forward propagation: start to calculate arrival time...
+TMR-601 : Backward propagation: start to calculate required time...
+TMR-601 : Timing propagation completely!
+TMR-601 : Start to generate timing report: 
+TMR-601 : clock_nets size = 3, clk_num = 1.
+TMR-611 WARNING: There is 1 clock net without clock constraint.
+TMR-601 : Export timing summary!
+TMR-601 : Timing report generated successfully in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_phy.timing, timing summay in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_phy.tsm. 
+
+CMD-004 : start command "bitgen -bit E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.bit -version 0X00 -svf E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.svf -svf_comment_on -128 E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/KEIL/demo.bin -g ucode:00000000000000000000000000000000 -c -f E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.btc"
+BIT-701 : Start to generate bitstream. 
+BIT-701 : Init instances with 4 threads.
+BIT-701 : Init instances completely, inst num: 31
+BIT-701 : Init pips with 4 threads.
+BIT-701 : Init pips completely, net num: 72, pip num: 437
+BIT-701 : Multithreading accelaration with 4 threads.
+BIT-701 : Generate bitstream completely, there are 134 valid insts, and 1094 bits set as '1'.
+BIT-701 : Generate bits file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.bit.
+BIT-701 : Generate svf file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_sram.svf.
+BIT-701 : Generate tde file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_sram.tde
+BIT-701 : Generate tde file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_spi_bk.tde
+BIT-701 : Generate tde file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_spi_norefresh_bk.tde
+BIT-701 : Generate tde file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_refresh.tde
+BIT-701 : Generate tde file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_erase_spi.tde
+BIT-701 : Generate tde file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_readstatus.tde
+CMD-005 : finish command "bitgen -bit E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.bit -version 0X00 -svf E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.svf -svf_comment_on -128 E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/KEIL/demo.bin -g ucode:00000000000000000000000000000000 -c -f E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.btc" in  2.588942s wall, 3.026419s user + 0.000000s system = 3.026419s CPU (116.9%)
+
+CMD-006 : used memory is 220 MB, reserved memory is 165 MB, peak memory is 295 MB
+CMD-004 : start command "download -svf E:\ELF2_SOC\trunk\Basic_Demo\RESET_Demo\TD\project\demo\demo_sram.svf -mode jtag -wait 20 -spd 6 -sec 64 -cable 0 -chip EF2M45B"
+CMD-004 : start command "bit_to_vec -chip EF2M45B -m jtag -svf E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_sram.svf"
+CMD-004 : start command "program -cable 0 -spd 6"
+CMD-005 : finish command "program -cable 0 -spd 6" in  1.438755s wall, 0.093601s user + 0.078001s system = 0.171601s CPU (11.9%)
+
+CMD-006 : used memory is 266 MB, reserved memory is 211 MB, peak memory is 295 MB
+CMD-005 : finish command "download -svf E:\ELF2_SOC\trunk\Basic_Demo\RESET_Demo\TD\project\demo\demo_sram.svf -mode jtag -wait 20 -spd 6 -sec 64 -cable 0 -chip EF2M45B" in  1.602888s wall, 0.249602s user + 0.078001s system = 0.327602s CPU (20.4%)
+
+CMD-006 : used memory is 266 MB, reserved memory is 211 MB, peak memory is 295 MB
+GUI-001 : Download success!
+CMD-004 : start command "download -svf E:\ELF2_SOC\trunk\Basic_Demo\RESET_Demo\TD\project\demo\demo_spi_bk.svf -mode jtag -wait 20 -spd 6 -sec 64 -cable 0 -chip EF2M45B"
+CMD-004 : start command "bit_to_vec -chip EF2M45B -m jtag -svf E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_spi_bk.svf"
+CMD-004 : start command "program -cable 0 -spd 6"
+CMD-005 : finish command "program -cable 0 -spd 6" in  11.272416s wall, 1.279208s user + 0.436803s system = 1.716011s CPU (15.2%)
+
+CMD-006 : used memory is 549 MB, reserved memory is 494 MB, peak memory is 549 MB
+CMD-005 : finish command "download -svf E:\ELF2_SOC\trunk\Basic_Demo\RESET_Demo\TD\project\demo\demo_spi_bk.svf -mode jtag -wait 20 -spd 6 -sec 64 -cable 0 -chip EF2M45B" in  12.037204s wall, 1.950012s user + 0.530403s system = 2.480416s CPU (20.6%)
+
+CMD-006 : used memory is 549 MB, reserved memory is 494 MB, peak memory is 549 MB
+GUI-001 : Download success!
+CMD-004 : start command "download -svf E:\ELF2_SOC\trunk\Basic_Demo\RESET_Demo\TD\project\demo\demo_refresh.svf -mode jtag -wait 20 -spd 6 -sec 64 -cable 0 -chip EF2M45B"
+CMD-004 : start command "bit_to_vec -chip EF2M45B -m jtag -svf E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_refresh.svf"
+CMD-004 : start command "program -cable 0 -spd 6"
+GUI-001 : Download success!
+CMD-004 : start command "download -svf E:\ELF2_SOC\trunk\Basic_Demo\RESET_Demo\TD\project\demo\demo_refresh.svf -mode jtag -wait 20 -spd 6 -sec 64 -cable 0 -chip EF2M45B"
+CMD-004 : start command "bit_to_vec -chip EF2M45B -m jtag -svf E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_refresh.svf"
+CMD-004 : start command "program -cable 0 -spd 6"
+GUI-001 : Download success!
+CMD-004 : start command "download -svf E:\ELF2_SOC\trunk\Basic_Demo\RESET_Demo\TD\project\demo\demo_refresh.svf -mode jtag -wait 20 -spd 6 -sec 64 -cable 0 -chip EF2M45B"
+CMD-004 : start command "bit_to_vec -chip EF2M45B -m jtag -svf E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_refresh.svf"
+CMD-004 : start command "program -cable 0 -spd 6"
+GUI-001 : Download success!
+CMD-004 : start command "download -svf E:\ELF2_SOC\trunk\Basic_Demo\RESET_Demo\TD\project\demo\demo_refresh.svf -mode jtag -wait 20 -spd 6 -sec 64 -cable 0 -chip EF2M45B"
+CMD-004 : start command "bit_to_vec -chip EF2M45B -m jtag -svf E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_refresh.svf"
+CMD-004 : start command "program -cable 0 -spd 6"
+GUI-001 : Download success!
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/src/top.v
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/mcu.v
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/pll.v
+CMD-004 : start command "elaborate -top top"
+VLG-939 WARNING: port gpio_h2_out remains unconnected for this instance in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35)
+VLG-004 : elaborate module top in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(2)
+VLG-004 : elaborate module pll in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/pll.v(23)
+VLG-004 : elaborate module EF2_LOGIC_BUFG in D:/TD4.2.217/arch/ef2_macro.v(8)
+VLG-004 : elaborate module EF2_PHY_PLL(FIN="50.000",REFCLK_DIV=3,FBCLK_DIV=12,CLKC0_DIV=5,CLKC1_DIV=20,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=5,CLKC1_CPHASE=20,GMC_GAIN=6,ICP_CURRENT=3,KVCO=6,LPF_RESISTOR=2,PLLRST_ENA="DISABLE",INTPI=3,HIGH_SPEED_EN="ENABLE",OFFSET_MODE="EXT",CLKC0_DUTY=0.5,CLKC1_DUTY=0.5,CLKC0_DUTY_INT=3,CLKC1_DUTY_INT=10) in D:/TD4.2.217/arch/ef2_macro.v(2644)
+VLG-939 WARNING: port ppm_clk remains unconnected for this instance in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/mcu.v(48)
+VLG-004 : elaborate module mcu in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/mcu.v(14)
+VLG-004 : elaborate module EF2_PHY_MCU(GPIO_L0="ENABLE",GPIO_L1="ENABLE") in D:/TD4.2.217/arch/ef2_macro.v(741)
+VIN-1013 WARNING: input port ppm_clk is not connected on this instance in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/mcu.v(48)
+VIN-1002 WARNING: net gpio_h0_in does not have a driver in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(13)
+VIN-1002 WARNING: net gpio_h1_in does not have a driver in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(16)
+VIN-1013 WARNING: input port gpio_h2_in is not connected on this instance in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35)
+RTL-100 : Current top model is top
+RAM-300 : Inferred 0 RAMs.
+CMD-004 : start command "optimize_rtl"
+RUN-001 : Open license file D:/TD4.2.217/license/Anlogic.lic
+SNT-300 : SanityCheck: Model "top"
+SNT-300 : SanityCheck: Model "mcu"
+SNT-300 : SanityCheck: Model "pll"
+RTL-100 : Mark pll as IO macro for instance bufg_feedback
+UDR-200 WARNING: Undriven pin: model "top" / inst "u_mcu" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35) / pin "gpio_h2_in"
+UDR-200 WARNING: Undriven pin: model "top" / inst "u_mcu" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35) / pin "gpio_h3_in"
+UDR-202 WARNING: Undriven net: model "top" / net "gpio_h0_in" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(13)
+UDR-203 WARNING: the net's pin: pin "gpio_h0_in" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35)
+UDR-202 WARNING: Undriven net: model "top" / net "gpio_h1_in" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(16)
+UDR-203 WARNING: the net's pin: pin "gpio_h1_in" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35)
+RTL-200 WARNING: Using 0 for all undriven pins and nets
+LAT-200 WARNING: Found latch in "top", name: "led_reg$0$", d: "gpio_h0_out", q: "led[0]" // E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(46)
+LAT-200 WARNING: Found latch in "top", name: "led_reg$1$", d: "gpio_h1_out", q: "led[1]" // E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(47)
+FLT-300 : Flatten model top
+FLT-300 : Flatten model mcu
+FLT-300 : Flatten model pll
+MRG-300 : Merged 2 instances.
+OPT-300 : Optimize round 1
+RTL-100 : 63/9 useful/useless nets, 34/2 useful/useless insts
+MUX-301 : Optimized 0 mux instances.
+OPT-301 : Optimize round 1, 13 better
+OPT-300 : Optimize round 2
+RTL-100 : 62/1 useful/useless nets, 33/0 useful/useless insts
+MUX-301 : Optimized 0 mux instances.
+OPT-301 : Optimize round 2, 0 better
+CMD-004 : start command "report_area -file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_rtl.area"
+standard
+IO Statistics
+#IO                     7
+  #input                3
+  #output               4
+  #inout                0
+#MACRO_ADD              1
+#MACRO_EQ               2
+
+CMD-004 : start command "read_sdc ../../constrs/ELF2M45.sdc"
+CMD-004 : start command "get_ports sys_clk"
+CMD-004 : start command "create_clock -name sys_clk -period 20 -waveform 0 10 "
+RUN-001 : create_clock: clock name: sys_clk, type: 0, period: 20000, rise: 0, fall 10000.
+RUN-001 : Import SDC file ../../constrs/ELF2M45.sdc finished, there are 0 nets kept by constraints.
+CMD-004 : start command "read_adc ../../constrs/ELF2M45.adc"
+CMD-004 : start command "set_pin_assignment sys_clk  LOCATION = P22;  "
+CMD-004 : start command "set_pin_assignment sys_rstn  LOCATION = P21;  "
+CMD-004 : start command "set_pin_assignment ppm_rstn  LOCATION = P24;  "
+CMD-004 : start command "set_pin_assignment led[3]  LOCATION = P19;   "
+CMD-004 : start command "set_pin_assignment led[2]  LOCATION = P18;   "
+CMD-004 : start command "set_pin_assignment led[1]  LOCATION = P16;   "
+CMD-004 : start command "set_pin_assignment led[0]  LOCATION = P15;   "
+CMD-004 : start command "export_db E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_rtl.db"
+RUN-001 : Exported /
+RUN-001 : Exported libs
+RUN-001 : Exported entities
+RUN-001 : Exported ports
+RUN-001 : Exported pins
+RUN-001 : Exported instances
+RUN-001 : Exported nets
+RUN-001 : Exported buses
+RUN-001 : Exported models
+RUN-001 : Exported congestions
+RUN-001 : Exported violations
+RUN-001 : Exported timing constraints
+RUN-001 : Exported IO constraints
+RUN-001 : Exported Inst constraints
+RUN-001 : Exported flow parameters
+CMD-004 : start command "map_macro"
+RTL-100 : Map 7 IOs to PADs
+GAT-100 : Processed 0 LOGIC_BUF instances.
+GAT-100 : 1 BUFG to GCLK
+RTL-100 : Optimize round 1
+RTL-100 : 67/0 useful/useless nets, 39/0 useful/useless insts
+RTL-100 : Optimize round 1, 2 better
+RTL-100 : Optimize round 2
+RTL-100 : 67/0 useful/useless nets, 39/0 useful/useless insts
+RTL-100 : Optimize round 2, 0 better
+RTL-100 : Map 1 macro adder
+RTL-100 : 137/46 useful/useless nets, 63/23 useful/useless insts
+CMD-004 : start command "map"
+CMD-004 : start command "start_timer -prepack"
+TMR-601 : Start building timing graph for model top
+TMR-601 : Build timing graph completely. Port num: 4, tpin num: 229, tnet num: 95, tinst num: 61, tnode num: 456, tedge num: 487.
+
+TMR-601 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-601 : Levelize timing graph completed, there are 54 levels in all.
+TMR-601 : Timing graph initialized successfully.
+
+TMR-601 : Start to update net delay, extr mode = 2.
+TMR-601 : Update delay of 95 nets completely.
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$0$_DO.F of inst led_reg$0$_DO
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$1$_DO.F of inst led_reg$1$_DO
+TMR-601 : Annotate delay to tedge completely, extr mode = 2.
+TMR-601 : Initiate 1 clocks from SDC
+TMR-601 : Start to map constraints to rules, there are 0 constraints in all.
+TMR-601 : Start to map report constraints to rules, there are 0 constraints in all.
+TMR-601 : Constraints initiated successfully.
+TMR-601 : Forward propagation: start to calculate arrival time...
+TMR-601 : Backward propagation: start to calculate required time...
+TMR-601 : Timing propagation completely!
+GAT-100 : Running gate level optimization.
+GAT-100 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+GAT-100 : Post LUT mapping optimization.
+GAT-100 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+GAT-100 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+GAT-100 : Logic optimization runtime opt =   0.00 sec, map =   0.00 sec
+GAT-100 : Mapper mapped 2 instances into 2 LUTs, name keeping = 100%.
+CMD-004 : start command "pack"
+GAT-100 : Packing top model "top" ...
+PAK-301 : Pack lib has 35 rtl pack models with 12 top pack blocks
+OPT-300 : Optimize round 1
+RTL-100 : 90/0 useful/useless nets, 62/0 useful/useless insts
+OPT-301 : Optimize round 1, 0 better
+PAK-SEQ-305 : Packing 23 DFF/LATCH to SEQ ...
+PAK-RLS : Pack 1 carry chain into lslice
+PAK-BLE-301 : Packing 0 adder to BLE ...
+PAK-BLE-302 : Packed 0 adder and 0 SEQ to BLE.
+PAK-BLE-301 : Packing 0 gate4 to BLE ...
+PAK-BLE-302 : Packed 0 gate4 and 0 SEQ to BLE.
+PAK-309 : Packed 0 FxMUX
+PAK-BLE-301 : Packing 0 MUX to BLE ...
+PAK-BLE-302 : Packed 0 MUX and 0 SEQ to BLE.
+PAK-BLE-301 : Packing 2 LUT to BLE ...
+PAK-BLE-302 : Packed 2 LUT and 0 SEQ to BLE.
+PAK-SEQ-301 : Packing 23 remaining SEQ's ...
+PAK-SEQ-302 : #0: Packed 0 SEQ (23 nodes)...
+PAK-SEQ-302 : #1: Packed 2 SEQ (23 nodes)...
+PAK-SEQ-303 : Packed 2 SEQ with LUT/SLICE
+PAK-SEQ-304 : 2 single LUT's are left
+PAK-SEQ-304 : 23 single SEQ's are left
+PAK-303 : Packing model "top" (AL_USER_NORMAL) with 23/42 primitive instances ...
+CLK-302 : Net u_pll/clk0_out driven by BUFG (0 clock/control pins, 1 other pins).
+CLK-311 : Net clk_25m is clkc1 of pll u_pll/pll_inst.
+CLK-304 : Net sys_clk_pad is refclk of pll u_pll/pll_inst.
+CLK-305 : Net sys_clk_pad is fbclk of pll u_pll/pll_inst.
+CLK-309 : Tag rtl::Net clk_25m as clock net
+CLK-309 : Tag rtl::Net sys_clk_pad as clock net
+CLK-309 : Tag rtl::Net u_pll/clk0_out as clock net
+CLK-310 : Tagged 3 rtl::Net as clock net
+CMD-004 : start command "report_area -file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_gate.area"
+standard
+IO Statistics
+#IO                     7
+  #input                3
+  #output               4
+  #inout                0
+
+Utilization Statistics
+#lut                    2   out of   4480    0.04%
+#reg                   23   out of   4480    0.51%
+#le                    25
+  #lut only             2   out of     25    8.00%
+  #reg only            23   out of     25   92.00%
+  #lut&reg              0   out of     25    0.00%
+#dsp                    0   out of     15    0.00%
+#bram                   0   out of     12    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of      6    0.00%
+#mcu                    1   out of      1  100.00%
+#pad                    7   out of     31   22.58%
+  #ireg                 0
+  #oreg                 2
+  #treg                 0
+#pll                    1   out of      1  100.00%
+#clknet                 3   out of     16   18.75%
+  #gclk                 1
+
+CMD-004 : start command "export_db E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_gate.db"
+RUN-001 : Exported /
+RUN-001 : Exported libs
+RUN-001 : Exported entities
+RUN-001 : Exported ports
+RUN-001 : Exported pins
+RUN-001 : Exported instances
+RUN-001 : Exported nets
+RUN-001 : Exported buses
+RUN-001 : Exported models
+RUN-001 : Exported congestions
+RUN-001 : Exported violations
+RUN-001 : Exported timing constraints
+RUN-001 : Exported IO constraints
+RUN-001 : Exported Inst constraints
+RUN-001 : Exported flow parameters
+CMD-004 : start command "start_timer"
+RUN-001 : There are total 31 instances
+RUN-001 : 9 mslices, 9 lslices, 7 pads, 0 brams, 0 dsps
+RUN-001 : There are total 72 nets
+RUN-001 : 66 nets have 2 pins
+RUN-001 : 2 nets have [3 - 5] pins
+RUN-001 : 3 nets have [11 - 20] pins
+RUN-001 : 1 nets have [21 - 99] pins
+TMR-601 : Start building timing graph for model top
+TMR-601 : Build timing graph completely. Port num: 4, tpin num: 164, tnet num: 70, tinst num: 28, tnode num: 215, tedge num: 272.
+
+TMR-601 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-601 : Levelize timing graph completed, there are 16 levels in all.
+TMR-601 : Timing graph initialized successfully.
+
+CMD-004 : start command "place"
+RUN-001 : Open license file D:/TD4.2.217/license/Anlogic.lic
+PLC-001 : Placer runs in 4 thread(s).
+PLC-001 : Initial placement ...
+PLC-001 : design contains 29 instances, 18 slices, 1 macros(6 instances)
+PLC-001 : Start timing update ...
+TMR-601 : Start to update net delay, extr mode = 2.
+TMR-601 : Update delay of 70 nets completely.
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$0$_DO.F of inst led_reg$0$_DO
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$1$_DO.F of inst led_reg$1$_DO
+TMR-601 : Annotate delay to tedge completely, extr mode = 2.
+TMR-601 : Initiate 1 clocks from SDC
+TMR-601 : Start to map constraints to rules, there are 0 constraints in all.
+TMR-601 : Start to map report constraints to rules, there are 0 constraints in all.
+TMR-601 : Constraints initiated successfully.
+TMR-601 : Forward propagation: start to calculate arrival time...
+TMR-601 : Backward propagation: start to calculate required time...
+TMR-601 : Timing propagation completely!
+PLC-001 : End timing update;  0.002262s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PLC-001 : Global placement ...
+PLC-001 : Initial: Len = 8227
+PLC-001 : Run with size of 3
+PLC-001 : Cell area utilization is 0%, beta_incr = 0.995179
+PLC-001 : :::0::: Try harder cell spreading with beta_ = 0
+PLC-004 : Step(101): len = 4934.1, overlap = 0
+PLC-004 : Step(102): len = 3088.2, overlap = 0
+PLC-004 : Step(103): len = 2695.5, overlap = 0
+PLC-004 : Step(104): len = 2434.3, overlap = 0
+PLC-004 : Step(105): len = 2498.9, overlap = 0
+PLC-004 : Step(106): len = 2569.2, overlap = 0
+PLC-004 : Step(107): len = 2471.4, overlap = 0
+PLC-004 : Step(108): len = 2407.7, overlap = 0
+PLC-004 : Step(109): len = 2164.7, overlap = 0
+PLC-004 : Step(110): len = 2020.7, overlap = 0
+PLC-004 : Step(111): len = 2010.2, overlap = 0
+PLC-004 : Step(112): len = 1962.9, overlap = 0
+PLC-004 : Step(113): len = 1962.9, overlap = 0
+PLC-004 : Step(114): len = 1907.5, overlap = 0
+PLC-004 : Step(115): len = 1907.5, overlap = 0
+PLC-004 : Step(116): len = 1907.5, overlap = 0
+PLC-001 : Legalization ...
+PLC-001 : Run with size of 3
+PLC-001 : Cell area utilization is 1%, beta_incr = 0.995179
+PLC-001 : :::0::: Try harder cell spreading with beta_ = 0
+PLC-004 : Step(117): len = 1887.6, overlap = 0
+PLC-004 : Step(118): len = 1933, overlap = 0
+PLC-004 : Step(119): len = 1957.2, overlap = 0
+PLC-004 : Step(120): len = 1942, overlap = 0
+PLC-004 : Step(121): len = 1942, overlap = 0
+PLC-004 : Step(122): len = 1826.5, overlap = 0
+PLC-004 : Step(123): len = 1826.5, overlap = 0
+PLC-004 : Step(124): len = 1824, overlap = 0
+PLC-001 : :::1::: Try harder cell spreading with beta_ = 3.92103
+PLC-004 : Step(125): len = 1825.5, overlap = 0
+PLC-004 : Step(126): len = 1825.5, overlap = 0
+PLC-001 : :::2::: Try harder cell spreading with beta_ = 7.84206
+PLC-004 : Step(127): len = 1825.3, overlap = 0
+PLC-004 : Step(128): len = 1825.3, overlap = 0
+PLC-001 : Run with size of 1
+PLC-001 : Cell area utilization is 1%, beta_incr = 0.995179
+PLC-001 : :::0::: Try harder cell spreading with beta_ = 3.73541e-05
+PLC-004 : Step(129): len = 1817, overlap = 1.25
+PLC-004 : Step(130): len = 1826, overlap = 1.25
+PLC-004 : Step(131): len = 1826, overlap = 1.25
+PLC-001 : :::1::: Try harder cell spreading with beta_ = 7.47083e-05
+PLC-004 : Step(132): len = 1832.8, overlap = 1.25
+PLC-004 : Step(133): len = 1841.1, overlap = 1.25
+PLC-001 : :::2::: Try harder cell spreading with beta_ = 0.000149417
+PLC-004 : Step(134): len = 1839.3, overlap = 1.25
+PLC-004 : Step(135): len = 1854.3, overlap = 1.25
+PLC-001 : :::3::: Try harder cell spreading with beta_ = 0.000298833
+PLC-004 : Step(136): len = 1876.6, overlap = 1.25
+PLC-004 : Step(137): len = 1880.8, overlap = 0.75
+PLC-001 : Legalization ...
+PLC-001 : Run with size of 1
+PLC-001 : Cell area utilization is 1%, beta_incr = 0.995179
+PLC-001 : :::0::: Try harder cell spreading with beta_ = 0
+PLC-004 : Step(138): len = 1822, overlap = 1.75
+PLC-004 : Step(139): len = 1817.6, overlap = 1.75
+PLC-004 : Step(140): len = 1817.6, overlap = 1.75
+PLC-001 : :::1::: Try harder cell spreading with beta_ = 2.745e-05
+PLC-004 : Step(141): len = 1813.7, overlap = 1.75
+PLC-004 : Step(142): len = 1813.7, overlap = 1.75
+PLC-001 : :::2::: Try harder cell spreading with beta_ = 5.49001e-05
+PLC-004 : Step(143): len = 1831.8, overlap = 1.75
+PLC-004 : Step(144): len = 1831.8, overlap = 1.75
+PLC-001 : :::3::: Try harder cell spreading with beta_ = 0.0001098
+PLC-004 : Step(145): len = 1852.8, overlap = 1.5
+PLC-004 : Step(146): len = 1852.8, overlap = 1.5
+PLC-001 : :::4::: Try harder cell spreading with beta_ = 0.0002196
+PLC-004 : Step(147): len = 1881.6, overlap = 1.5
+PLC-004 : Step(148): len = 1881.6, overlap = 1.5
+PLC-001 : :::5::: Try harder cell spreading with beta_ = 0.000439201
+PLC-004 : Step(149): len = 1885.8, overlap = 1.5
+PLC-004 : Step(150): len = 1888.6, overlap = 1.25
+PLC-001 : Legalization ...
+PLC-001 : Legalized: Len = 2028, Over = 0
+PLC-001 : Final: Len = 2028, Over = 0
+PLC-001 : Improving timing with driver duplication.
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$0$_DO.F of inst led_reg$0$_DO
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$1$_DO.F of inst led_reg$1$_DO
+CMD-004 : start command "route"
+RUN-001 : Open license file D:/TD4.2.217/license/Anlogic.lic
+RUN-001 : Pin swapping for better routability
+RUN-001 : Pin misalignment score is improved from 4 to 4
+RUN-001 : Pin local connectivity score is improved from 1 to 1
+RUN-001 : Pin misalignment score is improved from 4 to 4
+RUN-001 : Pin local connectivity score is improved from 1 to 1
+RTE-301 : End pin swap;  0.002591s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+RTE-301 : Route runs in 4 thread(s)
+RUN-001 : There are total 31 instances
+RUN-001 : 9 mslices, 9 lslices, 7 pads, 0 brams, 0 dsps
+RUN-001 : There are total 72 nets
+RUN-001 : 66 nets have 2 pins
+RUN-001 : 2 nets have [3 - 5] pins
+RUN-001 : 3 nets have [11 - 20] pins
+RUN-001 : 1 nets have [21 - 99] pins
+RTE-301 : Start global routing ...
+RTE-301 : Generate routing grids ...
+RTE-301 : Initialize routing nets ...
+RTE-301 : Ripup & Reroute ...
+RTE-302 : len = 2072, over cnt = 1(0%), over = 1, worst = 1
+RTE-302 : len = 2072, over cnt = 0(0%), over = 0, worst = 0
+RTE-301 : Timing updates.
+TMR-601 : Start to update net delay, extr mode = 5.
+TMR-601 : Update delay of 70 nets completely.
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$0$_DO.F of inst led_reg$0$_DO
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$1$_DO.F of inst led_reg$1$_DO
+TMR-601 : Annotate delay to tedge completely, extr mode = 5.
+TMR-601 : Start to map report constraints to rules, there are 0 constraints in all.
+TMR-601 : Forward propagation: start to calculate arrival time...
+TMR-601 : Backward propagation: start to calculate required time...
+TMR-601 : Timing propagation completely!
+RTE-301 : Optimize timing.
+RTE-301 : End global routing;  0.010269s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+RTE-301 : Start detail routing ...
+RTE-301 : Generate detailed routing grids ...
+RTE-301 : Generate nets ...
+RTE-301 : net clk_25m will be routed on clock mesh
+RTE-301 : net sys_clk_pad will be routed on clock mesh
+RTE-301 : clock net u_pll/clk0_out will be merged with clock u_pll/clk0_buf
+RTE-301 : Detail Route ...
+RTE-301 : ===== Initial DR =====
+RTE-301 : Routed 63% nets. 
+RTE-301 : Routed 65% nets. 
+RTE-301 : Routed 68% nets. 
+RTE-301 : Routed 68% nets. 
+RTE-301 : Routed 73% nets. 
+RTE-301 : Routed 73% nets. 
+RTE-301 : Routed 73% nets. 
+RTE-301 : Routed 75% nets. 
+RTE-301 :  0.040044s wall, 0.046800s user + 0.015600s system = 0.062400s CPU (155.8%)
+
+RTE-302 : len = 4272, over cnt = 7(0%), over = 7, worst = 1
+RTE-301 : ===== DR Iter 1 =====
+RTE-301 :  0.007327s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+RTE-302 : len = 4248, over cnt = 0(0%), over = 0, worst = 0
+RTE-303 : Routed, final wirelength = 4248
+RTE-301 : 0 feed throughs used by 0 nets
+RTE-301 : Generate detailed routing grids ...
+RTE-301 : Generate nets ...
+RTE-301 : net clk_25m will be routed on clock mesh
+RTE-301 : net sys_clk_pad will be routed on clock mesh
+RTE-301 : clock net u_pll/clk0_out will be merged with clock u_pll/clk0_buf
+RTE-301 : eco open net = 0
+RTE-301 : End detail routing;  0.580632s wall, 0.546003s user + 0.093601s system = 0.639604s CPU (110.2%)
+
+RTE-301 : Routing violations:
+RTE-301 : End of Routing Violations.
+CMD-004 : start command "report_area -io_info -file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_phy.area"
+standard
+IO Statistics
+#IO                     7
+  #input                3
+  #output               4
+  #inout                0
+
+Utilization Statistics
+#lut                    2   out of   4480    0.04%
+#reg                   23   out of   4480    0.51%
+#le                    25
+  #lut only             2   out of     25    8.00%
+  #reg only            23   out of     25   92.00%
+  #lut&reg              0   out of     25    0.00%
+#dsp                    0   out of     15    0.00%
+#bram                   0   out of     12    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of      6    0.00%
+#mcu                    1   out of      1  100.00%
+#pad                    7   out of     31   22.58%
+  #ireg                 0
+  #oreg                 2
+  #treg                 0
+#pll                    1   out of      1  100.00%
+#clknet                 3   out of     16   18.75%
+  #gclk                 1
+
+CMD-004 : start command "export_db E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_pr.db"
+RUN-001 : Exported /
+RUN-001 : Exported libs
+RUN-001 : Exported entities
+RUN-001 : Exported ports
+RUN-001 : Exported pins
+RUN-001 : Exported instances
+RUN-001 : Exported nets
+RUN-001 : Exported buses
+RUN-001 : Exported models
+RUN-001 : Exported congestions
+RUN-001 : Exported violations
+RUN-001 : Exported timing constraints
+RUN-001 : Exported IO constraints
+RUN-001 : Exported Inst constraints
+RUN-001 : Exported flow parameters
+CMD-004 : start command "start_timer"
+TMR-601 : Start building timing graph for model top
+TMR-601 : Build timing graph completely. Port num: 4, tpin num: 164, tnet num: 70, tinst num: 28, tnode num: 215, tedge num: 272.
+
+TMR-601 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-601 : Levelize timing graph completed, there are 16 levels in all.
+TMR-601 : Timing graph initialized successfully.
+
+CMD-004 : start command "report_timing -mode FINAL -net_info -ep_num 3 -path_num 3 -file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_phy.timing"
+TMR-601 : Start to update net delay, extr mode = 6.
+RTE-301 : Generate detailed routing grids ...
+RTE-301 : Generate nets ...
+RTE-301 : net clk_25m will be routed on clock mesh
+RTE-301 : net sys_clk_pad will be routed on clock mesh
+RTE-301 : clock net u_pll/clk0_out will be merged with clock u_pll/clk0_buf
+RTE-301 : eco open net = 0
+TMR-601 : Update delay of 70 nets completely.
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$0$_DO.F of inst led_reg$0$_DO
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$1$_DO.F of inst led_reg$1$_DO
+TMR-601 : Annotate delay to tedge completely, extr mode = 6.
+TMR-601 : Initiate 1 clocks from SDC
+TMR-601 : Start to map constraints to rules, there are 0 constraints in all.
+TMR-601 : Start to map report constraints to rules, there are 0 constraints in all.
+TMR-601 : Constraints initiated successfully.
+TMR-601 : Forward propagation: start to calculate arrival time...
+TMR-601 : Backward propagation: start to calculate required time...
+TMR-601 : Timing propagation completely!
+TMR-601 : Start to generate timing report: 
+TMR-601 : clock_nets size = 3, clk_num = 1.
+TMR-611 WARNING: There is 1 clock net without clock constraint.
+TMR-601 : Export timing summary!
+TMR-601 : Timing report generated successfully in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_phy.timing, timing summay in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_phy.tsm. 
+
+CMD-004 : start command "bitgen -bit E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.bit -version 0X00 -svf E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.svf -svf_comment_on -128 E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/KEIL/demo.bin -g ucode:00000000000000000000000000000000 -c -f E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.btc"
+BIT-701 : Start to generate bitstream. 
+BIT-701 : Init instances with 4 threads.
+BIT-701 : Init instances completely, inst num: 31
+BIT-701 : Init pips with 4 threads.
+BIT-701 : Init pips completely, net num: 72, pip num: 437
+BIT-701 : Multithreading accelaration with 4 threads.
+BIT-701 : Generate bitstream completely, there are 134 valid insts, and 1094 bits set as '1'.
+BIT-701 : Generate bits file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.bit.
+BIT-701 : Generate svf file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_sram.svf.
+BIT-701 : Generate tde file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_sram.tde
+BIT-701 : Generate tde file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_spi_bk.tde
+BIT-701 : Generate tde file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_spi_norefresh_bk.tde
+BIT-701 : Generate tde file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_refresh.tde
+BIT-701 : Generate tde file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_erase_spi.tde
+BIT-701 : Generate tde file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_readstatus.tde
+CMD-005 : finish command "bitgen -bit E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.bit -version 0X00 -svf E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.svf -svf_comment_on -128 E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/KEIL/demo.bin -g ucode:00000000000000000000000000000000 -c -f E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.btc" in  2.538523s wall, 2.901619s user + 0.062400s system = 2.964019s CPU (116.8%)
+
+CMD-006 : used memory is 239 MB, reserved memory is 183 MB, peak memory is 549 MB
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/src/top.v
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/mcu.v
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/pll.v
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/src/top.v
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/mcu.v
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/pll.v
+CMD-004 : start command "elaborate -top top"
+VLG-939 WARNING: port gpio_h2_out remains unconnected for this instance in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35)
+VLG-004 : elaborate module top in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(2)
+VLG-004 : elaborate module pll in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/pll.v(23)
+VLG-004 : elaborate module EF2_LOGIC_BUFG in D:/TD4.2.217/arch/ef2_macro.v(8)
+VLG-004 : elaborate module EF2_PHY_PLL(FIN="50.000",REFCLK_DIV=3,FBCLK_DIV=12,CLKC0_DIV=5,CLKC1_DIV=20,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=5,CLKC1_CPHASE=20,GMC_GAIN=6,ICP_CURRENT=3,KVCO=6,LPF_RESISTOR=2,PLLRST_ENA="DISABLE",INTPI=3,HIGH_SPEED_EN="ENABLE",OFFSET_MODE="EXT",CLKC0_DUTY=0.5,CLKC1_DUTY=0.5,CLKC0_DUTY_INT=3,CLKC1_DUTY_INT=10) in D:/TD4.2.217/arch/ef2_macro.v(2644)
+VLG-939 WARNING: port ppm_clk remains unconnected for this instance in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/mcu.v(48)
+VLG-004 : elaborate module mcu in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/mcu.v(14)
+VLG-004 : elaborate module EF2_PHY_MCU(GPIO_L0="ENABLE",GPIO_L1="ENABLE") in D:/TD4.2.217/arch/ef2_macro.v(741)
+VIN-1013 WARNING: input port ppm_clk is not connected on this instance in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/mcu.v(48)
+VIN-1002 WARNING: net gpio_h0_in does not have a driver in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(13)
+VIN-1002 WARNING: net gpio_h1_in does not have a driver in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(16)
+VIN-1013 WARNING: input port gpio_h2_in is not connected on this instance in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35)
+RTL-100 : Current top model is top
+RAM-300 : Inferred 0 RAMs.
+CMD-004 : start command "optimize_rtl"
+RUN-001 : Open license file D:/TD4.2.217/license/Anlogic.lic
+SNT-300 : SanityCheck: Model "top"
+SNT-300 : SanityCheck: Model "mcu"
+SNT-300 : SanityCheck: Model "pll"
+RTL-100 : Mark pll as IO macro for instance bufg_feedback
+UDR-200 WARNING: Undriven pin: model "top" / inst "u_mcu" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35) / pin "gpio_h2_in"
+UDR-200 WARNING: Undriven pin: model "top" / inst "u_mcu" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35) / pin "gpio_h3_in"
+UDR-202 WARNING: Undriven net: model "top" / net "gpio_h0_in" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(13)
+UDR-203 WARNING: the net's pin: pin "gpio_h0_in" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35)
+UDR-202 WARNING: Undriven net: model "top" / net "gpio_h1_in" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(16)
+UDR-203 WARNING: the net's pin: pin "gpio_h1_in" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35)
+RTL-200 WARNING: Using 0 for all undriven pins and nets
+LAT-200 WARNING: Found latch in "top", name: "led_reg$0$", d: "gpio_h0_out", q: "led[0]" // E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(46)
+LAT-200 WARNING: Found latch in "top", name: "led_reg$1$", d: "gpio_h1_out", q: "led[1]" // E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(47)
+FLT-300 : Flatten model top
+FLT-300 : Flatten model mcu
+FLT-300 : Flatten model pll
+MRG-300 : Merged 2 instances.
+OPT-300 : Optimize round 1
+RTL-100 : 67/5 useful/useless nets, 36/0 useful/useless insts
+MUX-301 : Optimized 0 mux instances.
+OPT-301 : Optimize round 1, 5 better
+OPT-300 : Optimize round 2
+RTL-100 : 66/1 useful/useless nets, 35/0 useful/useless insts
+MUX-301 : Optimized 0 mux instances.
+OPT-301 : Optimize round 2, 0 better
+CMD-004 : start command "report_area -file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_rtl.area"
+standard
+IO Statistics
+#IO                     7
+  #input                3
+  #output               4
+  #inout                0
+#MACRO_ADD              1
+#MACRO_EQ               2
+
+CMD-004 : start command "read_sdc ../../constrs/ELF2M45.sdc"
+CMD-004 : start command "get_ports sys_clk"
+CMD-004 : start command "create_clock -name sys_clk -period 20 -waveform 0 10 "
+RUN-001 : create_clock: clock name: sys_clk, type: 0, period: 20000, rise: 0, fall 10000.
+RUN-001 : Import SDC file ../../constrs/ELF2M45.sdc finished, there are 0 nets kept by constraints.
+CMD-004 : start command "read_adc ../../constrs/ELF2M45.adc"
+CMD-004 : start command "set_pin_assignment sys_clk  LOCATION = P22;  "
+CMD-004 : start command "set_pin_assignment sys_rstn  LOCATION = P21;  "
+CMD-004 : start command "set_pin_assignment ppm_rstn  LOCATION = P24;  "
+CMD-004 : start command "set_pin_assignment led[3]  LOCATION = P19;   "
+CMD-004 : start command "set_pin_assignment led[2]  LOCATION = P18;   "
+CMD-004 : start command "set_pin_assignment led[1]  LOCATION = P16;   "
+CMD-004 : start command "set_pin_assignment led[0]  LOCATION = P15;   "
+CMD-004 : start command "export_db E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_rtl.db"
+RUN-001 : Exported /
+RUN-001 : Exported libs
+RUN-001 : Exported entities
+RUN-001 : Exported ports
+RUN-001 : Exported pins
+RUN-001 : Exported instances
+RUN-001 : Exported nets
+RUN-001 : Exported buses
+RUN-001 : Exported models
+RUN-001 : Exported congestions
+RUN-001 : Exported violations
+RUN-001 : Exported timing constraints
+RUN-001 : Exported IO constraints
+RUN-001 : Exported Inst constraints
+RUN-001 : Exported flow parameters
+CMD-004 : start command "map_macro"
+RTL-100 : Map 7 IOs to PADs
+GAT-100 : Processed 0 LOGIC_BUF instances.
+GAT-100 : 1 BUFG to GCLK
+RTL-100 : Optimize round 1
+RTL-100 : 71/0 useful/useless nets, 41/0 useful/useless insts
+RTL-100 : Optimize round 1, 2 better
+RTL-100 : Optimize round 2
+RTL-100 : 71/0 useful/useless nets, 41/0 useful/useless insts
+RTL-100 : Optimize round 2, 0 better
+RTL-100 : Map 1 macro adder
+RTL-100 : 147/50 useful/useless nets, 67/25 useful/useless insts
+CMD-004 : start command "map"
+CMD-004 : start command "start_timer -prepack"
+TMR-601 : Start building timing graph for model top
+TMR-601 : Build timing graph completely. Port num: 4, tpin num: 245, tnet num: 101, tinst num: 65, tnode num: 492, tedge num: 527.
+
+TMR-601 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-601 : Levelize timing graph completed, there are 58 levels in all.
+TMR-601 : Timing graph initialized successfully.
+
+TMR-601 : Start to update net delay, extr mode = 2.
+TMR-601 : Update delay of 101 nets completely.
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$0$_DO.F of inst led_reg$0$_DO
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$1$_DO.F of inst led_reg$1$_DO
+TMR-601 : Annotate delay to tedge completely, extr mode = 2.
+TMR-601 : Initiate 1 clocks from SDC
+TMR-601 : Start to map constraints to rules, there are 0 constraints in all.
+TMR-601 : Start to map report constraints to rules, there are 0 constraints in all.
+TMR-601 : Constraints initiated successfully.
+TMR-601 : Forward propagation: start to calculate arrival time...
+TMR-601 : Backward propagation: start to calculate required time...
+TMR-601 : Timing propagation completely!
+GAT-100 : Running gate level optimization.
+GAT-100 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+GAT-100 : Post LUT mapping optimization.
+GAT-100 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+GAT-100 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+GAT-100 : Logic optimization runtime opt =   0.00 sec, map =   0.00 sec
+GAT-100 : Mapper mapped 2 instances into 2 LUTs, name keeping = 100%.
+CMD-004 : start command "pack"
+GAT-100 : Packing top model "top" ...
+PAK-301 : Pack lib has 35 rtl pack models with 12 top pack blocks
+OPT-300 : Optimize round 1
+RTL-100 : 96/0 useful/useless nets, 66/0 useful/useless insts
+OPT-301 : Optimize round 1, 0 better
+PAK-SEQ-305 : Packing 25 DFF/LATCH to SEQ ...
+PAK-RLS : Pack 1 carry chain into lslice
+PAK-BLE-301 : Packing 0 adder to BLE ...
+PAK-BLE-302 : Packed 0 adder and 0 SEQ to BLE.
+PAK-BLE-301 : Packing 0 gate4 to BLE ...
+PAK-BLE-302 : Packed 0 gate4 and 0 SEQ to BLE.
+PAK-309 : Packed 0 FxMUX
+PAK-BLE-301 : Packing 0 MUX to BLE ...
+PAK-BLE-302 : Packed 0 MUX and 0 SEQ to BLE.
+PAK-BLE-301 : Packing 2 LUT to BLE ...
+PAK-BLE-302 : Packed 2 LUT and 0 SEQ to BLE.
+PAK-SEQ-301 : Packing 25 remaining SEQ's ...
+PAK-SEQ-302 : #0: Packed 0 SEQ (25 nodes)...
+PAK-SEQ-302 : #1: Packed 2 SEQ (25 nodes)...
+PAK-SEQ-303 : Packed 2 SEQ with LUT/SLICE
+PAK-SEQ-304 : 2 single LUT's are left
+PAK-SEQ-304 : 25 single SEQ's are left
+PAK-303 : Packing model "top" (AL_USER_NORMAL) with 25/45 primitive instances ...
+CLK-302 : Net u_pll/clk0_out driven by BUFG (0 clock/control pins, 1 other pins).
+CLK-311 : Net clk_25m is clkc1 of pll u_pll/pll_inst.
+CLK-304 : Net sys_clk_pad is refclk of pll u_pll/pll_inst.
+CLK-305 : Net sys_clk_pad is fbclk of pll u_pll/pll_inst.
+CLK-309 : Tag rtl::Net clk_25m as clock net
+CLK-309 : Tag rtl::Net sys_clk_pad as clock net
+CLK-309 : Tag rtl::Net u_pll/clk0_out as clock net
+CLK-310 : Tagged 3 rtl::Net as clock net
+CMD-004 : start command "report_area -file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_gate.area"
+standard
+IO Statistics
+#IO                     7
+  #input                3
+  #output               4
+  #inout                0
+
+Utilization Statistics
+#lut                    2   out of   4480    0.04%
+#reg                   25   out of   4480    0.56%
+#le                    27
+  #lut only             2   out of     27    7.41%
+  #reg only            25   out of     27   92.59%
+  #lut&reg              0   out of     27    0.00%
+#dsp                    0   out of     15    0.00%
+#bram                   0   out of     12    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of      6    0.00%
+#mcu                    1   out of      1  100.00%
+#pad                    7   out of     31   22.58%
+  #ireg                 0
+  #oreg                 2
+  #treg                 0
+#pll                    1   out of      1  100.00%
+#clknet                 3   out of     16   18.75%
+  #gclk                 1
+
+CMD-004 : start command "export_db E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_gate.db"
+RUN-001 : Exported /
+RUN-001 : Exported libs
+RUN-001 : Exported entities
+RUN-001 : Exported ports
+RUN-001 : Exported pins
+RUN-001 : Exported instances
+RUN-001 : Exported nets
+RUN-001 : Exported buses
+RUN-001 : Exported models
+RUN-001 : Exported congestions
+RUN-001 : Exported violations
+RUN-001 : Exported timing constraints
+RUN-001 : Exported IO constraints
+RUN-001 : Exported Inst constraints
+RUN-001 : Exported flow parameters
+CMD-004 : start command "start_timer"
+RUN-001 : There are total 33 instances
+RUN-001 : 10 mslices, 10 lslices, 7 pads, 0 brams, 0 dsps
+RUN-001 : There are total 77 nets
+RUN-001 : 71 nets have 2 pins
+RUN-001 : 2 nets have [3 - 5] pins
+RUN-001 : 3 nets have [11 - 20] pins
+RUN-001 : 1 nets have [21 - 99] pins
+TMR-601 : Start building timing graph for model top
+TMR-601 : Build timing graph completely. Port num: 4, tpin num: 176, tnet num: 75, tinst num: 30, tnode num: 231, tedge num: 295.
+
+TMR-601 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-601 : Levelize timing graph completed, there are 18 levels in all.
+TMR-601 : Timing graph initialized successfully.
+
+CMD-004 : start command "place"
+RUN-001 : Open license file D:/TD4.2.217/license/Anlogic.lic
+PLC-001 : Placer runs in 4 thread(s).
+PLC-001 : Initial placement ...
+PLC-001 : design contains 31 instances, 20 slices, 1 macros(7 instances)
+PLC-001 : Start timing update ...
+TMR-601 : Start to update net delay, extr mode = 2.
+TMR-601 : Update delay of 75 nets completely.
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$0$_DO.F of inst led_reg$0$_DO
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$1$_DO.F of inst led_reg$1$_DO
+TMR-601 : Annotate delay to tedge completely, extr mode = 2.
+TMR-601 : Initiate 1 clocks from SDC
+TMR-601 : Start to map constraints to rules, there are 0 constraints in all.
+TMR-601 : Start to map report constraints to rules, there are 0 constraints in all.
+TMR-601 : Constraints initiated successfully.
+TMR-601 : Forward propagation: start to calculate arrival time...
+TMR-601 : Backward propagation: start to calculate required time...
+TMR-601 : Timing propagation completely!
+PLC-001 : End timing update;  0.002019s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PLC-001 : Global placement ...
+PLC-001 : Initial: Len = 9130
+PLC-001 : Run with size of 3
+PLC-001 : Cell area utilization is 0%, beta_incr = 0.994643
+PLC-001 : :::0::: Try harder cell spreading with beta_ = 0
+PLC-004 : Step(151): len = 5212.6, overlap = 0
+PLC-004 : Step(152): len = 3106, overlap = 0
+PLC-004 : Step(153): len = 2746.2, overlap = 0
+PLC-004 : Step(154): len = 2609.2, overlap = 0
+PLC-004 : Step(155): len = 2652, overlap = 0
+PLC-004 : Step(156): len = 2690.9, overlap = 0
+PLC-004 : Step(157): len = 2746, overlap = 0
+PLC-004 : Step(158): len = 2533.2, overlap = 0
+PLC-004 : Step(159): len = 2308.1, overlap = 0
+PLC-004 : Step(160): len = 2055.8, overlap = 0
+PLC-004 : Step(161): len = 2081.7, overlap = 0
+PLC-004 : Step(162): len = 2043.8, overlap = 0
+PLC-004 : Step(163): len = 2043.8, overlap = 0
+PLC-004 : Step(164): len = 2013.1, overlap = 0
+PLC-004 : Step(165): len = 2013.1, overlap = 0
+PLC-004 : Step(166): len = 1975.1, overlap = 0
+PLC-001 : Legalization ...
+PLC-001 : Run with size of 3
+PLC-001 : Cell area utilization is 1%, beta_incr = 0.994643
+PLC-001 : :::0::: Try harder cell spreading with beta_ = 0
+PLC-004 : Step(167): len = 1974.5, overlap = 0
+PLC-004 : Step(168): len = 2007.3, overlap = 0
+PLC-004 : Step(169): len = 2027.8, overlap = 0
+PLC-001 : Run with size of 1
+PLC-001 : Cell area utilization is 1%, beta_incr = 0.994643
+PLC-001 : :::0::: Try harder cell spreading with beta_ = 3.57788e-05
+PLC-004 : Step(170): len = 1982.8, overlap = 1.75
+PLC-004 : Step(171): len = 2001.2, overlap = 1.75
+PLC-004 : Step(172): len = 2011.1, overlap = 1.75
+PLC-001 : :::1::: Try harder cell spreading with beta_ = 7.15576e-05
+PLC-004 : Step(173): len = 2018.4, overlap = 1.5
+PLC-004 : Step(174): len = 2002.3, overlap = 1.75
+PLC-004 : Step(175): len = 2005.3, overlap = 1.75
+PLC-001 : :::2::: Try harder cell spreading with beta_ = 0.000121781
+PLC-004 : Step(176): len = 2048.6, overlap = 1.25
+PLC-004 : Step(177): len = 2056.6, overlap = 1.25
+PLC-004 : Step(178): len = 2042.8, overlap = 1.25
+PLC-001 : Legalization ...
+PLC-001 : Run with size of 1
+PLC-001 : Cell area utilization is 1%, beta_incr = 0.994643
+PLC-001 : :::0::: Try harder cell spreading with beta_ = 0.000405766
+PLC-004 : Step(179): len = 2170.8, overlap = 1.25
+PLC-004 : Step(180): len = 2165.9, overlap = 1.5
+PLC-004 : Step(181): len = 2176.9, overlap = 1.25
+PLC-001 : :::1::: Try harder cell spreading with beta_ = 0.000811532
+PLC-004 : Step(182): len = 2187.8, overlap = 1.25
+PLC-004 : Step(183): len = 2188.4, overlap = 1.25
+PLC-001 : :::2::: Try harder cell spreading with beta_ = 0.00162306
+PLC-004 : Step(184): len = 2186.2, overlap = 1.25
+PLC-004 : Step(185): len = 2184.4, overlap = 1.25
+PLC-001 : Legalization ...
+PLC-001 : Legalized: Len = 2251, Over = 0
+PLC-001 : Final: Len = 2251, Over = 0
+PLC-001 : Improving timing with driver duplication.
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$0$_DO.F of inst led_reg$0$_DO
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$1$_DO.F of inst led_reg$1$_DO
+CMD-004 : start command "route"
+RUN-001 : Open license file D:/TD4.2.217/license/Anlogic.lic
+RUN-001 : Pin swapping for better routability
+RUN-001 : Pin misalignment score is improved from 4 to 4
+RUN-001 : Pin local connectivity score is improved from 1 to 1
+RUN-001 : Pin misalignment score is improved from 4 to 4
+RUN-001 : Pin local connectivity score is improved from 1 to 1
+RTE-301 : End pin swap;  0.002234s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+RTE-301 : Route runs in 4 thread(s)
+RUN-001 : There are total 33 instances
+RUN-001 : 10 mslices, 10 lslices, 7 pads, 0 brams, 0 dsps
+RUN-001 : There are total 77 nets
+RUN-001 : 71 nets have 2 pins
+RUN-001 : 2 nets have [3 - 5] pins
+RUN-001 : 3 nets have [11 - 20] pins
+RUN-001 : 1 nets have [21 - 99] pins
+RTE-301 : Start global routing ...
+RTE-301 : Generate routing grids ...
+RTE-301 : Initialize routing nets ...
+RTE-301 : Ripup & Reroute ...
+RTE-302 : len = 2264, over cnt = 2(0%), over = 4, worst = 3
+RTE-302 : len = 2264, over cnt = 2(0%), over = 4, worst = 3
+RTE-302 : len = 2280, over cnt = 2(0%), over = 3, worst = 2
+RTE-302 : len = 2328, over cnt = 0(0%), over = 0, worst = 0
+RTE-301 : Timing updates.
+TMR-601 : Start to update net delay, extr mode = 5.
+TMR-601 : Update delay of 75 nets completely.
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$0$_DO.F of inst led_reg$0$_DO
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$1$_DO.F of inst led_reg$1$_DO
+TMR-601 : Annotate delay to tedge completely, extr mode = 5.
+TMR-601 : Start to map report constraints to rules, there are 0 constraints in all.
+TMR-601 : Forward propagation: start to calculate arrival time...
+TMR-601 : Backward propagation: start to calculate required time...
+TMR-601 : Timing propagation completely!
+RTE-301 : Optimize timing.
+RTE-301 : End global routing;  0.013388s wall, 0.015600s user + 0.000000s system = 0.015600s CPU (116.5%)
+
+RTE-301 : Start detail routing ...
+RTE-301 : Generate detailed routing grids ...
+RTE-301 : Generate nets ...
+RTE-301 : net clk_25m will be routed on clock mesh
+RTE-301 : net sys_clk_pad will be routed on clock mesh
+RTE-301 : clock net u_pll/clk0_out will be merged with clock u_pll/clk0_buf
+RTE-301 : Detail Route ...
+RTE-301 : ===== Initial DR =====
+RTE-301 : Routed 64% nets. 
+RTE-301 : Routed 64% nets. 
+RTE-301 : Routed 67% nets. 
+RTE-301 : Routed 68% nets. 
+RTE-301 : Routed 74% nets. 
+RTE-301 : Routed 74% nets. 
+RTE-301 : Routed 74% nets. 
+RTE-301 : Routed 75% nets. 
+RTE-301 :  0.038617s wall, 0.031200s user + 0.000000s system = 0.031200s CPU (80.8%)
+
+RTE-302 : len = 4824, over cnt = 7(0%), over = 8, worst = 2
+RTE-301 : ===== DR Iter 1 =====
+RTE-301 :  0.008697s wall, 0.015600s user + 0.000000s system = 0.015600s CPU (179.4%)
+
+RTE-302 : len = 4824, over cnt = 2(0%), over = 2, worst = 1
+RTE-301 : ===== DR Iter 2 =====
+RTE-301 :  0.004202s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+RTE-302 : len = 4824, over cnt = 0(0%), over = 0, worst = 0
+RTE-303 : Routed, final wirelength = 4824
+RTE-301 : 0 feed throughs used by 0 nets
+RTE-301 : Generate detailed routing grids ...
+RTE-301 : Generate nets ...
+RTE-301 : net clk_25m will be routed on clock mesh
+RTE-301 : net sys_clk_pad will be routed on clock mesh
+RTE-301 : clock net u_pll/clk0_out will be merged with clock u_pll/clk0_buf
+RTE-301 : eco open net = 0
+RTE-301 : End detail routing;  0.580503s wall, 0.592804s user + 0.031200s system = 0.624004s CPU (107.5%)
+
+RTE-301 : Routing violations:
+RTE-301 : End of Routing Violations.
+CMD-004 : start command "report_area -io_info -file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_phy.area"
+standard
+IO Statistics
+#IO                     7
+  #input                3
+  #output               4
+  #inout                0
+
+Utilization Statistics
+#lut                    2   out of   4480    0.04%
+#reg                   25   out of   4480    0.56%
+#le                    27
+  #lut only             2   out of     27    7.41%
+  #reg only            25   out of     27   92.59%
+  #lut&reg              0   out of     27    0.00%
+#dsp                    0   out of     15    0.00%
+#bram                   0   out of     12    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of      6    0.00%
+#mcu                    1   out of      1  100.00%
+#pad                    7   out of     31   22.58%
+  #ireg                 0
+  #oreg                 2
+  #treg                 0
+#pll                    1   out of      1  100.00%
+#clknet                 3   out of     16   18.75%
+  #gclk                 1
+
+CMD-004 : start command "export_db E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_pr.db"
+RUN-001 : Exported /
+RUN-001 : Exported libs
+RUN-001 : Exported entities
+RUN-001 : Exported ports
+RUN-001 : Exported pins
+RUN-001 : Exported instances
+RUN-001 : Exported nets
+RUN-001 : Exported buses
+RUN-001 : Exported models
+RUN-001 : Exported congestions
+RUN-001 : Exported violations
+RUN-001 : Exported timing constraints
+RUN-001 : Exported IO constraints
+RUN-001 : Exported Inst constraints
+RUN-001 : Exported flow parameters
+CMD-004 : start command "start_timer"
+TMR-601 : Start building timing graph for model top
+TMR-601 : Build timing graph completely. Port num: 4, tpin num: 176, tnet num: 75, tinst num: 30, tnode num: 231, tedge num: 295.
+
+TMR-601 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-601 : Levelize timing graph completed, there are 18 levels in all.
+TMR-601 : Timing graph initialized successfully.
+
+CMD-004 : start command "report_timing -mode FINAL -net_info -ep_num 3 -path_num 3 -file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_phy.timing"
+TMR-601 : Start to update net delay, extr mode = 6.
+RTE-301 : Generate detailed routing grids ...
+RTE-301 : Generate nets ...
+RTE-301 : net clk_25m will be routed on clock mesh
+RTE-301 : net sys_clk_pad will be routed on clock mesh
+RTE-301 : clock net u_pll/clk0_out will be merged with clock u_pll/clk0_buf
+RTE-301 : eco open net = 0
+TMR-601 : Update delay of 75 nets completely.
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$0$_DO.F of inst led_reg$0$_DO
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$1$_DO.F of inst led_reg$1$_DO
+TMR-601 : Annotate delay to tedge completely, extr mode = 6.
+TMR-601 : Initiate 1 clocks from SDC
+TMR-601 : Start to map constraints to rules, there are 0 constraints in all.
+TMR-601 : Start to map report constraints to rules, there are 0 constraints in all.
+TMR-601 : Constraints initiated successfully.
+TMR-601 : Forward propagation: start to calculate arrival time...
+TMR-601 : Backward propagation: start to calculate required time...
+TMR-601 : Timing propagation completely!
+TMR-601 : Start to generate timing report: 
+TMR-601 : clock_nets size = 3, clk_num = 1.
+TMR-611 WARNING: There is 1 clock net without clock constraint.
+TMR-601 : Export timing summary!
+TMR-601 : Timing report generated successfully in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_phy.timing, timing summay in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_phy.tsm. 
+
+CMD-004 : start command "bitgen -bit E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.bit -version 0X00 -svf E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.svf -svf_comment_on -128 E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/KEIL/demo.bin -g ucode:00000000000000000000000000000000 -c -f E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.btc"
+BIT-701 : Start to generate bitstream. 
+BIT-701 : Init instances with 4 threads.
+BIT-701 : Init instances completely, inst num: 33
+BIT-701 : Init pips with 4 threads.
+BIT-701 : Init pips completely, net num: 77, pip num: 465
+BIT-701 : Multithreading accelaration with 4 threads.
+BIT-701 : Generate bitstream completely, there are 139 valid insts, and 1189 bits set as '1'.
+BIT-701 : Generate bits file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.bit.
+BIT-701 : Generate svf file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_sram.svf.
+BIT-701 : Generate tde file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_sram.tde
+BIT-701 : Generate tde file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_spi_bk.tde
+BIT-701 : Generate tde file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_spi_norefresh_bk.tde
+BIT-701 : Generate tde file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_refresh.tde
+BIT-701 : Generate tde file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_erase_spi.tde
+BIT-701 : Generate tde file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_readstatus.tde
+CMD-005 : finish command "bitgen -bit E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.bit -version 0X00 -svf E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.svf -svf_comment_on -128 E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/KEIL/demo.bin -g ucode:00000000000000000000000000000000 -c -f E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.btc" in  2.544215s wall, 2.995219s user + 0.078001s system = 3.073220s CPU (120.8%)
+
+CMD-006 : used memory is 263 MB, reserved memory is 210 MB, peak memory is 549 MB
+CMD-004 : start command "download -svf E:\ELF2_SOC\trunk\Basic_Demo\RESET_Demo\TD\project\demo\demo_sram.svf -mode jtag -wait 20 -spd 6 -sec 64 -cable 0 -chip EF2M45B"
+CMD-004 : start command "bit_to_vec -chip EF2M45B -m jtag -svf E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_sram.svf"
+CMD-004 : start command "program -cable 0 -spd 6"
+CMD-005 : finish command "program -cable 0 -spd 6" in  1.472778s wall, 0.187201s user + 0.046800s system = 0.234002s CPU (15.9%)
+
+CMD-006 : used memory is 301 MB, reserved memory is 248 MB, peak memory is 549 MB
+CMD-005 : finish command "download -svf E:\ELF2_SOC\trunk\Basic_Demo\RESET_Demo\TD\project\demo\demo_sram.svf -mode jtag -wait 20 -spd 6 -sec 64 -cable 0 -chip EF2M45B" in  1.617059s wall, 0.327602s user + 0.046800s system = 0.374402s CPU (23.2%)
+
+CMD-006 : used memory is 301 MB, reserved memory is 248 MB, peak memory is 549 MB
+GUI-001 : Download success!
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/src/top.v
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/mcu.v
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/pll.v
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/src/top.v
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/mcu.v
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/pll.v
+CMD-004 : start command "elaborate -top top"
+VLG-939 WARNING: port gpio_h2_out remains unconnected for this instance in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35)
+VLG-004 : elaborate module top in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(2)
+VLG-004 : elaborate module pll in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/pll.v(23)
+VLG-004 : elaborate module EF2_LOGIC_BUFG in D:/TD4.2.217/arch/ef2_macro.v(8)
+VLG-004 : elaborate module EF2_PHY_PLL(FIN="50.000",REFCLK_DIV=3,FBCLK_DIV=12,CLKC0_DIV=5,CLKC1_DIV=20,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=5,CLKC1_CPHASE=20,GMC_GAIN=6,ICP_CURRENT=3,KVCO=6,LPF_RESISTOR=2,PLLRST_ENA="DISABLE",INTPI=3,HIGH_SPEED_EN="ENABLE",OFFSET_MODE="EXT",CLKC0_DUTY=0.5,CLKC1_DUTY=0.5,CLKC0_DUTY_INT=3,CLKC1_DUTY_INT=10) in D:/TD4.2.217/arch/ef2_macro.v(2644)
+VLG-939 WARNING: port ppm_clk remains unconnected for this instance in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/mcu.v(48)
+VLG-004 : elaborate module mcu in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/mcu.v(14)
+VLG-004 : elaborate module EF2_PHY_MCU(GPIO_L0="ENABLE",GPIO_L1="ENABLE") in D:/TD4.2.217/arch/ef2_macro.v(741)
+VIN-1013 WARNING: input port ppm_clk is not connected on this instance in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/al_ip/mcu.v(48)
+VIN-1002 WARNING: net gpio_h0_in does not have a driver in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(13)
+VIN-1002 WARNING: net gpio_h1_in does not have a driver in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(16)
+VIN-1013 WARNING: input port gpio_h2_in is not connected on this instance in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35)
+RTL-100 : Current top model is top
+RAM-300 : Inferred 0 RAMs.
+CMD-004 : start command "optimize_rtl"
+RUN-001 : Open license file D:/TD4.2.217/license/Anlogic.lic
+SNT-300 : SanityCheck: Model "top"
+SNT-300 : SanityCheck: Model "mcu"
+SNT-300 : SanityCheck: Model "pll"
+RTL-100 : Mark pll as IO macro for instance bufg_feedback
+UDR-200 WARNING: Undriven pin: model "top" / inst "u_mcu" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35) / pin "gpio_h2_in"
+UDR-200 WARNING: Undriven pin: model "top" / inst "u_mcu" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35) / pin "gpio_h3_in"
+UDR-202 WARNING: Undriven net: model "top" / net "gpio_h0_in" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(13)
+UDR-203 WARNING: the net's pin: pin "gpio_h0_in" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35)
+UDR-202 WARNING: Undriven net: model "top" / net "gpio_h1_in" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(16)
+UDR-203 WARNING: the net's pin: pin "gpio_h1_in" in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(35)
+RTL-200 WARNING: Using 0 for all undriven pins and nets
+LAT-200 WARNING: Found latch in "top", name: "led_reg$0$", d: "gpio_h0_out", q: "led[0]" // E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(46)
+LAT-200 WARNING: Found latch in "top", name: "led_reg$1$", d: "gpio_h1_out", q: "led[1]" // E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/../../src/top.v(47)
+FLT-300 : Flatten model top
+FLT-300 : Flatten model mcu
+FLT-300 : Flatten model pll
+MRG-300 : Merged 2 instances.
+OPT-300 : Optimize round 1
+RTL-100 : 65/7 useful/useless nets, 35/1 useful/useless insts
+MUX-301 : Optimized 0 mux instances.
+OPT-301 : Optimize round 1, 10 better
+OPT-300 : Optimize round 2
+RTL-100 : 64/1 useful/useless nets, 34/0 useful/useless insts
+MUX-301 : Optimized 0 mux instances.
+OPT-301 : Optimize round 2, 0 better
+CMD-004 : start command "report_area -file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_rtl.area"
+standard
+IO Statistics
+#IO                     7
+  #input                3
+  #output               4
+  #inout                0
+#MACRO_ADD              1
+#MACRO_EQ               2
+
+CMD-004 : start command "read_sdc ../../constrs/ELF2M45.sdc"
+CMD-004 : start command "get_ports sys_clk"
+CMD-004 : start command "create_clock -name sys_clk -period 20 -waveform 0 10 "
+RUN-001 : create_clock: clock name: sys_clk, type: 0, period: 20000, rise: 0, fall 10000.
+RUN-001 : Import SDC file ../../constrs/ELF2M45.sdc finished, there are 0 nets kept by constraints.
+CMD-004 : start command "read_adc ../../constrs/ELF2M45.adc"
+CMD-004 : start command "set_pin_assignment sys_clk  LOCATION = P22;  "
+CMD-004 : start command "set_pin_assignment sys_rstn  LOCATION = P21;  "
+CMD-004 : start command "set_pin_assignment ppm_rstn  LOCATION = P24;  "
+CMD-004 : start command "set_pin_assignment led[3]  LOCATION = P19;   "
+CMD-004 : start command "set_pin_assignment led[2]  LOCATION = P18;   "
+CMD-004 : start command "set_pin_assignment led[1]  LOCATION = P16;   "
+CMD-004 : start command "set_pin_assignment led[0]  LOCATION = P15;   "
+CMD-004 : start command "export_db E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_rtl.db"
+RUN-001 : Exported /
+RUN-001 : Exported libs
+RUN-001 : Exported entities
+RUN-001 : Exported ports
+RUN-001 : Exported pins
+RUN-001 : Exported instances
+RUN-001 : Exported nets
+RUN-001 : Exported buses
+RUN-001 : Exported models
+RUN-001 : Exported congestions
+RUN-001 : Exported violations
+RUN-001 : Exported timing constraints
+RUN-001 : Exported IO constraints
+RUN-001 : Exported Inst constraints
+RUN-001 : Exported flow parameters
+CMD-004 : start command "map_macro"
+RTL-100 : Map 7 IOs to PADs
+GAT-100 : Processed 0 LOGIC_BUF instances.
+GAT-100 : 1 BUFG to GCLK
+RTL-100 : Optimize round 1
+RTL-100 : 69/0 useful/useless nets, 40/0 useful/useless insts
+RTL-100 : Optimize round 1, 2 better
+RTL-100 : Optimize round 2
+RTL-100 : 69/0 useful/useless nets, 40/0 useful/useless insts
+RTL-100 : Optimize round 2, 0 better
+RTL-100 : Map 1 macro adder
+RTL-100 : 142/48 useful/useless nets, 65/24 useful/useless insts
+CMD-004 : start command "map"
+CMD-004 : start command "start_timer -prepack"
+TMR-601 : Start building timing graph for model top
+TMR-601 : Build timing graph completely. Port num: 4, tpin num: 237, tnet num: 98, tinst num: 63, tnode num: 474, tedge num: 507.
+
+TMR-601 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-601 : Levelize timing graph completed, there are 56 levels in all.
+TMR-601 : Timing graph initialized successfully.
+
+TMR-601 : Start to update net delay, extr mode = 2.
+TMR-601 : Update delay of 98 nets completely.
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$0$_DO.F of inst led_reg$0$_DO
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$1$_DO.F of inst led_reg$1$_DO
+TMR-601 : Annotate delay to tedge completely, extr mode = 2.
+TMR-601 : Initiate 1 clocks from SDC
+TMR-601 : Start to map constraints to rules, there are 0 constraints in all.
+TMR-601 : Start to map report constraints to rules, there are 0 constraints in all.
+TMR-601 : Constraints initiated successfully.
+TMR-601 : Forward propagation: start to calculate arrival time...
+TMR-601 : Backward propagation: start to calculate required time...
+TMR-601 : Timing propagation completely!
+GAT-100 : Running gate level optimization.
+GAT-100 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+GAT-100 : Post LUT mapping optimization.
+GAT-100 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+GAT-100 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+GAT-100 : Logic optimization runtime opt =   0.00 sec, map =   0.00 sec
+GAT-100 : Mapper mapped 2 instances into 2 LUTs, name keeping = 100%.
+CMD-004 : start command "pack"
+GAT-100 : Packing top model "top" ...
+PAK-301 : Pack lib has 35 rtl pack models with 12 top pack blocks
+OPT-300 : Optimize round 1
+RTL-100 : 93/0 useful/useless nets, 64/0 useful/useless insts
+OPT-301 : Optimize round 1, 0 better
+PAK-SEQ-305 : Packing 24 DFF/LATCH to SEQ ...
+PAK-RLS : Pack 1 carry chain into lslice
+PAK-BLE-301 : Packing 0 adder to BLE ...
+PAK-BLE-302 : Packed 0 adder and 0 SEQ to BLE.
+PAK-BLE-301 : Packing 0 gate4 to BLE ...
+PAK-BLE-302 : Packed 0 gate4 and 0 SEQ to BLE.
+PAK-309 : Packed 0 FxMUX
+PAK-BLE-301 : Packing 0 MUX to BLE ...
+PAK-BLE-302 : Packed 0 MUX and 0 SEQ to BLE.
+PAK-BLE-301 : Packing 2 LUT to BLE ...
+PAK-BLE-302 : Packed 2 LUT and 0 SEQ to BLE.
+PAK-SEQ-301 : Packing 24 remaining SEQ's ...
+PAK-SEQ-302 : #0: Packed 0 SEQ (24 nodes)...
+PAK-SEQ-302 : #1: Packed 2 SEQ (24 nodes)...
+PAK-SEQ-303 : Packed 2 SEQ with LUT/SLICE
+PAK-SEQ-304 : 2 single LUT's are left
+PAK-SEQ-304 : 24 single SEQ's are left
+PAK-303 : Packing model "top" (AL_USER_NORMAL) with 24/44 primitive instances ...
+CLK-302 : Net u_pll/clk0_out driven by BUFG (0 clock/control pins, 1 other pins).
+CLK-311 : Net clk_25m is clkc1 of pll u_pll/pll_inst.
+CLK-304 : Net sys_clk_pad is refclk of pll u_pll/pll_inst.
+CLK-305 : Net sys_clk_pad is fbclk of pll u_pll/pll_inst.
+CLK-309 : Tag rtl::Net clk_25m as clock net
+CLK-309 : Tag rtl::Net sys_clk_pad as clock net
+CLK-309 : Tag rtl::Net u_pll/clk0_out as clock net
+CLK-310 : Tagged 3 rtl::Net as clock net
+CMD-004 : start command "report_area -file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_gate.area"
+standard
+IO Statistics
+#IO                     7
+  #input                3
+  #output               4
+  #inout                0
+
+Utilization Statistics
+#lut                    2   out of   4480    0.04%
+#reg                   24   out of   4480    0.54%
+#le                    26
+  #lut only             2   out of     26    7.69%
+  #reg only            24   out of     26   92.31%
+  #lut&reg              0   out of     26    0.00%
+#dsp                    0   out of     15    0.00%
+#bram                   0   out of     12    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of      6    0.00%
+#mcu                    1   out of      1  100.00%
+#pad                    7   out of     31   22.58%
+  #ireg                 0
+  #oreg                 2
+  #treg                 0
+#pll                    1   out of      1  100.00%
+#clknet                 3   out of     16   18.75%
+  #gclk                 1
+
+CMD-004 : start command "export_db E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_gate.db"
+RUN-001 : Exported /
+RUN-001 : Exported libs
+RUN-001 : Exported entities
+RUN-001 : Exported ports
+RUN-001 : Exported pins
+RUN-001 : Exported instances
+RUN-001 : Exported nets
+RUN-001 : Exported buses
+RUN-001 : Exported models
+RUN-001 : Exported congestions
+RUN-001 : Exported violations
+RUN-001 : Exported timing constraints
+RUN-001 : Exported IO constraints
+RUN-001 : Exported Inst constraints
+RUN-001 : Exported flow parameters
+CMD-004 : start command "start_timer"
+RUN-001 : There are total 32 instances
+RUN-001 : 10 mslices, 9 lslices, 7 pads, 0 brams, 0 dsps
+RUN-001 : There are total 75 nets
+RUN-001 : 69 nets have 2 pins
+RUN-001 : 2 nets have [3 - 5] pins
+RUN-001 : 3 nets have [11 - 20] pins
+RUN-001 : 1 nets have [21 - 99] pins
+TMR-601 : Start building timing graph for model top
+TMR-601 : Build timing graph completely. Port num: 4, tpin num: 170, tnet num: 73, tinst num: 29, tnode num: 222, tedge num: 284.
+
+TMR-601 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-601 : Levelize timing graph completed, there are 18 levels in all.
+TMR-601 : Timing graph initialized successfully.
+
+CMD-004 : start command "place"
+RUN-001 : Open license file D:/TD4.2.217/license/Anlogic.lic
+PLC-001 : Placer runs in 4 thread(s).
+PLC-001 : Initial placement ...
+PLC-001 : design contains 30 instances, 19 slices, 1 macros(7 instances)
+PLC-001 : Start timing update ...
+TMR-601 : Start to update net delay, extr mode = 2.
+TMR-601 : Update delay of 73 nets completely.
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$0$_DO.F of inst led_reg$0$_DO
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$1$_DO.F of inst led_reg$1$_DO
+TMR-601 : Annotate delay to tedge completely, extr mode = 2.
+TMR-601 : Initiate 1 clocks from SDC
+TMR-601 : Start to map constraints to rules, there are 0 constraints in all.
+TMR-601 : Start to map report constraints to rules, there are 0 constraints in all.
+TMR-601 : Constraints initiated successfully.
+TMR-601 : Forward propagation: start to calculate arrival time...
+TMR-601 : Backward propagation: start to calculate required time...
+TMR-601 : Timing propagation completely!
+PLC-001 : End timing update;  0.002161s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PLC-001 : Global placement ...
+PLC-001 : Initial: Len = 11157.6
+PLC-001 : Run with size of 3
+PLC-001 : Cell area utilization is 0%, beta_incr = 0.994911
+PLC-001 : :::0::: Try harder cell spreading with beta_ = 0
+PLC-004 : Step(186): len = 5952.1, overlap = 0
+PLC-004 : Step(187): len = 4648.3, overlap = 0
+PLC-004 : Step(188): len = 3036.8, overlap = 0
+PLC-004 : Step(189): len = 2549.5, overlap = 0
+PLC-004 : Step(190): len = 2547.3, overlap = 0
+PLC-004 : Step(191): len = 2464.1, overlap = 0
+PLC-004 : Step(192): len = 2612.6, overlap = 0
+PLC-004 : Step(193): len = 2703.2, overlap = 0
+PLC-004 : Step(194): len = 2434.7, overlap = 0
+PLC-004 : Step(195): len = 2510.8, overlap = 0
+PLC-004 : Step(196): len = 2079.8, overlap = 0
+PLC-004 : Step(197): len = 2033.6, overlap = 0
+PLC-004 : Step(198): len = 2022.7, overlap = 0
+PLC-004 : Step(199): len = 1997.1, overlap = 0
+PLC-001 : Legalization ...
+PLC-001 : Run with size of 3
+PLC-001 : Cell area utilization is 1%, beta_incr = 0.994911
+PLC-001 : :::0::: Try harder cell spreading with beta_ = 0
+PLC-004 : Step(200): len = 1929.8, overlap = 0
+PLC-004 : Step(201): len = 1934, overlap = 0
+PLC-004 : Step(202): len = 1934, overlap = 0
+PLC-004 : Step(203): len = 1927.7, overlap = 0
+PLC-004 : Step(204): len = 1945.4, overlap = 0
+PLC-004 : Step(205): len = 1973.7, overlap = 0
+PLC-004 : Step(206): len = 1999.9, overlap = 0
+PLC-004 : Step(207): len = 1991.1, overlap = 0
+PLC-004 : Step(208): len = 1989.5, overlap = 0
+PLC-004 : Step(209): len = 1877.7, overlap = 0
+PLC-004 : Step(210): len = 1865.7, overlap = 0
+PLC-004 : Step(211): len = 1864, overlap = 0
+PLC-001 : :::1::: Try harder cell spreading with beta_ = 4.00683
+PLC-004 : Step(212): len = 1868.8, overlap = 0
+PLC-004 : Step(213): len = 1868.8, overlap = 0
+PLC-001 : :::2::: Try harder cell spreading with beta_ = 8.01366
+PLC-004 : Step(214): len = 1871, overlap = 0
+PLC-004 : Step(215): len = 1871, overlap = 0
+PLC-001 : Run with size of 1
+PLC-001 : Cell area utilization is 1%, beta_incr = 0.994911
+PLC-001 : :::0::: Try harder cell spreading with beta_ = 4.35453e-05
+PLC-004 : Step(216): len = 1862.6, overlap = 1.75
+PLC-004 : Step(217): len = 1883.3, overlap = 1.75
+PLC-001 : :::1::: Try harder cell spreading with beta_ = 8.70906e-05
+PLC-004 : Step(218): len = 1893.4, overlap = 1
+PLC-004 : Step(219): len = 1893.4, overlap = 1
+PLC-001 : :::2::: Try harder cell spreading with beta_ = 0.000174181
+PLC-004 : Step(220): len = 1919.6, overlap = 1.25
+PLC-004 : Step(221): len = 1919.6, overlap = 1.25
+PLC-001 : :::3::: Try harder cell spreading with beta_ = 0.000348362
+PLC-004 : Step(222): len = 1931.2, overlap = 1
+PLC-004 : Step(223): len = 1931.2, overlap = 1
+PLC-001 : :::4::: Try harder cell spreading with beta_ = 0.000696725
+PLC-004 : Step(224): len = 1948.1, overlap = 0.75
+PLC-004 : Step(225): len = 1948.1, overlap = 0.75
+PLC-004 : Step(226): len = 1946.5, overlap = 0.75
+PLC-001 : Legalization ...
+PLC-001 : Run with size of 1
+PLC-001 : Cell area utilization is 1%, beta_incr = 0.994911
+PLC-001 : :::0::: Try harder cell spreading with beta_ = 0
+PLC-004 : Step(227): len = 1867.8, overlap = 2
+PLC-004 : Step(228): len = 1869, overlap = 2
+PLC-004 : Step(229): len = 1868.4, overlap = 2
+PLC-001 : :::1::: Try harder cell spreading with beta_ = 2.35005e-05
+PLC-004 : Step(230): len = 1870.9, overlap = 2
+PLC-004 : Step(231): len = 1870.9, overlap = 2
+PLC-001 : Legalization ...
+PLC-001 : Legalized: Len = 2108.6, Over = 0
+PLC-001 : Final: Len = 2108.6, Over = 0
+PLC-001 : Improving timing with driver duplication.
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$0$_DO.F of inst led_reg$0$_DO
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$1$_DO.F of inst led_reg$1$_DO
+CMD-004 : start command "route"
+RUN-001 : Open license file D:/TD4.2.217/license/Anlogic.lic
+RUN-001 : Pin swapping for better routability
+RUN-001 : Pin misalignment score is improved from 4 to 4
+RUN-001 : Pin local connectivity score is improved from 1 to 1
+RUN-001 : Pin misalignment score is improved from 4 to 4
+RUN-001 : Pin local connectivity score is improved from 1 to 1
+RTE-301 : End pin swap;  0.002537s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+RTE-301 : Route runs in 4 thread(s)
+RUN-001 : There are total 32 instances
+RUN-001 : 10 mslices, 9 lslices, 7 pads, 0 brams, 0 dsps
+RUN-001 : There are total 75 nets
+RUN-001 : 69 nets have 2 pins
+RUN-001 : 2 nets have [3 - 5] pins
+RUN-001 : 3 nets have [11 - 20] pins
+RUN-001 : 1 nets have [21 - 99] pins
+RTE-301 : Start global routing ...
+RTE-301 : Generate routing grids ...
+RTE-301 : Initialize routing nets ...
+RTE-301 : Ripup & Reroute ...
+RTE-302 : len = 2096, over cnt = 4(0%), over = 4, worst = 1
+RTE-302 : len = 2104, over cnt = 3(0%), over = 3, worst = 1
+RTE-302 : len = 2104, over cnt = 3(0%), over = 3, worst = 1
+RTE-302 : len = 2152, over cnt = 0(0%), over = 0, worst = 0
+RTE-301 : Timing updates.
+TMR-601 : Start to update net delay, extr mode = 5.
+TMR-601 : Update delay of 73 nets completely.
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$0$_DO.F of inst led_reg$0$_DO
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$1$_DO.F of inst led_reg$1$_DO
+TMR-601 : Annotate delay to tedge completely, extr mode = 5.
+TMR-601 : Start to map report constraints to rules, there are 0 constraints in all.
+TMR-601 : Forward propagation: start to calculate arrival time...
+TMR-601 : Backward propagation: start to calculate required time...
+TMR-601 : Timing propagation completely!
+RTE-301 : Optimize timing.
+RTE-301 : End global routing;  0.012659s wall, 0.031200s user + 0.000000s system = 0.031200s CPU (246.5%)
+
+RTE-301 : Start detail routing ...
+RTE-301 : Generate detailed routing grids ...
+RTE-301 : Generate nets ...
+RTE-301 : net clk_25m will be routed on clock mesh
+RTE-301 : net sys_clk_pad will be routed on clock mesh
+RTE-301 : clock net u_pll/clk0_out will be merged with clock u_pll/clk0_buf
+RTE-301 : Detail Route ...
+RTE-301 : ===== Initial DR =====
+RTE-301 : Routed 64% nets. 
+RTE-301 : Routed 65% nets. 
+RTE-301 : Routed 68% nets. 
+RTE-301 : Routed 68% nets. 
+RTE-301 : Routed 73% nets. 
+RTE-301 : Routed 73% nets. 
+RTE-301 : Routed 73% nets. 
+RTE-301 : Routed 74% nets. 
+RTE-301 :  0.040605s wall, 0.031200s user + 0.000000s system = 0.031200s CPU (76.8%)
+
+RTE-302 : len = 4256, over cnt = 7(0%), over = 7, worst = 1
+RTE-301 : ===== DR Iter 1 =====
+RTE-301 :  0.008122s wall, 0.031200s user + 0.000000s system = 0.031200s CPU (384.1%)
+
+RTE-302 : len = 4256, over cnt = 1(0%), over = 1, worst = 1
+RTE-301 : ===== DR Iter 2 =====
+RTE-301 :  0.003587s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+RTE-302 : len = 4272, over cnt = 0(0%), over = 0, worst = 0
+RTE-303 : Routed, final wirelength = 4272
+RTE-301 : 0 feed throughs used by 0 nets
+RTE-301 : Generate detailed routing grids ...
+RTE-301 : Generate nets ...
+RTE-301 : net clk_25m will be routed on clock mesh
+RTE-301 : net sys_clk_pad will be routed on clock mesh
+RTE-301 : clock net u_pll/clk0_out will be merged with clock u_pll/clk0_buf
+RTE-301 : eco open net = 0
+RTE-301 : End detail routing;  0.540372s wall, 0.499203s user + 0.062400s system = 0.561604s CPU (103.9%)
+
+RTE-301 : Routing violations:
+RTE-301 : End of Routing Violations.
+CMD-004 : start command "report_area -io_info -file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_phy.area"
+standard
+IO Statistics
+#IO                     7
+  #input                3
+  #output               4
+  #inout                0
+
+Utilization Statistics
+#lut                    2   out of   4480    0.04%
+#reg                   24   out of   4480    0.54%
+#le                    26
+  #lut only             2   out of     26    7.69%
+  #reg only            24   out of     26   92.31%
+  #lut&reg              0   out of     26    0.00%
+#dsp                    0   out of     15    0.00%
+#bram                   0   out of     12    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of      6    0.00%
+#mcu                    1   out of      1  100.00%
+#pad                    7   out of     31   22.58%
+  #ireg                 0
+  #oreg                 2
+  #treg                 0
+#pll                    1   out of      1  100.00%
+#clknet                 3   out of     16   18.75%
+  #gclk                 1
+
+CMD-004 : start command "export_db E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_pr.db"
+RUN-001 : Exported /
+RUN-001 : Exported libs
+RUN-001 : Exported entities
+RUN-001 : Exported ports
+RUN-001 : Exported pins
+RUN-001 : Exported instances
+RUN-001 : Exported nets
+RUN-001 : Exported buses
+RUN-001 : Exported models
+RUN-001 : Exported congestions
+RUN-001 : Exported violations
+RUN-001 : Exported timing constraints
+RUN-001 : Exported IO constraints
+RUN-001 : Exported Inst constraints
+RUN-001 : Exported flow parameters
+CMD-004 : start command "start_timer"
+TMR-601 : Start building timing graph for model top
+TMR-601 : Build timing graph completely. Port num: 4, tpin num: 170, tnet num: 73, tinst num: 29, tnode num: 222, tedge num: 284.
+
+TMR-601 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-601 : Levelize timing graph completed, there are 18 levels in all.
+TMR-601 : Timing graph initialized successfully.
+
+CMD-004 : start command "report_timing -mode FINAL -net_info -ep_num 3 -path_num 3 -file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_phy.timing"
+TMR-601 : Start to update net delay, extr mode = 6.
+RTE-301 : Generate detailed routing grids ...
+RTE-301 : Generate nets ...
+RTE-301 : net clk_25m will be routed on clock mesh
+RTE-301 : net sys_clk_pad will be routed on clock mesh
+RTE-301 : clock net u_pll/clk0_out will be merged with clock u_pll/clk0_buf
+RTE-301 : eco open net = 0
+TMR-601 : Update delay of 73 nets completely.
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$0$_DO.F of inst led_reg$0$_DO
+TMR-613 WARNING: Unknown tarc type:  /  for node led_reg$1$_DO.F of inst led_reg$1$_DO
+TMR-601 : Annotate delay to tedge completely, extr mode = 6.
+TMR-601 : Initiate 1 clocks from SDC
+TMR-601 : Start to map constraints to rules, there are 0 constraints in all.
+TMR-601 : Start to map report constraints to rules, there are 0 constraints in all.
+TMR-601 : Constraints initiated successfully.
+TMR-601 : Forward propagation: start to calculate arrival time...
+TMR-601 : Backward propagation: start to calculate required time...
+TMR-601 : Timing propagation completely!
+TMR-601 : Start to generate timing report: 
+TMR-601 : clock_nets size = 3, clk_num = 1.
+TMR-611 WARNING: There is 1 clock net without clock constraint.
+TMR-601 : Export timing summary!
+TMR-601 : Timing report generated successfully in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_phy.timing, timing summay in E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_phy.tsm. 
+
+CMD-004 : start command "bitgen -bit E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.bit -version 0X00 -svf E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.svf -svf_comment_on -128 E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/KEIL/demo.bin -g ucode:00000000000000000000000000000000 -c -f E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.btc"
+BIT-701 : Start to generate bitstream. 
+BIT-701 : Init instances with 4 threads.
+BIT-701 : Init instances completely, inst num: 32
+BIT-701 : Init pips with 4 threads.
+BIT-701 : Init pips completely, net num: 75, pip num: 442
+BIT-701 : Multithreading accelaration with 4 threads.
+BIT-701 : Generate bitstream completely, there are 131 valid insts, and 1122 bits set as '1'.
+BIT-701 : Generate bits file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.bit.
+BIT-701 : Generate svf file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_sram.svf.
+BIT-701 : Generate tde file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_sram.tde
+BIT-701 : Generate tde file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_spi_bk.tde
+BIT-701 : Generate tde file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_spi_norefresh_bk.tde
+BIT-701 : Generate tde file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_refresh.tde
+BIT-701 : Generate tde file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_erase_spi.tde
+BIT-701 : Generate tde file E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_readstatus.tde
+CMD-005 : finish command "bitgen -bit E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.bit -version 0X00 -svf E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.svf -svf_comment_on -128 E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/KEIL/demo.bin -g ucode:00000000000000000000000000000000 -c -f E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo.btc" in  2.573755s wall, 2.932819s user + 0.046800s system = 2.979619s CPU (115.8%)
+
+CMD-006 : used memory is 301 MB, reserved memory is 246 MB, peak memory is 549 MB
+CMD-004 : start command "download -svf E:\ELF2_SOC\trunk\Basic_Demo\RESET_Demo\TD\project\demo\demo_sram.svf -mode jtag -wait 20 -spd 6 -sec 64 -cable 0 -chip EF2M45B"
+CMD-004 : start command "bit_to_vec -chip EF2M45B -m jtag -svf E:/ELF2_SOC/trunk/Basic_Demo/RESET_Demo/TD/project/demo/demo_sram.svf"
+CMD-004 : start command "program -cable 0 -spd 6"
+CMD-005 : finish command "program -cable 0 -spd 6" in  1.463424s wall, 0.031200s user + 0.031200s system = 0.062400s CPU (4.3%)
+
+CMD-006 : used memory is 308 MB, reserved memory is 253 MB, peak memory is 549 MB
+CMD-005 : finish command "download -svf E:\ELF2_SOC\trunk\Basic_Demo\RESET_Demo\TD\project\demo\demo_sram.svf -mode jtag -wait 20 -spd 6 -sec 64 -cable 0 -chip EF2M45B" in  1.632452s wall, 0.202801s user + 0.046800s system = 0.249602s CPU (15.3%)
+
+CMD-006 : used memory is 308 MB, reserved memory is 253 MB, peak memory is 549 MB
+GUI-001 : Download success!

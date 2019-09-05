@@ -1,0 +1,27 @@
+standard
+IO Statistics
+#IO                     6
+  #input                2
+  #output               2
+  #inout                2
+
+Utilization Statistics
+#lut                    2   out of   4480    0.04%
+#reg                   25   out of   4480    0.56%
+#le                    27
+  #lut only             2   out of     27    7.41%
+  #reg only            25   out of     27   92.59%
+  #lut&reg              0   out of     27    0.00%
+#dsp                    0   out of     15    0.00%
+#bram                   0   out of     12    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of      6    0.00%
+#mcu                    1   out of      1  100.00%
+#pad                    6   out of     31   19.35%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    1   out of      1  100.00%
+#clknet                 3   out of     16   18.75%
+  #gclk                 1

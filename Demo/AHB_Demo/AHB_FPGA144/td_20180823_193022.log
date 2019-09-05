@@ -1,0 +1,36 @@
+============================================================
+   Tang Dynasty, V4.2.285
+   Copyright:   Shanghai Anlogic Infotech Co., Ltd.
+                2011 - 2021
+   Executable = C:/Anlogic/TD4.2.285/bin/td.exe
+   Built at =   11:19:28 Jul 25 2018
+   Run by =     Administrator
+   Run Date =   Thu Aug 23 19:30:22 2018
+
+   Run on =     Y1YBFM96WTED81W
+============================================================
+CMD-004 : start command "import_device ef2_4.db -package EF2L45LG144B -basic"
+CMD-004 : start command "read_verilog -file F:/SVN_ELF2_SOC/trunk/Basic_Demo/AHB_Demo/AHB_FPGA144/al_ip/sys_pll.v"
+VLG-002 : analyze verilog file F:/SVN_ELF2_SOC/trunk/Basic_Demo/AHB_Demo/AHB_FPGA144/al_ip/sys_pll.v
+VLG-004 : elaborate module sys_pll in F:/SVN_ELF2_SOC/trunk/Basic_Demo/AHB_Demo/AHB_FPGA144/al_ip/sys_pll.v(24)
+VLG-004 : elaborate module EF2_LOGIC_BUFG in C:/Anlogic/TD4.2.285/arch/ef2_macro.v(8)
+VLG-004 : elaborate module EF2_PHY_PLL(FIN="25.000",FBCLK_DIV=8,CLKC0_DIV=6,CLKC1_DIV=48,CLKC2_DIV=8,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",CLKC2_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=6,CLKC1_CPHASE=48,CLKC2_CPHASE=8,GMC_GAIN=6,ICP_CURRENT=3,KVCO=6,LPF_RESISTOR=2,PLLRST_ENA="DISABLE",INTPI=5,HIGH_SPEED_EN="ENABLE",OFFSET_MODE="EXT",CLKC0_DUTY=0.5,CLKC1_DUTY=0.5,CLKC0_DUTY_INT=3,CLKC1_DUTY_INT=24) in C:/Anlogic/TD4.2.285/arch/ef2_macro.v(2644)
+RTL-100 : Current top model is sys_pll
+RAM-300 : Inferred 0 RAMs.
+CMD-004 : start command "optimize_rtl"
+RUN-001 : Open license file C:/Anlogic/TD4.2.285/license/Anlogic.lic
+SNT-300 : SanityCheck: Model "sys_pll"
+FLT-300 : Flatten model sys_pll
+OPT-300 : Optimize round 1
+RTL-100 : 7/0 useful/useless nets, 3/0 useful/useless insts
+MUX-301 : Optimized 0 mux instances.
+OPT-301 : Optimize round 1, 0 better
+CMD-004 : start command "map_macro -nopad"
+GAT-100 : Processed 0 LOGIC_BUF instances.
+GAT-100 : 1 BUFG to GCLK
+RTL-100 : Optimize round 1
+RTL-100 : 7/1 useful/useless nets, 4/1 useful/useless insts
+RTL-100 : Optimize round 1, 0 better
+RTL-100 : 7/1 useful/useless nets, 4/1 useful/useless insts
+CMD-004 : start command "write_verilog F:/SVN_ELF2_SOC/trunk/Basic_Demo/AHB_Demo/AHB_FPGA144/al_ip/sys_pll_sim.v"
+RTL-100 : write out verilog file F:/SVN_ELF2_SOC/trunk/Basic_Demo/AHB_Demo/AHB_FPGA144/al_ip/sys_pll_sim.v

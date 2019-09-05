@@ -1,0 +1,36 @@
+============================================================
+   Tang Dynasty, V4.2.217
+   Copyright:   Shanghai Anlogic Infotech Co., Ltd.
+                2011 - 2021
+   Executable = D:/TD4.2.217/bin/td.exe
+   Built at =   10:05:48 Jul 16 2018
+   Run by =     Administrator
+   Run Date =   Mon Aug  6 10:00:09 2018
+
+   Run on =     USER-20180530KQ
+============================================================
+CMD-004 : start command "import_device ef2_4.db -package EF2L45LG144B -basic"
+CMD-004 : start command "read_verilog -file E:/ELF2_SOC/trunk/Basic_Demo/TIMER_Demo/TD/project/demo/al_ip/pll.v"
+VLG-002 : analyze verilog file E:/ELF2_SOC/trunk/Basic_Demo/TIMER_Demo/TD/project/demo/al_ip/pll.v
+VLG-004 : elaborate module pll in E:/ELF2_SOC/trunk/Basic_Demo/TIMER_Demo/TD/project/demo/al_ip/pll.v(23)
+VLG-004 : elaborate module EF2_LOGIC_BUFG in D:/TD4.2.217/arch/ef2_macro.v(8)
+VLG-004 : elaborate module EF2_PHY_PLL(FIN="50.000",REFCLK_DIV=3,FBCLK_DIV=12,CLKC0_DIV=5,CLKC1_DIV=40,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=5,CLKC1_CPHASE=40,GMC_GAIN=6,ICP_CURRENT=3,KVCO=6,LPF_RESISTOR=2,PLLRST_ENA="DISABLE",INTPI=3,HIGH_SPEED_EN="ENABLE",OFFSET_MODE="EXT",CLKC0_DUTY=0.5,CLKC1_DUTY=0.5,CLKC0_DUTY_INT=3,CLKC1_DUTY_INT=20) in D:/TD4.2.217/arch/ef2_macro.v(2644)
+RTL-100 : Current top model is pll
+RAM-300 : Inferred 0 RAMs.
+CMD-004 : start command "optimize_rtl"
+RUN-001 : Open license file D:/TD4.2.217/license/Anlogic.lic
+SNT-300 : SanityCheck: Model "pll"
+FLT-300 : Flatten model pll
+OPT-300 : Optimize round 1
+RTL-100 : 6/0 useful/useless nets, 3/0 useful/useless insts
+MUX-301 : Optimized 0 mux instances.
+OPT-301 : Optimize round 1, 0 better
+CMD-004 : start command "map_macro -nopad"
+GAT-100 : Processed 0 LOGIC_BUF instances.
+GAT-100 : 1 BUFG to GCLK
+RTL-100 : Optimize round 1
+RTL-100 : 6/1 useful/useless nets, 4/1 useful/useless insts
+RTL-100 : Optimize round 1, 0 better
+RTL-100 : 6/1 useful/useless nets, 4/1 useful/useless insts
+CMD-004 : start command "write_verilog E:/ELF2_SOC/trunk/Basic_Demo/TIMER_Demo/TD/project/demo/al_ip/pll_sim.v"
+RTL-100 : write out verilog file E:/ELF2_SOC/trunk/Basic_Demo/TIMER_Demo/TD/project/demo/al_ip/pll_sim.v

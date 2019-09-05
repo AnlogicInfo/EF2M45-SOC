@@ -1,0 +1,24 @@
+============================================================
+   Tang Dynasty, V4.2.511
+   Copyright:   Shanghai Anlogic Infotech Co., Ltd.
+                2011 - 2021
+   Executable = C:/Anlogic/TD4.2.511/bin/td.exe
+   Built at =   13:05:02 Aug 20 2018
+   Run by =     Administrator
+   Run Date =   Wed Aug 29 16:36:20 2018
+
+   Run on =     Y1YBFM96WTED81W
+============================================================
+CMD-004 : start command "import_device ef2_4.db -package EF2M45LG48B"
+CMD-004 : start command "open_project Quick_Start.al"
+VLG-002 : analyze verilog file G:/ELF2_SOC_Shanghai/trunk/Demo/SPIM_Demo/TD/al_ip/sys_pll.v
+VLG-002 : analyze verilog file G:/ELF2_SOC_Shanghai/trunk/Demo/SPIM_Demo/TD/al_ip/AL_MCU.v
+VLG-002 : analyze verilog file G:/ELF2_SOC_Shanghai/trunk/Demo/SPIM_Demo/TD/src/quick_start.v
+DAT-001 : Device setting, mark IO P11 as dedicated.
+DAT-001 : Device setting, mark IO P12 as dedicated.
+DAT-001 : Device setting, mark IO P13 as dedicated.
+DAT-001 : Device setting, mark IO P14 as dedicated.
+DAT-001 : Device setting, mark IO P4 as dedicated.
+CMD-005 : finish command "import_device ef2_4.db -package EF2M45LG48B" in  1.233074s wall, 1.263608s user + 0.234002s system = 1.497610s CPU (121.5%)
+
+CMD-006 : used memory is 111 MB, reserved memory is 83 MB, peak memory is 111 MB

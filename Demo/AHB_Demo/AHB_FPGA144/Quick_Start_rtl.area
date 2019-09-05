@@ -1,0 +1,25 @@
+standard
+IO Statistics
+#IO                     4
+  #input                2
+  #output               1
+  #inout                1
+
+Gate Statistics
+#Basic gates           85
+  #and                  7
+  #nand                 0
+  #or                   5
+  #nor                  0
+  #xor                  0
+  #xnor                 0
+  #buf                  0
+  #not                  8
+  #bufif1               1
+  #MX21                 1
+  #FADD                 0
+  #DFF                 63
+  #LATCH                0
+#MACRO_ADD              3
+#MACRO_EQ               6
+#MACRO_MUX             11

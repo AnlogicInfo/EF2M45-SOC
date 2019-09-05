@@ -1,0 +1,974 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ;/******************************************************
+                       ********************//**
+    2 00000000         ; * @file     startup_elf2.s
+    3 00000000         ; * @brief    CMSIS Cortex-M ARMv7-M based Core Device S
+                       tartup File for
+    4 00000000         ; *           Device elf2
+    5 00000000         ; * @version  V5.00
+    6 00000000         ; * @date     02. March 2016
+    7 00000000         ; ******************************************************
+                       ************************/
+    8 00000000         ;/*
+    9 00000000         ; * Copyright (c) 2009-2016 ARM Limited. All rights rese
+                       rved.
+   10 00000000         ; *
+   11 00000000         ; * SPDX-License-Identifier: Apache-2.0
+   12 00000000         ; *
+   13 00000000         ; * Licensed under the Apache License, Version 2.0 (the 
+                       License); you may
+   14 00000000         ; * not use this file except in compliance with the Lice
+                       nse.
+   15 00000000         ; * You may obtain a copy of the License at
+   16 00000000         ; *
+   17 00000000         ; * www.apache.org/licenses/LICENSE-2.0
+   18 00000000         ; *
+   19 00000000         ; * Unless required by applicable law or agreed to in wr
+                       iting, software
+   20 00000000         ; * distributed under the License is distributed on an A
+                       S IS BASIS, WITHOUT
+   21 00000000         ; * WARRANTIES OR CONDITIONS OF ANY KIND, either express
+                        or implied.
+   22 00000000         ; * See the License for the specific language governing 
+                       permissions and
+   23 00000000         ; * limitations under the License.
+   24 00000000         ; */
+   25 00000000         ;/*
+   26 00000000         
+   27 00000000         ;//-------- <<< Use Configuration Wizard in Context Menu
+                        >>> ------------------
+   28 00000000         ;*/
+   29 00000000         
+   30 00000000         
+   31 00000000         ; <h> Stack Configuration
+   32 00000000         ;   <o> Stack Size (in Bytes) <0x0-0xFFFFFFFF:8>
+   33 00000000         ; </h>
+   34 00000000         
+   35 00000000 00000400 
+                       Stack_Size
+                               EQU              0x00000400
+   36 00000000         
+   37 00000000                 AREA             STACK, NOINIT, READWRITE, ALIGN
+=3
+   38 00000000         Stack_Mem
+                               SPACE            Stack_Size
+   39 00000400         __initial_sp
+   40 00000400         
+   41 00000400         
+   42 00000400         ; <h> Heap Configuration
+   43 00000400         ;   <o>  Heap Size (in Bytes) <0x0-0xFFFFFFFF:8>
+   44 00000400         ; </h>
+
+
+
+ARM Macro Assembler    Page 2 
+
+
+   45 00000400         
+   46 00000400 00000100 
+                       Heap_Size
+                               EQU              0x00000100
+   47 00000400         
+   48 00000400                 AREA             HEAP, NOINIT, READWRITE, ALIGN=
+3
+   49 00000000         __heap_base
+   50 00000000         Heap_Mem
+                               SPACE            Heap_Size
+   51 00000100         __heap_limit
+   52 00000100         
+   53 00000100         
+   54 00000100                 PRESERVE8
+   55 00000100                 THUMB
+   56 00000100         
+   57 00000100         
+   58 00000100         ; Vector Table Mapped to Address 0 at Reset
+   59 00000100         
+   60 00000100                 AREA             RESET, DATA, READONLY
+   61 00000000                 EXPORT           __Vectors
+   62 00000000                 EXPORT           __Vectors_End
+   63 00000000                 EXPORT           __Vectors_Size
+   64 00000000         
+   65 00000000 00000000 
+                       __Vectors
+                               DCD              __initial_sp ; Top of Stack
+   66 00000004 00000000        DCD              Reset_Handler ; Reset Handler
+   67 00000008 00000000        DCD              NMI_Handler ; NMI Handler
+   68 0000000C 00000000        DCD              HardFault_Handler ; Hard Fault 
+                                                            Handler
+   69 00000010 00000000        DCD              MemManage_Handler 
+                                                            ; MPU Fault Handler
+                                                            
+   70 00000014 00000000        DCD              BusFault_Handler 
+                                                            ; Bus Fault Handler
+                                                            
+   71 00000018 00000000        DCD              UsageFault_Handler ; Usage Faul
+                                                            t Handler
+   72 0000001C 00000000        DCD              0           ; Reserved
+   73 00000020 00000000        DCD              0           ; Reserved
+   74 00000024 00000000        DCD              0           ; Reserved
+   75 00000028 00000000        DCD              0           ; Reserved
+   76 0000002C 00000000        DCD              SVC_Handler ; SVCall Handler
+   77 00000030 00000000        DCD              DebugMon_Handler ; Debug Monito
+                                                            r Handler
+   78 00000034 00000000        DCD              0           ; Reserved
+   79 00000038 00000000        DCD              PendSV_Handler ; PendSV Handler
+                                                            
+   80 0000003C 00000000        DCD              SysTick_Handler 
+                                                            ; SysTick Handler
+   81 00000040         
+   82 00000040         ; External Interrupts
+   83 00000040         
+   84 00000040 00000000        DCD              WDT_IRQHandler ;  0:  WDT inter
+                                                            rupt
+   85 00000044 00000000        DCD              EXT_IRQHandler ;  1:  EXT inter
+                                                            rupt
+   86 00000048 00000000        DCD              RTC_IRQHandler ;  2:  RTC inter
+
+
+
+ARM Macro Assembler    Page 3 
+
+
+                                                            rupt
+   87 0000004C 00000000        DCD              DMAC_IRQHandler ;  3:  DMAC int
+                                                            errupt
+   88 00000050 00000000        DCD              QSPI_IRQHandler ;  4:  QSPI int
+                                                            errupt
+   89 00000054 00000000        DCD              ADCC0_IRQHandler ;  5:  ADCC0 i
+                                                            nterrupt
+   90 00000058 00000000        DCD              ADCC1_IRQHandler ;  6:  ADCC1 i
+                                                            nterrupt
+   91 0000005C 00000000        DCD              ADCC2_IRQHandler ;  7:  ADCC2 i
+                                                            nterrupt
+   92 00000060 00000000        DCD              ADCC3_IRQHandler ;  8:  ADCC3 i
+                                                            nterrupt
+   93 00000064 00000000        DCD              ADCC4_IRQHandler ;  9:  ADCC4 i
+                                                            nterrupt
+   94 00000068 00000000        DCD              ADCC5_IRQHandler ;  10: ADCC5 i
+                                                            nterrupt
+   95 0000006C 00000000        DCD              TIMER_IRQHandler ;  11: TIMER i
+                                                            nterrupt
+   96 00000070 00000000        DCD              I2C0_IRQHandler ;  12: I2C0 int
+                                                            errupt
+   97 00000074 00000000        DCD              I2C1_IRQHandler ;  13: I2C1 int
+                                                            errupt
+   98 00000078 00000000        DCD              SPIM_IRQHandler ;  14: SPIM int
+                                                            errupt
+   99 0000007C 00000000        DCD              UART_IRQHandler ;  15: UART int
+                                                            errupt
+  100 00000080 00000000        DCD              GPIO_IRQHandler ;  16: GPIO int
+                                                            errupt
+  101 00000084 00000000        DCD              I2S_IRQHandler ;  17: I2S inter
+                                                            rupt
+  102 00000088         __Vectors_End
+  103 00000088         
+  104 00000088 00000088 
+                       __Vectors_Size
+                               EQU              __Vectors_End - __Vectors
+  105 00000088         
+  106 00000088                 AREA             |.text|, CODE, READONLY
+  107 00000000         
+  108 00000000         
+  109 00000000         ; Reset Handler
+  110 00000000         
+  111 00000000         Reset_Handler
+                               PROC
+  112 00000000                 EXPORT           Reset_Handler             [WEAK
+]
+  113 00000000                 IMPORT           SystemInit
+  114 00000000                 IMPORT           __main
+  115 00000000 4809            LDR              R0, =SystemInit
+  116 00000002 4780            BLX              R0
+  117 00000004 4809            LDR              R0, =__main
+  118 00000006 4700            BX               R0
+  119 00000008                 ENDP
+  120 00000008         
+  121 00000008         
+  122 00000008         ; Dummy Exception Handlers (infinite loops which can be 
+                       modified)
+  123 00000008         
+  125 00000008         NMI_Handler
+
+
+
+ARM Macro Assembler    Page 4 
+
+
+                               PROC
+  126 00000008                 EXPORT           NMI_Handler               [WEAK
+]
+  127 00000008 E7FE            B                .
+  128 0000000A                 ENDP
+  130 0000000A         HardFault_Handler
+                               PROC
+  131 0000000A                 EXPORT           HardFault_Handler         [WEAK
+]
+  132 0000000A E7FE            B                .
+  133 0000000C                 ENDP
+  135 0000000C         MemManage_Handler
+                               PROC
+  136 0000000C                 EXPORT           MemManage_Handler         [WEAK
+]
+  137 0000000C E7FE            B                .
+  138 0000000E                 ENDP
+  140 0000000E         BusFault_Handler
+                               PROC
+  141 0000000E                 EXPORT           BusFault_Handler          [WEAK
+]
+  142 0000000E E7FE            B                .
+  143 00000010                 ENDP
+  145 00000010         UsageFault_Handler
+                               PROC
+  146 00000010                 EXPORT           UsageFault_Handler        [WEAK
+]
+  147 00000010 E7FE            B                .
+  148 00000012                 ENDP
+  150 00000012         SVC_Handler
+                               PROC
+  151 00000012                 EXPORT           SVC_Handler               [WEAK
+]
+  152 00000012 E7FE            B                .
+  153 00000014                 ENDP
+  155 00000014         DebugMon_Handler
+                               PROC
+  156 00000014                 EXPORT           DebugMon_Handler          [WEAK
+]
+  157 00000014 E7FE            B                .
+  158 00000016                 ENDP
+  160 00000016         PendSV_Handler
+                               PROC
+  161 00000016                 EXPORT           PendSV_Handler            [WEAK
+]
+  162 00000016 E7FE            B                .
+  163 00000018                 ENDP
+  165 00000018         SysTick_Handler
+                               PROC
+  166 00000018                 EXPORT           SysTick_Handler           [WEAK
+]
+  167 00000018 E7FE            B                .
+  168 0000001A                 ENDP
+  169 0000001A         
+  170 0000001A         Default_Handler
+                               PROC
+  171 0000001A         
+  172 0000001A                 EXPORT           WDT_IRQHandler            [WEAK
+]
+
+
+
+ARM Macro Assembler    Page 5 
+
+
+  173 0000001A                 EXPORT           EXT_IRQHandler            [WEAK
+]
+  174 0000001A                 EXPORT           RTC_IRQHandler            [WEAK
+]
+  175 0000001A                 EXPORT           DMAC_IRQHandler           [WEAK
+]
+  176 0000001A                 EXPORT           QSPI_IRQHandler           [WEAK
+]
+  177 0000001A                 EXPORT           ADCC0_IRQHandler          [WEAK
+]
+  178 0000001A                 EXPORT           ADCC1_IRQHandler          [WEAK
+]
+  179 0000001A                 EXPORT           ADCC2_IRQHandler          [WEAK
+]
+  180 0000001A                 EXPORT           ADCC3_IRQHandler          [WEAK
+]
+  181 0000001A                 EXPORT           ADCC4_IRQHandler          [WEAK
+]
+  182 0000001A                 EXPORT           ADCC5_IRQHandler          [WEAK
+]
+  183 0000001A                 EXPORT           TIMER_IRQHandler          [WEAK
+]
+  184 0000001A                 EXPORT           I2C0_IRQHandler           [WEAK
+]
+  185 0000001A                 EXPORT           I2C1_IRQHandler           [WEAK
+]
+  186 0000001A                 EXPORT           SPIM_IRQHandler           [WEAK
+]
+  187 0000001A                 EXPORT           UART_IRQHandler           [WEAK
+]
+  188 0000001A                 EXPORT           GPIO_IRQHandler           [WEAK
+]
+  189 0000001A                 EXPORT           I2S_IRQHandler            [WEAK
+]
+  190 0000001A         WDT_IRQHandler
+  191 0000001A         EXT_IRQHandler
+  192 0000001A         RTC_IRQHandler
+  193 0000001A         DMAC_IRQHandler
+  194 0000001A         QSPI_IRQHandler
+  195 0000001A         ADCC0_IRQHandler
+  196 0000001A         ADCC1_IRQHandler
+  197 0000001A         ADCC2_IRQHandler
+  198 0000001A         ADCC3_IRQHandler
+  199 0000001A         ADCC4_IRQHandler
+  200 0000001A         ADCC5_IRQHandler
+  201 0000001A         TIMER_IRQHandler
+  202 0000001A         I2C0_IRQHandler
+  203 0000001A         I2C1_IRQHandler
+  204 0000001A         SPIM_IRQHandler
+  205 0000001A         UART_IRQHandler
+  206 0000001A         GPIO_IRQHandler
+  207 0000001A         I2S_IRQHandler
+  208 0000001A E7FE            B                .
+  209 0000001C                 ENDP
+  210 0000001C         
+  211 0000001C         
+  212 0000001C                 ALIGN
+  213 0000001C         
+  214 0000001C         
+
+
+
+ARM Macro Assembler    Page 6 
+
+
+  215 0000001C         ; User Initial Stack & Heap
+  216 0000001C         
+  217 0000001C                 IF               :DEF:__MICROLIB
+  224 0000001C         
+  225 0000001C                 IMPORT           __use_two_region_memory
+  226 0000001C                 EXPORT           __user_initial_stackheap
+  227 0000001C         
+  228 0000001C         __user_initial_stackheap
+                               PROC
+  229 0000001C 4804            LDR              R0, =  Heap_Mem
+  230 0000001E 4905            LDR              R1, =(Stack_Mem + Stack_Size)
+  231 00000020 4A05            LDR              R2, = (Heap_Mem +  Heap_Size)
+  232 00000022 4B06            LDR              R3, = Stack_Mem
+  233 00000024 4770            BX               LR
+  234 00000026                 ENDP
+  235 00000026         
+  236 00000026 00 00           ALIGN
+  237 00000028         
+  238 00000028                 ENDIF
+  239 00000028         
+  240 00000028         
+  241 00000028                 END
+              00000000 
+              00000000 
+              00000000 
+              00000400 
+              00000100 
+              00000000 
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
+ork --depend=.\objects\startup_elf2.d -o.\objects\startup_elf2.o -IF:\SVN_ELF2_
+SOC\trunk\Basic_Demo\USR_REG_Demo\Keil\RTE -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.
+0\Device\ARM\ARMCM3\Include -IC:\Keil_v5\ARM\CMSIS\Include --predefine="__UVISI
+ON_VERSION SETA 515" --predefine="ARMCM3 SETA 1" --list=.\listings\startup_elf2
+.lst ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+STACK 00000000
+
+Symbol: STACK
+   Definitions
+      At line 37 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+   Uses
+      None
+Comment: STACK unused
+Stack_Mem 00000000
+
+Symbol: Stack_Mem
+   Definitions
+      At line 38 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+   Uses
+      At line 230 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+      At line 232 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+
+__initial_sp 00000400
+
+Symbol: __initial_sp
+   Definitions
+      At line 39 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+   Uses
+      At line 65 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+Comment: __initial_sp used once
+3 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+HEAP 00000000
+
+Symbol: HEAP
+   Definitions
+      At line 48 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+   Uses
+      None
+Comment: HEAP unused
+Heap_Mem 00000000
+
+Symbol: Heap_Mem
+   Definitions
+      At line 50 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+   Uses
+      At line 229 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+      At line 231 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+
+__heap_base 00000000
+
+Symbol: __heap_base
+   Definitions
+      At line 49 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+   Uses
+      None
+Comment: __heap_base unused
+__heap_limit 00000100
+
+Symbol: __heap_limit
+   Definitions
+      At line 51 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+   Uses
+      None
+Comment: __heap_limit unused
+4 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 60 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+   Uses
+      None
+Comment: RESET unused
+__Vectors 00000000
+
+Symbol: __Vectors
+   Definitions
+      At line 65 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+   Uses
+      At line 61 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+      At line 104 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+
+__Vectors_End 00000088
+
+Symbol: __Vectors_End
+   Definitions
+      At line 102 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      At line 62 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+      At line 104 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+
+3 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 106 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      None
+Comment: .text unused
+ADCC0_IRQHandler 0000001A
+
+Symbol: ADCC0_IRQHandler
+   Definitions
+      At line 195 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      At line 89 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+      At line 177 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+
+ADCC1_IRQHandler 0000001A
+
+Symbol: ADCC1_IRQHandler
+   Definitions
+      At line 196 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      At line 90 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+      At line 178 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+
+ADCC2_IRQHandler 0000001A
+
+Symbol: ADCC2_IRQHandler
+   Definitions
+      At line 197 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      At line 91 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+      At line 179 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+
+ADCC3_IRQHandler 0000001A
+
+Symbol: ADCC3_IRQHandler
+   Definitions
+      At line 198 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      At line 92 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+      At line 180 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+
+ADCC4_IRQHandler 0000001A
+
+
+
+
+ARM Macro Assembler    Page 2 Alphabetic symbol ordering
+Relocatable symbols
+
+Symbol: ADCC4_IRQHandler
+   Definitions
+      At line 199 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      At line 93 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+      At line 181 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+
+ADCC5_IRQHandler 0000001A
+
+Symbol: ADCC5_IRQHandler
+   Definitions
+      At line 200 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      At line 94 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+      At line 182 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+
+BusFault_Handler 0000000E
+
+Symbol: BusFault_Handler
+   Definitions
+      At line 140 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      At line 70 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+      At line 141 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+
+DMAC_IRQHandler 0000001A
+
+Symbol: DMAC_IRQHandler
+   Definitions
+      At line 193 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      At line 87 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+      At line 175 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+
+DebugMon_Handler 00000014
+
+Symbol: DebugMon_Handler
+   Definitions
+      At line 155 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      At line 77 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+      At line 156 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+
+Default_Handler 0000001A
+
+
+
+ARM Macro Assembler    Page 3 Alphabetic symbol ordering
+Relocatable symbols
+
+
+Symbol: Default_Handler
+   Definitions
+      At line 170 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      None
+Comment: Default_Handler unused
+EXT_IRQHandler 0000001A
+
+Symbol: EXT_IRQHandler
+   Definitions
+      At line 191 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      At line 85 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+      At line 173 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+
+GPIO_IRQHandler 0000001A
+
+Symbol: GPIO_IRQHandler
+   Definitions
+      At line 206 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      At line 100 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+      At line 188 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+
+HardFault_Handler 0000000A
+
+Symbol: HardFault_Handler
+   Definitions
+      At line 130 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      At line 68 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+      At line 131 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+
+I2C0_IRQHandler 0000001A
+
+Symbol: I2C0_IRQHandler
+   Definitions
+      At line 202 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      At line 96 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+      At line 184 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+
+I2C1_IRQHandler 0000001A
+
+Symbol: I2C1_IRQHandler
+
+
+
+ARM Macro Assembler    Page 4 Alphabetic symbol ordering
+Relocatable symbols
+
+   Definitions
+      At line 203 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      At line 97 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+      At line 185 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+
+I2S_IRQHandler 0000001A
+
+Symbol: I2S_IRQHandler
+   Definitions
+      At line 207 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      At line 101 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+      At line 189 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+
+MemManage_Handler 0000000C
+
+Symbol: MemManage_Handler
+   Definitions
+      At line 135 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      At line 69 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+      At line 136 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+
+NMI_Handler 00000008
+
+Symbol: NMI_Handler
+   Definitions
+      At line 125 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      At line 67 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+      At line 126 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+
+PendSV_Handler 00000016
+
+Symbol: PendSV_Handler
+   Definitions
+      At line 160 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      At line 79 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+      At line 161 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+
+QSPI_IRQHandler 0000001A
+
+
+
+
+ARM Macro Assembler    Page 5 Alphabetic symbol ordering
+Relocatable symbols
+
+Symbol: QSPI_IRQHandler
+   Definitions
+      At line 194 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      At line 88 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+      At line 176 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+
+RTC_IRQHandler 0000001A
+
+Symbol: RTC_IRQHandler
+   Definitions
+      At line 192 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      At line 86 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+      At line 174 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 111 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      At line 66 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+      At line 112 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+
+SPIM_IRQHandler 0000001A
+
+Symbol: SPIM_IRQHandler
+   Definitions
+      At line 204 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      At line 98 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+      At line 186 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+
+SVC_Handler 00000012
+
+Symbol: SVC_Handler
+   Definitions
+      At line 150 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      At line 76 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+      At line 151 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+
+SysTick_Handler 00000018
+
+
+
+ARM Macro Assembler    Page 6 Alphabetic symbol ordering
+Relocatable symbols
+
+
+Symbol: SysTick_Handler
+   Definitions
+      At line 165 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      At line 80 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+      At line 166 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+
+TIMER_IRQHandler 0000001A
+
+Symbol: TIMER_IRQHandler
+   Definitions
+      At line 201 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      At line 95 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+      At line 183 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+
+UART_IRQHandler 0000001A
+
+Symbol: UART_IRQHandler
+   Definitions
+      At line 205 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      At line 99 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+      At line 187 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+
+UsageFault_Handler 00000010
+
+Symbol: UsageFault_Handler
+   Definitions
+      At line 145 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      At line 71 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+      At line 146 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+
+WDT_IRQHandler 0000001A
+
+Symbol: WDT_IRQHandler
+   Definitions
+      At line 190 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      At line 84 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+      At line 172 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+
+
+
+
+ARM Macro Assembler    Page 7 Alphabetic symbol ordering
+Relocatable symbols
+
+__user_initial_stackheap 0000001C
+
+Symbol: __user_initial_stackheap
+   Definitions
+      At line 228 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      At line 226 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+Comment: __user_initial_stackheap used once
+31 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Absolute symbols
+
+Heap_Size 00000100
+
+Symbol: Heap_Size
+   Definitions
+      At line 46 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+   Uses
+      At line 50 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+      At line 231 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+
+Stack_Size 00000400
+
+Symbol: Stack_Size
+   Definitions
+      At line 35 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+   Uses
+      At line 38 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+      At line 230 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+
+__Vectors_Size 00000088
+
+Symbol: __Vectors_Size
+   Definitions
+      At line 104 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      At line 63 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.
+s
+Comment: __Vectors_Size used once
+3 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+External symbols
+
+SystemInit 00000000
+
+Symbol: SystemInit
+   Definitions
+      At line 113 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      At line 115 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+Comment: SystemInit used once
+__main 00000000
+
+Symbol: __main
+   Definitions
+      At line 114 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      At line 117 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+Comment: __main used once
+__use_two_region_memory 00000000
+
+Symbol: __use_two_region_memory
+   Definitions
+      At line 225 in file ..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2
+.s
+   Uses
+      None
+Comment: __use_two_region_memory unused
+3 symbols
+383 symbols in table

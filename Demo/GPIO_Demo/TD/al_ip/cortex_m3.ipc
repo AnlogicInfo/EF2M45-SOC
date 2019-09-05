@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoreGen>
+	<Type>MCU</Type>
+	<Device>EF2M45LG64B</Device>
+	<create_VHDL>false</create_VHDL>
+	<used_features>
+		<io_l> 0 1 6 </io_l>
+		<io_h> 0 </io_h>
+		<clks>
+			<clk>PPM_CLK</clk>
+		</clks>
+	</used_features>
+</CoreGen>

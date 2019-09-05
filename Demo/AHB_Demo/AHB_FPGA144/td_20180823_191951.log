@@ -1,0 +1,36 @@
+============================================================
+   Tang Dynasty, V4.2.285
+   Copyright:   Shanghai Anlogic Infotech Co., Ltd.
+                2011 - 2021
+   Executable = C:/Anlogic/TD4.2.285/bin/td.exe
+   Built at =   11:19:28 Jul 25 2018
+   Run by =     Administrator
+   Run Date =   Thu Aug 23 19:19:51 2018
+
+   Run on =     Y1YBFM96WTED81W
+============================================================
+CMD-004 : start command "import_device ef2_4.db -package EF2M45LG64B -basic"
+CMD-004 : start command "read_verilog -file F:/SVN_ELF2_SOC/trunk/Basic_Demo/AHB_Demo/AHB_FPGA144/al_ip/AL_MCU.v"
+VLG-002 : analyze verilog file F:/SVN_ELF2_SOC/trunk/Basic_Demo/AHB_Demo/AHB_FPGA144/al_ip/AL_MCU.v
+VLG-939 WARNING: port i2s_mst_clk remains unconnected for this instance in F:/SVN_ELF2_SOC/trunk/Basic_Demo/AHB_Demo/AHB_FPGA144/al_ip/AL_MCU.v(67)
+VLG-004 : elaborate module AL_MCU in F:/SVN_ELF2_SOC/trunk/Basic_Demo/AHB_Demo/AHB_FPGA144/al_ip/AL_MCU.v(14)
+VLG-004 : elaborate module EF2_PHY_MCU(GPIO_L0="ENABLE",GPIO_L1="ENABLE",GPIO_L7="ENABLE") in C:/Anlogic/TD4.2.285/arch/ef2_macro.v(741)
+VIN-1013 WARNING: input port i2s_mst_clk is not connected on this instance in F:/SVN_ELF2_SOC/trunk/Basic_Demo/AHB_Demo/AHB_FPGA144/al_ip/AL_MCU.v(67)
+RTL-100 : Current top model is AL_MCU
+RAM-300 : Inferred 0 RAMs.
+CMD-004 : start command "optimize_rtl"
+RUN-001 : Open license file C:/Anlogic/TD4.2.285/license/Anlogic.lic
+SNT-300 : SanityCheck: Model "AL_MCU"
+FLT-300 : Flatten model AL_MCU
+OPT-300 : Optimize round 1
+RTL-100 : 119/0 useful/useless nets, 2/0 useful/useless insts
+MUX-301 : Optimized 0 mux instances.
+OPT-301 : Optimize round 1, 0 better
+CMD-004 : start command "map_macro -nopad"
+GAT-100 : Processed 0 LOGIC_BUF instances.
+RTL-100 : Optimize round 1
+RTL-100 : 119/1 useful/useless nets, 3/1 useful/useless insts
+RTL-100 : Optimize round 1, 0 better
+RTL-100 : 119/1 useful/useless nets, 3/1 useful/useless insts
+CMD-004 : start command "write_verilog F:/SVN_ELF2_SOC/trunk/Basic_Demo/AHB_Demo/AHB_FPGA144/al_ip/AL_MCU_sim.v"
+RTL-100 : write out verilog file F:/SVN_ELF2_SOC/trunk/Basic_Demo/AHB_Demo/AHB_FPGA144/al_ip/AL_MCU_sim.v

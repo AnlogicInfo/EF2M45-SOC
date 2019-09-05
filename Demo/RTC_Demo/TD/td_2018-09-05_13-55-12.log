@@ -1,0 +1,19 @@
+============================================================
+   Tang Dynasty, V4.2.285
+   Copyright:   Shanghai Anlogic Infotech Co., Ltd.
+                2011 - 2021
+   Executable = C:/Anlogic/TD4.2.285/bin/td.exe
+   Built at =   11:19:28 Jul 25 2018
+   Run by =     Administrator
+   Run Date =   Wed Sep  5 13:55:12 2018
+
+   Run on =     Y1YBFM96WTED81W
+============================================================
+CMD-004 : start command "open_project Quick_Start.al"
+VLG-002 : analyze verilog file G:/ELF2_SOC_Shanghai/trunk/Demo/RTC_Demo/TD/al_ip/sys_pll.v
+VLG-002 : analyze verilog file G:/ELF2_SOC_Shanghai/trunk/Demo/RTC_Demo/TD/al_ip/AL_MCU.v
+VLG-002 : analyze verilog file G:/ELF2_SOC_Shanghai/trunk/Demo/RTC_Demo/TD/src/quick_start.v
+CMD-004 : start command "import_device ef2_4.db -package EF2M45LG48B"
+CMD-005 : finish command "import_device ef2_4.db -package EF2M45LG48B" in  1.192195s wall, 1.201208s user + 0.031200s system = 1.232408s CPU (103.4%)
+
+CMD-006 : used memory is 136 MB, reserved memory is 95 MB, peak memory is 138 MB

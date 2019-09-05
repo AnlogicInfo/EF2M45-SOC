@@ -1,0 +1,53 @@
+standard
+IO Statistics
+#IO                    21
+  #input                2
+  #output              17
+  #inout                2
+
+Utilization Statistics
+#lut                  302   out of   4480    6.74%
+#reg                  314   out of   4480    7.01%
+#le                   468
+  #lut only           154   out of    468   32.91%
+  #reg only           166   out of    468   35.47%
+  #lut&reg            148   out of    468   31.62%
+#dsp                    0   out of     15    0.00%
+#bram                   2   out of     12   16.67%
+  #bram9k               2
+  #fifo9k               0
+#bram32k                0   out of      6    0.00%
+#mcu                    1   out of      1  100.00%
+#pad                   21   out of     31   67.74%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    1   out of      1  100.00%
+#clknet                 4   out of     16   25.00%
+  #gclk                 2
+
+
+Detailed IO Report
+
+Name            Direction     Location     IOStandard     DriveStrength     
+fpga_clk_in     INPUT         P22          LVCMOS25       N/A               
+fpga_rst_n      INPUT         P21          LVCMOS25       N/A               
+hw_led          OUTPUT        P15          LVCMOS25       16                
+usr_reg[15]     OUTPUT        P10          LVCMOS25       8                 
+usr_reg[14]     OUTPUT        P25          LVCMOS25       8                 
+usr_reg[13]     OUTPUT        P30          LVCMOS25       8                 
+usr_reg[12]     OUTPUT        P43          LVCMOS25       8                 
+usr_reg[11]     OUTPUT        P16          LVCMOS25       8                 
+usr_reg[10]     OUTPUT        P28          LVCMOS25       8                 
+usr_reg[9]      OUTPUT        P44          LVCMOS25       8                 
+usr_reg[8]      OUTPUT        P26          LVCMOS25       8                 
+usr_reg[7]      OUTPUT        P38          LVCMOS25       8                 
+usr_reg[6]      OUTPUT        P18          LVCMOS25       8                 
+usr_reg[5]      OUTPUT        P37          LVCMOS25       8                 
+usr_reg[4]      OUTPUT        P27          LVCMOS25       8                 
+usr_reg[3]      OUTPUT        P40          LVCMOS25       8                 
+usr_reg[2]      OUTPUT        P3           LVCMOS25       8                 
+usr_reg[1]      OUTPUT        P47          LVCMOS25       8                 
+usr_reg[0]      OUTPUT        P39          LVCMOS25       8                 
+button2         INOUT         P24          LVCMOS25       16                
+sw_led          INOUT         P19          LVCMOS25       16                

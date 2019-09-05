@@ -1,0 +1,144 @@
+Dependencies for Project 'helloworld', Target 'Target 1': (DO NOT MODIFY !)
+F (.\src\main.c)(0x5B5E9B26)(--c99 -c --cpu Cortex-M3 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I..\..\..\ELF2_BSP -I..\..\..\ELF2_BSP\CMSIS\Core\Include -I..\..\..\ELF2_BSP\Debug -I..\..\..\ELF2_BSP\Debug\RTT -I..\..\..\ELF2_BSP\Device\ELF2\Include -I..\..\..\ELF2_BSP\Device\ELF2\Source -I..\..\..\ELF2_BSP\Device\ELF2\Source\ARM -I..\..\..\ELF2_BSP\Driver -I..\..\..\ELF2_BSP\Driver\regmap -I..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include -I..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\portable\Keil\ARM_CM3-I F:\Anlogic_MCU\Release_To_Custom\V20180709\Anlogic_MCU_Pkg\Demo\FreeRTOS\Helloworld\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM3\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DARMCM3-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\FreeRtos.h)(0x573F3A16)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\FreeRTOSConfig.h)(0x5AED719E)
+I (..\..\..\ELF2_BSP\platform.h)(0x5B5AC9C4)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\projdefs.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\portable.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\portable\Keil\ARM_CM3\portmacro.h)(0x573F3A17)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\task.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\list.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\Debug\log.h)(0x5AED7150)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
+F (..\..\..\ELF2_BSP\Device\ELF2\Source\ARM\startup_elf2.s)(0x5A8247FD)(--cpu Cortex-M3 --li -g --apcs=interwork --pd "__MICROLIB SETA 1"-I F:\Anlogic_MCU\Release_To_Custom\V20180709\Anlogic_MCU_Pkg\Demo\FreeRTOS\Helloworld\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM3\Include-I C:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 515" --pd "ARMCM3 SETA 1"--list .\listings\startup_elf2.lst --xref -o .\objects\startup_elf2.o --depend .\objects\startup_elf2.d)
+F (..\..\..\ELF2_BSP\Device\ELF2\Source\system_elf2.c)(0x5AED1E4E)(--c99 -c --cpu Cortex-M3 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I..\..\..\ELF2_BSP -I..\..\..\ELF2_BSP\CMSIS\Core\Include -I..\..\..\ELF2_BSP\Debug -I..\..\..\ELF2_BSP\Debug\RTT -I..\..\..\ELF2_BSP\Device\ELF2\Include -I..\..\..\ELF2_BSP\Device\ELF2\Source -I..\..\..\ELF2_BSP\Device\ELF2\Source\ARM -I..\..\..\ELF2_BSP\Driver -I..\..\..\ELF2_BSP\Driver\regmap -I..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include -I..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\portable\Keil\ARM_CM3-I F:\Anlogic_MCU\Release_To_Custom\V20180709\Anlogic_MCU_Pkg\Demo\FreeRTOS\Helloworld\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM3\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DARMCM3-o .\objects\system_elf2.o --omf_browse .\objects\system_elf2.crf --depend .\objects\system_elf2.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\..\..\ELF2_BSP\Device\ELF2\Include\elf2.h)(0x5A6E7961)
+I (..\..\..\ELF2_BSP\CMSIS\Core\Include\core_cm3.h)(0x5A051EEE)
+I (..\..\..\ELF2_BSP\CMSIS\Core\Include\cmsis_version.h)(0x5A051EEE)
+I (..\..\..\ELF2_BSP\CMSIS\Core\Include\cmsis_compiler.h)(0x5A051EEE)
+I (..\..\..\ELF2_BSP\CMSIS\Core\Include\cmsis_armcc.h)(0x5A051EEE)
+I (..\..\..\ELF2_BSP\CMSIS\Core\Include\mpu_armv7.h)(0x5A051EEE)
+I (..\..\..\ELF2_BSP\Device\ELF2\Include\system_elf2.h)(0x5A051EEE)
+I (..\..\..\ELF2_BSP\platform.h)(0x5B5AC9C4)
+I (..\..\..\ELF2_BSP\Driver\syscon.h)(0x5A1E5B4E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x54C245B8)
+F (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\list.c)(0x573F3A16)(--c99 -c --cpu Cortex-M3 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I..\..\..\ELF2_BSP -I..\..\..\ELF2_BSP\CMSIS\Core\Include -I..\..\..\ELF2_BSP\Debug -I..\..\..\ELF2_BSP\Debug\RTT -I..\..\..\ELF2_BSP\Device\ELF2\Include -I..\..\..\ELF2_BSP\Device\ELF2\Source -I..\..\..\ELF2_BSP\Device\ELF2\Source\ARM -I..\..\..\ELF2_BSP\Driver -I..\..\..\ELF2_BSP\Driver\regmap -I..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include -I..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\portable\Keil\ARM_CM3-I F:\Anlogic_MCU\Release_To_Custom\V20180709\Anlogic_MCU_Pkg\Demo\FreeRTOS\Helloworld\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM3\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DARMCM3-o .\objects\list.o --omf_browse .\objects\list.crf --depend .\objects\list.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54C245B8)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\FreeRTOS.h)(0x573F3A16)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\FreeRTOSConfig.h)(0x5AED719E)
+I (..\..\..\ELF2_BSP\platform.h)(0x5B5AC9C4)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\projdefs.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\portable.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\portable\Keil\ARM_CM3\portmacro.h)(0x573F3A17)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\list.h)(0x573F3A16)
+F (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\queue.c)(0x573F3A17)(--c99 -c --cpu Cortex-M3 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I..\..\..\ELF2_BSP -I..\..\..\ELF2_BSP\CMSIS\Core\Include -I..\..\..\ELF2_BSP\Debug -I..\..\..\ELF2_BSP\Debug\RTT -I..\..\..\ELF2_BSP\Device\ELF2\Include -I..\..\..\ELF2_BSP\Device\ELF2\Source -I..\..\..\ELF2_BSP\Device\ELF2\Source\ARM -I..\..\..\ELF2_BSP\Driver -I..\..\..\ELF2_BSP\Driver\regmap -I..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include -I..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\portable\Keil\ARM_CM3-I F:\Anlogic_MCU\Release_To_Custom\V20180709\Anlogic_MCU_Pkg\Demo\FreeRTOS\Helloworld\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM3\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DARMCM3-o .\objects\queue.o --omf_browse .\objects\queue.crf --depend .\objects\queue.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\FreeRTOS.h)(0x573F3A16)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\FreeRTOSConfig.h)(0x5AED719E)
+I (..\..\..\ELF2_BSP\platform.h)(0x5B5AC9C4)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\projdefs.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\portable.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\portable\Keil\ARM_CM3\portmacro.h)(0x573F3A17)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\task.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\list.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\queue.h)(0x573F3A16)
+F (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\tasks.c)(0x573F3A17)(--c99 -c --cpu Cortex-M3 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I..\..\..\ELF2_BSP -I..\..\..\ELF2_BSP\CMSIS\Core\Include -I..\..\..\ELF2_BSP\Debug -I..\..\..\ELF2_BSP\Debug\RTT -I..\..\..\ELF2_BSP\Device\ELF2\Include -I..\..\..\ELF2_BSP\Device\ELF2\Source -I..\..\..\ELF2_BSP\Device\ELF2\Source\ARM -I..\..\..\ELF2_BSP\Driver -I..\..\..\ELF2_BSP\Driver\regmap -I..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include -I..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\portable\Keil\ARM_CM3-I F:\Anlogic_MCU\Release_To_Custom\V20180709\Anlogic_MCU_Pkg\Demo\FreeRTOS\Helloworld\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM3\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DARMCM3-o .\objects\tasks.o --omf_browse .\objects\tasks.crf --depend .\objects\tasks.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\FreeRTOS.h)(0x573F3A16)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\FreeRTOSConfig.h)(0x5AED719E)
+I (..\..\..\ELF2_BSP\platform.h)(0x5B5AC9C4)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\projdefs.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\portable.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\portable\Keil\ARM_CM3\portmacro.h)(0x573F3A17)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\task.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\list.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\timers.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\StackMacros.h)(0x573F3A16)
+F (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\timers.c)(0x573F3A17)(--c99 -c --cpu Cortex-M3 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I..\..\..\ELF2_BSP -I..\..\..\ELF2_BSP\CMSIS\Core\Include -I..\..\..\ELF2_BSP\Debug -I..\..\..\ELF2_BSP\Debug\RTT -I..\..\..\ELF2_BSP\Device\ELF2\Include -I..\..\..\ELF2_BSP\Device\ELF2\Source -I..\..\..\ELF2_BSP\Device\ELF2\Source\ARM -I..\..\..\ELF2_BSP\Driver -I..\..\..\ELF2_BSP\Driver\regmap -I..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include -I..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\portable\Keil\ARM_CM3-I F:\Anlogic_MCU\Release_To_Custom\V20180709\Anlogic_MCU_Pkg\Demo\FreeRTOS\Helloworld\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM3\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DARMCM3-o .\objects\timers.o --omf_browse .\objects\timers.crf --depend .\objects\timers.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54C245B8)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\FreeRTOS.h)(0x573F3A16)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\FreeRTOSConfig.h)(0x5AED719E)
+I (..\..\..\ELF2_BSP\platform.h)(0x5B5AC9C4)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\projdefs.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\portable.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\portable\Keil\ARM_CM3\portmacro.h)(0x573F3A17)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\task.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\list.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\queue.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\timers.h)(0x573F3A16)
+F (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\portable\Keil\ARM_CM3\port.c)(0x573F3A17)(--c99 -c --cpu Cortex-M3 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I..\..\..\ELF2_BSP -I..\..\..\ELF2_BSP\CMSIS\Core\Include -I..\..\..\ELF2_BSP\Debug -I..\..\..\ELF2_BSP\Debug\RTT -I..\..\..\ELF2_BSP\Device\ELF2\Include -I..\..\..\ELF2_BSP\Device\ELF2\Source -I..\..\..\ELF2_BSP\Device\ELF2\Source\ARM -I..\..\..\ELF2_BSP\Driver -I..\..\..\ELF2_BSP\Driver\regmap -I..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include -I..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\portable\Keil\ARM_CM3-I F:\Anlogic_MCU\Release_To_Custom\V20180709\Anlogic_MCU_Pkg\Demo\FreeRTOS\Helloworld\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM3\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DARMCM3-o .\objects\port.o --omf_browse .\objects\port.crf --depend .\objects\port.d)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\FreeRTOS.h)(0x573F3A16)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\FreeRTOSConfig.h)(0x5AED719E)
+I (..\..\..\ELF2_BSP\platform.h)(0x5B5AC9C4)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\projdefs.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\portable.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\portable\Keil\ARM_CM3\portmacro.h)(0x573F3A17)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\task.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\list.h)(0x573F3A16)
+F (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\portable\MemMang\heap_4.c)(0x573F3A16)(--c99 -c --cpu Cortex-M3 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I..\..\..\ELF2_BSP -I..\..\..\ELF2_BSP\CMSIS\Core\Include -I..\..\..\ELF2_BSP\Debug -I..\..\..\ELF2_BSP\Debug\RTT -I..\..\..\ELF2_BSP\Device\ELF2\Include -I..\..\..\ELF2_BSP\Device\ELF2\Source -I..\..\..\ELF2_BSP\Device\ELF2\Source\ARM -I..\..\..\ELF2_BSP\Driver -I..\..\..\ELF2_BSP\Driver\regmap -I..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include -I..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\portable\Keil\ARM_CM3-I F:\Anlogic_MCU\Release_To_Custom\V20180709\Anlogic_MCU_Pkg\Demo\FreeRTOS\Helloworld\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM3\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DARMCM3-o .\objects\heap_4.o --omf_browse .\objects\heap_4.crf --depend .\objects\heap_4.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54C245B8)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\FreeRTOS.h)(0x573F3A16)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\FreeRTOSConfig.h)(0x5AED719E)
+I (..\..\..\ELF2_BSP\platform.h)(0x5B5AC9C4)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\projdefs.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\portable.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\deprecated_definitions.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\portable\Keil\ARM_CM3\portmacro.h)(0x573F3A17)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\mpu_wrappers.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\task.h)(0x573F3A16)
+I (..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include\list.h)(0x573F3A16)
+F (..\..\..\ELF2_BSP\Driver\ELF2_CM3_Lib.lib)(0x5AEAD144)()
+F (..\..\..\ELF2_BSP\Debug\log.c)(0x5A26B068)(--c99 -c --cpu Cortex-M3 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I..\..\..\ELF2_BSP -I..\..\..\ELF2_BSP\CMSIS\Core\Include -I..\..\..\ELF2_BSP\Debug -I..\..\..\ELF2_BSP\Debug\RTT -I..\..\..\ELF2_BSP\Device\ELF2\Include -I..\..\..\ELF2_BSP\Device\ELF2\Source -I..\..\..\ELF2_BSP\Device\ELF2\Source\ARM -I..\..\..\ELF2_BSP\Driver -I..\..\..\ELF2_BSP\Driver\regmap -I..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include -I..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\portable\Keil\ARM_CM3-I F:\Anlogic_MCU\Release_To_Custom\V20180709\Anlogic_MCU_Pkg\Demo\FreeRTOS\Helloworld\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM3\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DARMCM3-o .\objects\log.o --omf_browse .\objects\log.crf --depend .\objects\log.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\..\..\ELF2_BSP\Debug\log.h)(0x5AED7150)
+I (..\..\..\ELF2_BSP\platform.h)(0x5B5AC9C4)
+I (..\..\..\ELF2_BSP\Debug\RTT\SEGGER_RTT.h)(0x59B7A68B)
+I (..\..\..\ELF2_BSP\Debug\RTT\SEGGER_RTT_Conf.h)(0x59B7A68B)
+I (..\..\..\ELF2_BSP\Driver\uart.h)(0x5AEC651B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x54C245B8)
+F (..\..\..\ELF2_BSP\Debug\debug.c)(0x5A0DB9E7)(--c99 -c --cpu Cortex-M3 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I..\..\..\ELF2_BSP -I..\..\..\ELF2_BSP\CMSIS\Core\Include -I..\..\..\ELF2_BSP\Debug -I..\..\..\ELF2_BSP\Debug\RTT -I..\..\..\ELF2_BSP\Device\ELF2\Include -I..\..\..\ELF2_BSP\Device\ELF2\Source -I..\..\..\ELF2_BSP\Device\ELF2\Source\ARM -I..\..\..\ELF2_BSP\Driver -I..\..\..\ELF2_BSP\Driver\regmap -I..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include -I..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\portable\Keil\ARM_CM3-I F:\Anlogic_MCU\Release_To_Custom\V20180709\Anlogic_MCU_Pkg\Demo\FreeRTOS\Helloworld\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM3\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DARMCM3-o .\objects\debug.o --omf_browse .\objects\debug.crf --depend .\objects\debug.d)
+I (..\..\..\ELF2_BSP\Debug\log.h)(0x5AED7150)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
+I (..\..\..\ELF2_BSP\platform.h)(0x5B5AC9C4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (..\..\..\ELF2_BSP\Debug\debug.h)(0x5A0EBC9C)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x54C245B8)
+F (..\..\..\ELF2_BSP\Debug\RTT\SEGGER_RTT.c)(0x59B7A68B)(--c99 -c --cpu Cortex-M3 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I..\..\..\ELF2_BSP -I..\..\..\ELF2_BSP\CMSIS\Core\Include -I..\..\..\ELF2_BSP\Debug -I..\..\..\ELF2_BSP\Debug\RTT -I..\..\..\ELF2_BSP\Device\ELF2\Include -I..\..\..\ELF2_BSP\Device\ELF2\Source -I..\..\..\ELF2_BSP\Device\ELF2\Source\ARM -I..\..\..\ELF2_BSP\Driver -I..\..\..\ELF2_BSP\Driver\regmap -I..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include -I..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\portable\Keil\ARM_CM3-I F:\Anlogic_MCU\Release_To_Custom\V20180709\Anlogic_MCU_Pkg\Demo\FreeRTOS\Helloworld\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM3\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DARMCM3-o .\objects\segger_rtt.o --omf_browse .\objects\segger_rtt.crf --depend .\objects\segger_rtt.d)
+I (..\..\..\ELF2_BSP\Debug\RTT\SEGGER_RTT.h)(0x59B7A68B)
+I (..\..\..\ELF2_BSP\Debug\RTT\SEGGER_RTT_Conf.h)(0x59B7A68B)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
+F (..\..\..\ELF2_BSP\Debug\RTT\SEGGER_RTT_printf.c)(0x59B7A68B)(--c99 -c --cpu Cortex-M3 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I..\..\..\ELF2_BSP -I..\..\..\ELF2_BSP\CMSIS\Core\Include -I..\..\..\ELF2_BSP\Debug -I..\..\..\ELF2_BSP\Debug\RTT -I..\..\..\ELF2_BSP\Device\ELF2\Include -I..\..\..\ELF2_BSP\Device\ELF2\Source -I..\..\..\ELF2_BSP\Device\ELF2\Source\ARM -I..\..\..\ELF2_BSP\Driver -I..\..\..\ELF2_BSP\Driver\regmap -I..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\include -I..\..\..\ELF2_BSP\FreeRTOSv9.0.0\FreeRTOS\Source\portable\Keil\ARM_CM3-I F:\Anlogic_MCU\Release_To_Custom\V20180709\Anlogic_MCU_Pkg\Demo\FreeRTOS\Helloworld\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM3\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -DARMCM3-o .\objects\segger_rtt_printf.o --omf_browse .\objects\segger_rtt_printf.crf --depend .\objects\segger_rtt_printf.d)
+I (..\..\..\ELF2_BSP\Debug\RTT\SEGGER_RTT.h)(0x59B7A68B)
+I (..\..\..\ELF2_BSP\Debug\RTT\SEGGER_RTT_Conf.h)(0x59B7A68B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54C245B8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)

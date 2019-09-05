@@ -1,0 +1,10 @@
+ 
+set_pin_assignment {sys_clk} { LOCATION = P22;  } #sys_clk_50M
+set_pin_assignment {sys_rstn} { LOCATION = P21;  } #botten1
+
+set_pin_assignment {ppm_rstn} { LOCATION = P24;  } #botten2
+
+set_pin_assignment {led[3]} { LOCATION = P19;   } #FPGA control
+set_pin_assignment {led[2]} { LOCATION = P18;   } #FPGA control
+set_pin_assignment {led[1]} { LOCATION = P16;   } #MCU control
+set_pin_assignment {led[0]} { LOCATION = P15;   } #MCU control

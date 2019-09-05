@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+    <Project_Created_Time>2018-07-17 10:36:56</Project_Created_Time>
+    <TD_Version>4.2.511</TD_Version>
+    <UCode>00000000</UCode>
+    <Name>demo</Name>
+    <HardWare>
+        <Family>EF2</Family>
+        <Device>EF2M45LG48B</Device>
+    </HardWare>
+    <Source_Files>
+        <Verilog>
+            <File>../../src/top.v</File>
+            <File>al_ip/pll.v</File>
+            <File>al_ip/mcu.v</File>
+        </Verilog>
+        <ADC_FILE>../../constrs/ELF2M45.adc</ADC_FILE>
+        <SDC_FILE>../../constrs/ELF2M45.sdc</SDC_FILE>
+        <CWC_FILE/>
+    </Source_Files>
+    <TOP_MODULE>
+        <LABEL/>
+        <MODULE>top</MODULE>
+        <CREATEINDEX>auto</CREATEINDEX>
+    </TOP_MODULE>
+    <Property>
+        <BitgenProperty::GeneralOption>
+            <bin>off</bin>
+            <c>on</c>
+            <data_ram/>
+            <gen_mask>off</gen_mask>
+            <instruct_ram>G:/ELF2_SOC_Shanghai/trunk/Demo/FLASH_Demo/SDK48/Quick_Start.bin</instruct_ram>
+            <s>off</s>
+            <time_info>on</time_info>
+            <version>0x00</version>
+        </BitgenProperty::GeneralOption>
+    </Property>
+    <Project_Settings>
+        <Step_Last_Change>2018-09-05 17:08:01</Step_Last_Change>
+        <Current_Step>60</Current_Step>
+        <Step_Status>true</Step_Status>
+    </Project_Settings>
+</Project>

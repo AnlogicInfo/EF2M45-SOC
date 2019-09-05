@@ -1,0 +1,614 @@
+============================================================
+   Tang Dynasty, V4.2.217
+   Copyright:   Shanghai Anlogic Infotech Co., Ltd.
+                2011 - 2021
+   Executable = C:/Anlogic/TD4.2.217/bin/td.exe
+   Built at =   10:05:48 Jul 16 2018
+   Run by =     Administrator
+   Run Date =   Mon Aug 27 10:40:00 2018
+
+   Run on =     Y1YBFM96WTED81W
+============================================================
+CMD-004 : start command "open_project F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.al"
+VLG-002 : analyze verilog file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/al_ip/sys_pll.v
+VLG-002 : analyze verilog file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/al_ip/AL_MCU.v
+VLG-002 : analyze verilog file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/src/quick_start.v
+CMD-004 : start command "import_device ef2_4.db -package EF2L45LG144B"
+CMD-005 : finish command "import_device ef2_4.db -package EF2L45LG144B" in  1.237876s wall, 1.185608s user + 0.093601s system = 1.279208s CPU (103.3%)
+
+CMD-006 : used memory is 134 MB, reserved memory is 96 MB, peak memory is 135 MB
+VLG-002 : analyze verilog file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/al_ip/sys_pll.v
+VLG-002 : analyze verilog file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/al_ip/AL_MCU.v
+VLG-002 : analyze verilog file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/src/quick_start.v
+CMD-004 : start command "elaborate -top quick_start"
+VLG-004 : elaborate module quick_start in F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/src/quick_start.v(2)
+VLG-004 : elaborate module sys_pll in F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/al_ip/sys_pll.v(23)
+VLG-004 : elaborate module EF2_LOGIC_BUFG in C:/Anlogic/TD4.2.217/arch/ef2_macro.v(8)
+VLG-004 : elaborate module EF2_PHY_PLL(FIN="25.000",FBCLK_DIV=8,CLKC0_DIV=5,CLKC1_DIV=40,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=5,CLKC1_CPHASE=40,GMC_GAIN=6,ICP_CURRENT=3,KVCO=6,LPF_RESISTOR=2,PLLRST_ENA="DISABLE",INTPI=3,HIGH_SPEED_EN="ENABLE",OFFSET_MODE="EXT",CLKC0_DUTY=0.5,CLKC1_DUTY=0.5,CLKC0_DUTY_INT=3,CLKC1_DUTY_INT=21) in C:/Anlogic/TD4.2.217/arch/ef2_macro.v(2644)
+VLG-939 WARNING: port i2s_mst_clk remains unconnected for this instance in F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/al_ip/AL_MCU.v(31)
+VLG-004 : elaborate module AL_MCU in F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/al_ip/AL_MCU.v(14)
+VLG-004 : elaborate module EF2_PHY_MCU(GPIO_L0="ENABLE",GPIO_L1="ENABLE",GPIO_L7="ENABLE") in C:/Anlogic/TD4.2.217/arch/ef2_macro.v(741)
+VIN-1013 WARNING: input port i2s_mst_clk is not connected on this instance in F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/al_ip/AL_MCU.v(31)
+RTL-100 : Current top model is quick_start
+RAM-300 : Inferred 0 RAMs.
+CMD-004 : start command "optimize_rtl"
+RUN-001 : Open license file C:/Anlogic/TD4.2.217/license/Anlogic.lic
+SNT-300 : SanityCheck: Model "quick_start"
+SNT-300 : SanityCheck: Model "AL_MCU"
+SNT-300 : SanityCheck: Model "sys_pll"
+RTL-100 : Mark sys_pll as IO macro for instance bufg_feedback
+FLT-300 : Flatten model quick_start
+FLT-300 : Flatten model AL_MCU
+FLT-300 : Flatten model sys_pll
+MRG-300 : Merged 2 instances.
+OPT-300 : Optimize round 1
+RTL-100 : 62/15 useful/useless nets, 34/7 useful/useless insts
+MUX-301 : Optimized 0 mux instances.
+OPT-301 : Optimize round 1, 24 better
+OPT-300 : Optimize round 2
+RTL-100 : 61/1 useful/useless nets, 33/0 useful/useless insts
+MUX-301 : Optimized 0 mux instances.
+OPT-301 : Optimize round 2, 0 better
+CMD-004 : start command "report_area -file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_rtl.area"
+standard
+IO Statistics
+#IO                     4
+  #input                2
+  #output               1
+  #inout                1
+
+Gate Statistics
+#Basic gates           27
+  #and                  0
+  #nand                 0
+  #or                   0
+  #nor                  0
+  #xor                  0
+  #xnor                 0
+  #buf                  0
+  #not                  1
+  #bufif1               1
+  #MX21                 0
+  #FADD                 0
+  #DFF                 25
+  #LATCH                0
+#MACRO_ADD              1
+
+CMD-004 : start command "read_adc constrs/board.adc"
+CMD-004 : start command "set_pin_assignment fpga_clk_in  LOCATION = P28;  "
+CMD-004 : start command "set_pin_assignment fpga_rst_n  LOCATION = P38;  "
+CMD-004 : start command "set_pin_assignment hw_led  LOCATION = P100;  "
+CMD-004 : start command "set_pin_assignment sw_led  LOCATION = P99;   "
+CMD-004 : start command "export_db F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_rtl.db"
+RUN-001 : Exported /
+RUN-001 : Exported libs
+RUN-001 : Exported entities
+RUN-001 : Exported ports
+RUN-001 : Exported pins
+RUN-001 : Exported instances
+RUN-001 : Exported nets
+RUN-001 : Exported buses
+RUN-001 : Exported models
+RUN-001 : Exported congestions
+RUN-001 : Exported violations
+RUN-001 : Exported IO constraints
+RUN-001 : Exported Inst constraints
+RUN-001 : Exported flow parameters
+CMD-004 : start command "map_macro"
+RTL-100 : Map 4 IOs to PADs
+GAT-100 : Processed 0 LOGIC_BUF instances.
+GAT-100 : 1 BUFG to GCLK
+RTL-100 : Optimize round 1
+RTL-100 : 65/0 useful/useless nets, 37/0 useful/useless insts
+RTL-100 : Optimize round 1, 0 better
+RTL-100 : Map 1 macro adder
+RTL-100 : 141/50 useful/useless nets, 63/25 useful/useless insts
+CMD-004 : start command "map"
+GAT-100 : Running gate level optimization.
+GAT-100 : LUT mapping.
+GAT-100 : Post mapping optimization.
+GAT-100 : Logic optimization runtime opt =   0.05 sec, map =   0.00 sec
+GAT-100 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+GAT-100 : Mapper mapped 1 instances into 1 LUTs, name keeping = 100%.
+CMD-004 : start command "pack"
+GAT-100 : Packing top model "quick_start" ...
+PAK-301 : Pack lib has 35 rtl pack models with 12 top pack blocks
+OPT-300 : Optimize round 1
+RTL-100 : 90/0 useful/useless nets, 62/0 useful/useless insts
+OPT-301 : Optimize round 1, 0 better
+PAK-SEQ-305 : Packing 25 DFF/LATCH to SEQ ...
+PAK-RLS : Pack 1 carry chain into lslice
+PAK-BLE-301 : Packing 0 adder to BLE ...
+PAK-BLE-302 : Packed 0 adder and 0 SEQ to BLE.
+PAK-BLE-301 : Packing 0 gate4 to BLE ...
+PAK-BLE-302 : Packed 0 gate4 and 0 SEQ to BLE.
+PAK-309 : Packed 0 FxMUX
+PAK-BLE-301 : Packing 0 MUX to BLE ...
+PAK-BLE-302 : Packed 0 MUX and 0 SEQ to BLE.
+PAK-BLE-301 : Packing 1 LUT to BLE ...
+PAK-BLE-302 : Packed 1 LUT and 0 SEQ to BLE.
+PAK-SEQ-301 : Packing 25 remaining SEQ's ...
+PAK-SEQ-302 : #0: Packed 0 SEQ (25 nodes)...
+PAK-SEQ-302 : #1: Packed 2 SEQ (24 nodes)...
+PAK-SEQ-303 : Packed 2 SEQ with LUT/SLICE
+PAK-SEQ-304 : 1 single LUT's are left
+PAK-SEQ-304 : 25 single SEQ's are left
+PAK-303 : Packing model "quick_start" (AL_USER_NORMAL) with 24/41 primitive instances ...
+CLK-302 : Net U_SYS_PLL/clk0_out driven by BUFG (0 clock/control pins, 1 other pins).
+CLK-311 : Net clk25 is clkc1 of pll U_SYS_PLL/pll_inst.
+CLK-304 : Net fpga_clk_in_pad is refclk of pll U_SYS_PLL/pll_inst.
+CLK-305 : Net fpga_clk_in_pad is fbclk of pll U_SYS_PLL/pll_inst.
+CLK-309 : Tag rtl::Net U_SYS_PLL/clk0_out as clock net
+CLK-309 : Tag rtl::Net clk25 as clock net
+CLK-309 : Tag rtl::Net fpga_clk_in_pad as clock net
+CLK-310 : Tagged 3 rtl::Net as clock net
+CMD-004 : start command "report_area -file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_gate.area"
+standard
+IO Statistics
+#IO                     4
+  #input                2
+  #output               1
+  #inout                1
+
+Utilization Statistics
+#lut                    1   out of   4480    0.02%
+#reg                   25   out of   4480    0.56%
+#le                    26
+  #lut only             1   out of     26    3.85%
+  #reg only            25   out of     26   96.15%
+  #lut&reg              0   out of     26    0.00%
+#dsp                    0   out of     15    0.00%
+#bram                   0   out of     12    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of      6    0.00%
+#mcu                    1   out of      1  100.00%
+#pad                    4   out of    109    3.67%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    1   out of      1  100.00%
+#clknet                 3   out of     16   18.75%
+  #gclk                 1
+
+CMD-004 : start command "export_db F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_gate.db"
+RUN-001 : Exported /
+RUN-001 : Exported libs
+RUN-001 : Exported entities
+RUN-001 : Exported ports
+RUN-001 : Exported pins
+RUN-001 : Exported instances
+RUN-001 : Exported nets
+RUN-001 : Exported buses
+RUN-001 : Exported models
+RUN-001 : Exported congestions
+RUN-001 : Exported violations
+RUN-001 : Exported IO constraints
+RUN-001 : Exported Inst constraints
+RUN-001 : Exported flow parameters
+CMD-004 : start command "place"
+RUN-001 : Open license file C:/Anlogic/TD4.2.217/license/Anlogic.lic
+PLC-001 : Placer runs in 4 thread(s).
+RUN-001 : There are total 30 instances
+RUN-001 : 10 mslices, 10 lslices, 4 pads, 0 brams, 0 dsps
+RUN-001 : There are total 71 nets
+RUN-001 : 66 nets have 2 pins
+RUN-001 : 2 nets have [3 - 5] pins
+RUN-001 : 2 nets have [11 - 20] pins
+RUN-001 : 1 nets have [21 - 99] pins
+PLC-001 : Initial placement ...
+PLC-001 : design contains 28 instances, 20 slices, 1 macros(7 instances)
+PLC-001 : Start timing update ...
+CMD-004 : start command "start_timer"
+TMR-611 WARNING: No sdc constraints found while initiating timer.
+TMR-601 : Start building timing graph for model quick_start
+TMR-601 : Build timing graph completely. Port num: 4, tpin num: 164, tnet num: 69, tinst num: 27, tnode num: 217, tedge num: 288.
+
+TMR-601 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-601 : Levelize timing graph completed, there are 18 levels in all.
+TMR-601 : Timing graph initialized successfully.
+
+TMR-601 : Start to update net delay, extr mode = 2.
+TMR-601 : Update delay of 69 nets completely.
+TMR-601 : Annotate delay to tedge completely, extr mode = 2.
+TMR-601 : No user constraint, initiate default constraint.
+TMR-601 : Assign derive clock DeriveClock to 26 clock pins, and constraint 51 relative nodes.
+TMR-601 : Start to map constraints to rules, there are 0 constraints in all.
+TMR-601 : Start to map report constraints to rules, there are 0 constraints in all.
+TMR-601 : Constraints initiated successfully.
+TMR-601 : Forward propagation: start to calculate arrival time...
+TMR-601 : Backward propagation: start to calculate required time...
+TMR-601 : Timing propagation completely!
+PLC-001 : End timing update;  0.037213s wall, 0.031200s user + 0.000000s system = 0.031200s CPU (83.8%)
+
+PLC-001 : Global placement ...
+PLC-001 : Initial: Len = 7881.4
+PLC-001 : Run with size of 3
+PLC-001 : Cell area utilization is 0%, beta_incr = 0.994643
+PLC-001 : :::0::: Try harder cell spreading with beta_ = 0
+PLC-004 : Step(1): len = 4099, overlap = 0
+PLC-004 : Step(2): len = 2424.9, overlap = 0
+PLC-004 : Step(3): len = 1837.8, overlap = 0
+PLC-004 : Step(4): len = 1596.9, overlap = 0
+PLC-004 : Step(5): len = 1437.3, overlap = 0
+PLC-004 : Step(6): len = 1426, overlap = 0
+PLC-004 : Step(7): len = 1452.5, overlap = 0
+PLC-004 : Step(8): len = 1335.8, overlap = 0
+PLC-004 : Step(9): len = 1296.4, overlap = 0
+PLC-004 : Step(10): len = 938.6, overlap = 0
+PLC-004 : Step(11): len = 903.6, overlap = 0
+PLC-004 : Step(12): len = 886.5, overlap = 0
+PLC-004 : Step(13): len = 927.7, overlap = 0
+PLC-004 : Step(14): len = 680, overlap = 0
+PLC-004 : Step(15): len = 603.9, overlap = 0
+PLC-004 : Step(16): len = 595.8, overlap = 0
+PLC-004 : Step(17): len = 600, overlap = 0
+PLC-001 : Legalization ...
+PLC-001 : Run with size of 3
+PLC-001 : Cell area utilization is 1%, beta_incr = 0.994643
+PLC-001 : :::0::: Try harder cell spreading with beta_ = 0
+PLC-004 : Step(18): len = 564.6, overlap = 0
+PLC-004 : Step(19): len = 564.6, overlap = 0
+PLC-004 : Step(20): len = 572.2, overlap = 0
+PLC-001 : Run with size of 1
+PLC-001 : Cell area utilization is 1%, beta_incr = 0.994643
+PLC-001 : :::0::: Try harder cell spreading with beta_ = 1.68311e-05
+PLC-004 : Step(21): len = 557.7, overlap = 3
+PLC-004 : Step(22): len = 557.7, overlap = 3
+PLC-001 : :::1::: Try harder cell spreading with beta_ = 3.36622e-05
+PLC-004 : Step(23): len = 592.2, overlap = 3
+PLC-004 : Step(24): len = 592.2, overlap = 3
+PLC-001 : :::2::: Try harder cell spreading with beta_ = 6.73243e-05
+PLC-004 : Step(25): len = 606.9, overlap = 3
+PLC-004 : Step(26): len = 613.1, overlap = 3
+PLC-001 : :::3::: Try harder cell spreading with beta_ = 0.000134649
+PLC-004 : Step(27): len = 668.4, overlap = 3
+PLC-004 : Step(28): len = 683.2, overlap = 3
+PLC-001 : :::4::: Try harder cell spreading with beta_ = 0.000269297
+PLC-004 : Step(29): len = 775.2, overlap = 3
+PLC-004 : Step(30): len = 823.9, overlap = 1.75
+PLC-004 : Step(31): len = 860, overlap = 1.25
+PLC-004 : Step(32): len = 814, overlap = 0.75
+PLC-004 : Step(33): len = 735.2, overlap = 0.75
+PLC-004 : Step(34): len = 714.3, overlap = 1
+PLC-004 : Step(35): len = 691.7, overlap = 0.75
+PLC-004 : Step(36): len = 661.8, overlap = 0.25
+PLC-001 : :::5::: Try harder cell spreading with beta_ = 0.000538594
+PLC-004 : Step(37): len = 681.6, overlap = 0.5
+PLC-004 : Step(38): len = 685.2, overlap = 0.75
+PLC-001 : :::6::: Try harder cell spreading with beta_ = 0.00107719
+PLC-004 : Step(39): len = 691, overlap = 1.25
+PLC-004 : Step(40): len = 693.4, overlap = 1.25
+PLC-001 : Legalization ...
+PLC-001 : Run with size of 1
+PLC-001 : Cell area utilization is 1%, beta_incr = 0.994643
+PLC-001 : :::0::: Try harder cell spreading with beta_ = 0.0120965
+PLC-004 : Step(41): len = 834.5, overlap = 0
+PLC-004 : Step(42): len = 832.9, overlap = 0
+PLC-004 : Step(43): len = 838.2, overlap = 0
+PLC-004 : Step(44): len = 819.4, overlap = 0.5
+PLC-004 : Step(45): len = 786.5, overlap = 0.5
+PLC-004 : Step(46): len = 766.1, overlap = 0.25
+PLC-004 : Step(47): len = 770.9, overlap = 0.5
+PLC-001 : :::1::: Try harder cell spreading with beta_ = 0.024193
+PLC-004 : Step(48): len = 765, overlap = 0.75
+PLC-004 : Step(49): len = 765, overlap = 0.75
+PLC-001 : :::2::: Try harder cell spreading with beta_ = 0.048386
+PLC-004 : Step(50): len = 766.5, overlap = 0.75
+PLC-004 : Step(51): len = 764.2, overlap = 0.75
+PLC-001 : Legalization ...
+PLC-001 : Legalized: Len = 834.4, Over = 0
+PLC-001 : Final: Len = 834.4, Over = 0
+PLC-001 : Improving timing with driver duplication.
+CMD-004 : start command "start_timer"
+TMR-611 WARNING: No sdc constraints found while initiating timer.
+TMR-601 : Start building timing graph for model quick_start
+TMR-601 : Build timing graph completely. Port num: 4, tpin num: 164, tnet num: 69, tinst num: 27, tnode num: 217, tedge num: 288.
+
+TMR-601 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-601 : Levelize timing graph completed, there are 18 levels in all.
+TMR-601 : Timing graph initialized successfully.
+
+CMD-004 : start command "route"
+RUN-001 : Open license file C:/Anlogic/TD4.2.217/license/Anlogic.lic
+RUN-001 : Pin swapping for better routability
+RUN-001 : Pin misalignment score is improved from 4 to 4
+RUN-001 : Pin local connectivity score is improved from 1 to 1
+RUN-001 : Pin misalignment score is improved from 4 to 4
+RUN-001 : Pin local connectivity score is improved from 1 to 1
+RTE-301 : End pin swap;  0.002841s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+RTE-301 : Route runs in 4 thread(s)
+RUN-001 : There are total 30 instances
+RUN-001 : 10 mslices, 10 lslices, 4 pads, 0 brams, 0 dsps
+RUN-001 : There are total 71 nets
+RUN-001 : 66 nets have 2 pins
+RUN-001 : 2 nets have [3 - 5] pins
+RUN-001 : 2 nets have [11 - 20] pins
+RUN-001 : 1 nets have [21 - 99] pins
+RTE-301 : Start global routing ...
+RTE-301 : Generate routing grids ...
+RTE-301 : Initialize routing nets ...
+RTE-301 : Ripup & Reroute ...
+RTE-302 : len = 848, over cnt = 2(0%), over = 2, worst = 1
+RTE-302 : len = 848, over cnt = 1(0%), over = 1, worst = 1
+RTE-302 : len = 848, over cnt = 1(0%), over = 1, worst = 1
+RTE-302 : len = 864, over cnt = 0(0%), over = 0, worst = 0
+RTE-301 : Timing updates.
+TMR-601 : Start to update net delay, extr mode = 5.
+TMR-601 : Update delay of 69 nets completely.
+TMR-601 : Annotate delay to tedge completely, extr mode = 5.
+TMR-601 : Start to map report constraints to rules, there are 0 constraints in all.
+TMR-601 : Forward propagation: start to calculate arrival time...
+TMR-601 : Backward propagation: start to calculate required time...
+TMR-601 : Timing propagation completely!
+RTE-301 : Optimize timing.
+RTE-301 : End global routing;  0.012929s wall, 0.031200s user + 0.000000s system = 0.031200s CPU (241.3%)
+
+RTE-301 : Start detail routing ...
+RTE-301 : Generate detailed routing grids ...
+RTE-301 : Generate nets ...
+RTE-301 : clock net U_SYS_PLL/clk0_out will be merged with clock U_SYS_PLL/clk0_buf
+RTE-301 : net clk25 will be routed on clock mesh
+RTE-301 : net fpga_clk_in_pad will be routed on clock mesh
+RTE-301 : Detail Route ...
+RTE-301 : ===== Initial DR =====
+RTE-301 : Routed 56% nets. 
+RTE-301 : Routed 60% nets. 
+RTE-301 : Routed 60% nets. 
+RTE-301 : Routed 60% nets. 
+RTE-301 : Routed 60% nets. 
+RTE-301 : Routed 61% nets. 
+RTE-301 : Routed 63% nets. 
+RTE-301 : Routed 63% nets. 
+RTE-301 :  0.041161s wall, 0.062400s user + 0.015600s system = 0.078001s CPU (189.5%)
+
+RTE-302 : len = 3136, over cnt = 10(0%), over = 10, worst = 1
+RTE-301 : ===== DR Iter 1 =====
+RTE-301 :  0.008643s wall, 0.046800s user + 0.015600s system = 0.062400s CPU (722.0%)
+
+RTE-302 : len = 3136, over cnt = 7(0%), over = 7, worst = 1
+RTE-301 : ===== DR Iter 2 =====
+RTE-301 :  0.006272s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+RTE-302 : len = 3184, over cnt = 1(0%), over = 1, worst = 1
+RTE-301 : ===== DR Iter 3 =====
+RTE-301 :  0.004482s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+RTE-302 : len = 3200, over cnt = 0(0%), over = 0, worst = 0
+RTE-303 : Routed, final wirelength = 3200
+RTE-301 : 0 feed throughs used by 0 nets
+RTE-301 : Generate detailed routing grids ...
+RTE-301 : Generate nets ...
+RTE-301 : clock net U_SYS_PLL/clk0_out will be merged with clock U_SYS_PLL/clk0_buf
+RTE-301 : net clk25 will be routed on clock mesh
+RTE-301 : net fpga_clk_in_pad will be routed on clock mesh
+RTE-301 : eco open net = 0
+RTE-301 : End detail routing;  1.121747s wall, 1.138807s user + 0.124801s system = 1.263608s CPU (112.6%)
+
+RTE-301 : Routing violations:
+RTE-301 : End of Routing Violations.
+CMD-005 : finish command "route" in  1.185704s wall, 1.216808s user + 0.124801s system = 1.341609s CPU (113.1%)
+
+CMD-006 : used memory is 190 MB, reserved memory is 144 MB, peak memory is 270 MB
+CMD-004 : start command "report_area -io_info -file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_phy.area"
+standard
+IO Statistics
+#IO                     4
+  #input                2
+  #output               1
+  #inout                1
+
+Utilization Statistics
+#lut                    1   out of   4480    0.02%
+#reg                   25   out of   4480    0.56%
+#le                    26
+  #lut only             1   out of     26    3.85%
+  #reg only            25   out of     26   96.15%
+  #lut&reg              0   out of     26    0.00%
+#dsp                    0   out of     15    0.00%
+#bram                   0   out of     12    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of      6    0.00%
+#mcu                    1   out of      1  100.00%
+#pad                    4   out of    109    3.67%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    1   out of      1  100.00%
+#clknet                 3   out of     16   18.75%
+  #gclk                 1
+
+CMD-004 : start command "export_db F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_pr.db"
+RUN-001 : Exported /
+RUN-001 : Exported libs
+RUN-001 : Exported entities
+RUN-001 : Exported ports
+RUN-001 : Exported pins
+RUN-001 : Exported instances
+RUN-001 : Exported nets
+RUN-001 : Exported buses
+RUN-001 : Exported models
+RUN-001 : Exported congestions
+RUN-001 : Exported violations
+RUN-001 : Exported IO constraints
+RUN-001 : Exported Inst constraints
+RUN-001 : Exported flow parameters
+CMD-004 : start command "bitgen -bit F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.bit -version 0X00 -svf F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.svf -svf_comment_on -128 F:/SVN_ELF2_SOC/trunk/Basic_Demo/BRAM_Demo/SDK144/Quick_Start.bin -g ucode:00000000000000000000000000000000 -f F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.btc"
+BIT-701 : Start to generate bitstream. 
+BIT-701 : Init instances with 4 threads.
+BIT-701 : Init instances completely, inst num: 30
+BIT-701 : Init pips with 4 threads.
+BIT-701 : Init pips completely, net num: 71, pip num: 421
+BIT-701 : Multithreading accelaration with 4 threads.
+BIT-701 : Generate bitstream completely, there are 106 valid insts, and 1086 bits set as '1'.
+BIT-701 : Generate bits file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.bit.
+BIT-701 : Generate svf file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_sram.svf.
+BIT-701 : Generate tde file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_sram.tde
+BIT-701 : Generate tde file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_spi_bk.tde
+BIT-701 : Generate tde file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_spi_norefresh_bk.tde
+BIT-701 : Generate tde file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_refresh.tde
+BIT-701 : Generate tde file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_erase_spi.tde
+BIT-701 : Generate tde file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_readstatus.tde
+CMD-005 : finish command "bitgen -bit F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.bit -version 0X00 -svf F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.svf -svf_comment_on -128 F:/SVN_ELF2_SOC/trunk/Basic_Demo/BRAM_Demo/SDK144/Quick_Start.bin -g ucode:00000000000000000000000000000000 -f F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.btc" in  2.532399s wall, 2.808018s user + 0.078001s system = 2.886019s CPU (114.0%)
+
+CMD-006 : used memory is 194 MB, reserved memory is 147 MB, peak memory is 270 MB
+CMD-004 : start command "download -svf F:\SVN_ELF2_SOC\trunk\Basic_Demo\WDT_Demo\FPGA144\Quick_Start_sram.svf -mode jtag -wait 20 -spd 6 -sec 64 -cable 0 -chip EF2L45B"
+CMD-004 : start command "bit_to_vec -chip EF2L45B -m jtag -svf F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_sram.svf"
+CMD-004 : start command "program -cable 0 -spd 6"
+CMD-005 : finish command "program -cable 0 -spd 6" in  1.415331s wall, 0.062400s user + 0.000000s system = 0.062400s CPU (4.4%)
+
+CMD-006 : used memory is 238 MB, reserved memory is 189 MB, peak memory is 270 MB
+CMD-005 : finish command "download -svf F:\SVN_ELF2_SOC\trunk\Basic_Demo\WDT_Demo\FPGA144\Quick_Start_sram.svf -mode jtag -wait 20 -spd 6 -sec 64 -cable 0 -chip EF2L45B" in  1.536643s wall, 0.187201s user + 0.000000s system = 0.187201s CPU (12.2%)
+
+CMD-006 : used memory is 238 MB, reserved memory is 189 MB, peak memory is 270 MB
+GUI-001 : Download success!
+CMD-004 : start command "import_db F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_pr.db"
+RUN-001 : Importing design generated by Tang Dynasty, V4.2.217.
+RUN-001 : Import IO constraints
+RUN-001 : Import Inst constraints
+RUN-001 : Import flow parameters
+CMD-004 : start command "bitgen -bit F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.bit -version 0X00 -svf F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.svf -svf_comment_on -128 F:/SVN_ELF2_SOC/trunk/Basic_Demo/BRAM_Demo/SDK144/Quick_Start.bin -g ucode:00000000000000000000000000000000 -f F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.btc"
+BIT-701 : Start to generate bitstream. 
+BIT-701 : Init instances completely, inst num: 30
+BIT-701 : Init pips completely, net num: 71, pip num: 421
+BIT-701 : Generate bitstream completely, there are 106 valid insts, and 1086 bits set as '1'.
+BIT-701 : Generate bits file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.bit.
+BIT-701 : Generate svf file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_sram.svf.
+BIT-701 : Generate tde file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_sram.tde
+BIT-701 : Generate tde file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_spi_bk.tde
+BIT-701 : Generate tde file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_spi_norefresh_bk.tde
+BIT-701 : Generate tde file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_refresh.tde
+BIT-701 : Generate tde file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_erase_spi.tde
+BIT-701 : Generate tde file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_readstatus.tde
+CMD-005 : finish command "bitgen -bit F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.bit -version 0X00 -svf F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.svf -svf_comment_on -128 F:/SVN_ELF2_SOC/trunk/Basic_Demo/BRAM_Demo/SDK144/Quick_Start.bin -g ucode:00000000000000000000000000000000 -f F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.btc" in  2.722119s wall, 2.698817s user + 0.000000s system = 2.698817s CPU (99.1%)
+
+CMD-006 : used memory is 240 MB, reserved memory is 190 MB, peak memory is 270 MB
+CMD-004 : start command "download -svf F:\SVN_ELF2_SOC\trunk\Basic_Demo\WDT_Demo\FPGA144\Quick_Start_sram.svf -mode jtag -wait 20 -spd 6 -sec 64 -cable 0 -chip EF2L45B"
+CMD-004 : start command "bit_to_vec -chip EF2L45B -m jtag -svf F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_sram.svf"
+CMD-004 : start command "program -cable 0 -spd 6"
+CMD-005 : finish command "program -cable 0 -spd 6" in  1.452028s wall, 0.078001s user + 0.000000s system = 0.078001s CPU (5.4%)
+
+CMD-006 : used memory is 235 MB, reserved memory is 184 MB, peak memory is 270 MB
+CMD-005 : finish command "download -svf F:\SVN_ELF2_SOC\trunk\Basic_Demo\WDT_Demo\FPGA144\Quick_Start_sram.svf -mode jtag -wait 20 -spd 6 -sec 64 -cable 0 -chip EF2L45B" in  1.606785s wall, 0.218401s user + 0.015600s system = 0.234002s CPU (14.6%)
+
+CMD-006 : used memory is 235 MB, reserved memory is 184 MB, peak memory is 270 MB
+GUI-001 : Download success!
+CMD-004 : start command "import_db F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_pr.db"
+RUN-001 : Importing design generated by Tang Dynasty, V4.2.217.
+RUN-001 : Import IO constraints
+RUN-001 : Import Inst constraints
+RUN-001 : Import flow parameters
+CMD-004 : start command "bitgen -bit F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.bit -version 0X00 -svf F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.svf -svf_comment_on -128 F:/SVN_ELF2_SOC/trunk/Basic_Demo/BRAM_Demo/SDK144/Quick_Start.bin -g ucode:00000000000000000000000000000000 -f F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.btc"
+BIT-701 : Start to generate bitstream. 
+BIT-701 : Init instances completely, inst num: 30
+BIT-701 : Init pips completely, net num: 71, pip num: 421
+BIT-701 : Generate bitstream completely, there are 106 valid insts, and 1086 bits set as '1'.
+BIT-701 : Generate bits file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.bit.
+BIT-701 : Generate svf file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_sram.svf.
+BIT-701 : Generate tde file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_sram.tde
+BIT-701 : Generate tde file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_spi_bk.tde
+BIT-701 : Generate tde file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_spi_norefresh_bk.tde
+BIT-701 : Generate tde file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_refresh.tde
+BIT-701 : Generate tde file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_erase_spi.tde
+BIT-701 : Generate tde file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_readstatus.tde
+CMD-005 : finish command "bitgen -bit F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.bit -version 0X00 -svf F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.svf -svf_comment_on -128 F:/SVN_ELF2_SOC/trunk/Basic_Demo/BRAM_Demo/SDK144/Quick_Start.bin -g ucode:00000000000000000000000000000000 -f F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.btc" in  2.745155s wall, 2.761218s user + 0.062400s system = 2.823618s CPU (102.9%)
+
+CMD-006 : used memory is 238 MB, reserved memory is 187 MB, peak memory is 270 MB
+RUN-003 ERROR: USB device open error, please re-connect the USB cable!
+RUN-003 ERROR: USB device open error, please re-connect the USB cable!
+CMD-004 : start command "download -svf F:\SVN_ELF2_SOC\trunk\Basic_Demo\WDT_Demo\FPGA144\Quick_Start_sram.svf -mode jtag -wait 20 -spd 6 -sec 64 -cable 0 -chip EF2L45B"
+CMD-004 : start command "bit_to_vec -chip EF2L45B -m jtag -svf F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_sram.svf"
+CMD-004 : start command "program -cable 0 -spd 6"
+CMD-005 : finish command "program -cable 0 -spd 6" in  1.417053s wall, 0.046800s user + 0.000000s system = 0.046800s CPU (3.3%)
+
+CMD-006 : used memory is 236 MB, reserved memory is 186 MB, peak memory is 270 MB
+CMD-005 : finish command "download -svf F:\SVN_ELF2_SOC\trunk\Basic_Demo\WDT_Demo\FPGA144\Quick_Start_sram.svf -mode jtag -wait 20 -spd 6 -sec 64 -cable 0 -chip EF2L45B" in  1.538831s wall, 0.171601s user + 0.000000s system = 0.171601s CPU (11.2%)
+
+CMD-006 : used memory is 236 MB, reserved memory is 186 MB, peak memory is 270 MB
+GUI-001 : Download success!
+CMD-004 : start command "download -spd 1 -mode erase_spi"
+RUN-001 : Chip validation success: EF2L45B
+CMD-004 : start command "program -cable 0 -spd 1"
+CMD-004 : start command "set_print_message_level warning"
+CMD-004 : start command "set_print_message_level note"
+RUN-001 : Erase flash successfully.
+CMD-005 : finish command "download -spd 1 -mode erase_spi" in  1.485805s wall, 1.029607s user + 0.015600s system = 1.045207s CPU (70.3%)
+
+CMD-006 : used memory is 210 MB, reserved memory is 160 MB, peak memory is 270 MB
+GUI-001 : Erase flash success!
+CMD-004 : start command "import_db F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_pr.db"
+RUN-001 : Importing design generated by Tang Dynasty, V4.2.217.
+RUN-001 : Import IO constraints
+RUN-001 : Import Inst constraints
+RUN-001 : Import flow parameters
+CMD-004 : start command "bitgen -bit F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.bit -version 0X00 -svf F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.svf -svf_comment_on -128 F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/SDK144/Quick_Start.bin -g ucode:00000000000000000000000000000000 -f F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.btc"
+BIT-701 : Start to generate bitstream. 
+BIT-701 : Init instances completely, inst num: 30
+BIT-701 : Init pips completely, net num: 71, pip num: 421
+BIT-701 : Generate bitstream completely, there are 106 valid insts, and 1086 bits set as '1'.
+BIT-701 : Generate bits file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.bit.
+BIT-701 : Generate svf file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_sram.svf.
+BIT-701 : Generate tde file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_sram.tde
+BIT-701 : Generate tde file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_spi_bk.tde
+BIT-701 : Generate tde file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_spi_norefresh_bk.tde
+BIT-701 : Generate tde file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_refresh.tde
+BIT-701 : Generate tde file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_erase_spi.tde
+BIT-701 : Generate tde file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_readstatus.tde
+CMD-005 : finish command "bitgen -bit F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.bit -version 0X00 -svf F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.svf -svf_comment_on -128 F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/SDK144/Quick_Start.bin -g ucode:00000000000000000000000000000000 -f F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.btc" in  2.725143s wall, 2.714417s user + 0.062400s system = 2.776818s CPU (101.9%)
+
+CMD-006 : used memory is 214 MB, reserved memory is 164 MB, peak memory is 270 MB
+CMD-004 : start command "download -svf F:\SVN_ELF2_SOC\trunk\Basic_Demo\WDT_Demo\FPGA144\Quick_Start_sram.svf -mode jtag -wait 20 -spd 6 -sec 64 -cable 0 -chip EF2L45B"
+CMD-004 : start command "bit_to_vec -chip EF2L45B -m jtag -svf F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_sram.svf"
+CMD-004 : start command "program -cable 0 -spd 6"
+CMD-005 : finish command "program -cable 0 -spd 6" in  1.408263s wall, 0.140401s user + 0.015600s system = 0.156001s CPU (11.1%)
+
+CMD-006 : used memory is 236 MB, reserved memory is 185 MB, peak memory is 270 MB
+CMD-005 : finish command "download -svf F:\SVN_ELF2_SOC\trunk\Basic_Demo\WDT_Demo\FPGA144\Quick_Start_sram.svf -mode jtag -wait 20 -spd 6 -sec 64 -cable 0 -chip EF2L45B" in  1.528362s wall, 0.234002s user + 0.046800s system = 0.280802s CPU (18.4%)
+
+CMD-006 : used memory is 236 MB, reserved memory is 185 MB, peak memory is 270 MB
+GUI-001 : Download success!
+CMD-004 : start command "import_db F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_pr.db"
+RUN-001 : Importing design generated by Tang Dynasty, V4.2.217.
+RUN-001 : Import IO constraints
+RUN-001 : Import Inst constraints
+RUN-001 : Import flow parameters
+CMD-004 : start command "bitgen -bit F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.bit -version 0X00 -svf F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.svf -svf_comment_on -128 F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/SDK144/Quick_Start.bin -g ucode:00000000000000000000000000000000 -f F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.btc"
+BIT-701 : Start to generate bitstream. 
+BIT-701 : Init instances completely, inst num: 30
+BIT-701 : Init pips completely, net num: 71, pip num: 421
+BIT-701 : Generate bitstream completely, there are 106 valid insts, and 1086 bits set as '1'.
+BIT-701 : Generate bits file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.bit.
+BIT-701 : Generate svf file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_sram.svf.
+BIT-701 : Generate tde file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_sram.tde
+BIT-701 : Generate tde file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_spi_bk.tde
+BIT-701 : Generate tde file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_spi_norefresh_bk.tde
+BIT-701 : Generate tde file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_refresh.tde
+BIT-701 : Generate tde file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_erase_spi.tde
+BIT-701 : Generate tde file F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_readstatus.tde
+CMD-005 : finish command "bitgen -bit F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.bit -version 0X00 -svf F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.svf -svf_comment_on -128 F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/SDK144/Quick_Start.bin -g ucode:00000000000000000000000000000000 -f F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start.btc" in  2.734080s wall, 2.667617s user + 0.046800s system = 2.714417s CPU (99.3%)
+
+CMD-006 : used memory is 241 MB, reserved memory is 189 MB, peak memory is 270 MB
+CMD-004 : start command "download -svf F:\SVN_ELF2_SOC\trunk\Basic_Demo\WDT_Demo\FPGA144\Quick_Start_sram.svf -mode jtag -wait 20 -spd 6 -sec 64 -cable 0 -chip EF2L45B"
+CMD-004 : start command "bit_to_vec -chip EF2L45B -m jtag -svf F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_sram.svf"
+CMD-004 : start command "program -cable 0 -spd 6"
+CMD-005 : finish command "program -cable 0 -spd 6" in  1.411017s wall, 0.078001s user + 0.015600s system = 0.093601s CPU (6.6%)
+
+CMD-006 : used memory is 239 MB, reserved memory is 188 MB, peak memory is 270 MB
+CMD-005 : finish command "download -svf F:\SVN_ELF2_SOC\trunk\Basic_Demo\WDT_Demo\FPGA144\Quick_Start_sram.svf -mode jtag -wait 20 -spd 6 -sec 64 -cable 0 -chip EF2L45B" in  1.564303s wall, 0.234002s user + 0.015600s system = 0.249602s CPU (16.0%)
+
+CMD-006 : used memory is 239 MB, reserved memory is 188 MB, peak memory is 270 MB
+GUI-001 : Download success!
+RUN-003 ERROR: USB device open error, please re-connect the USB cable!
+RUN-003 ERROR: USB device open error, please re-connect the USB cable!
+CMD-004 : start command "download -svf F:\SVN_ELF2_SOC\trunk\Basic_Demo\WDT_Demo\FPGA144\Quick_Start_sram.svf -mode jtag -wait 20 -spd 6 -sec 64 -cable 0 -chip EF2L45B"
+CMD-004 : start command "bit_to_vec -chip EF2L45B -m jtag -svf F:/SVN_ELF2_SOC/trunk/Basic_Demo/WDT_Demo/FPGA144/Quick_Start_sram.svf"
+CMD-004 : start command "program -cable 0 -spd 6"
+CMD-005 : finish command "program -cable 0 -spd 6" in  1.414019s wall, 0.140401s user + 0.015600s system = 0.156001s CPU (11.0%)
+
+CMD-006 : used memory is 238 MB, reserved memory is 187 MB, peak memory is 270 MB
+CMD-005 : finish command "download -svf F:\SVN_ELF2_SOC\trunk\Basic_Demo\WDT_Demo\FPGA144\Quick_Start_sram.svf -mode jtag -wait 20 -spd 6 -sec 64 -cable 0 -chip EF2L45B" in  1.540750s wall, 0.249602s user + 0.031200s system = 0.280802s CPU (18.2%)
+
+CMD-006 : used memory is 238 MB, reserved memory is 187 MB, peak memory is 270 MB
+GUI-001 : Download success!

@@ -1,0 +1,10 @@
+ 
+set_pin_assignment {sys_clk} { LOCATION = P22;  }
+set_pin_assignment {sys_rstn} { LOCATION = P21;  }
+
+set_pin_assignment {ppm_rstn} { LOCATION = P24;  }
+
+set_pin_assignment {led[3]} { LOCATION = P19;   }
+set_pin_assignment {led[2]} { LOCATION = P18;   }
+set_pin_assignment {led[1]} { LOCATION = P16;   }
+set_pin_assignment {led[0]} { LOCATION = P15;   }

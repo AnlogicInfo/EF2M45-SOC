@@ -1,0 +1,12 @@
+.\objects\system_elf2.o: ..\..\..\ELF2_BSP\Device\ELF2\Source\system_elf2.c
+.\objects\system_elf2.o: D:\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\system_elf2.o: ..\..\..\ELF2_BSP\Device\ELF2\Include\elf2.h
+.\objects\system_elf2.o: ..\..\..\ELF2_BSP\CMSIS\Core\Include\core_cm3.h
+.\objects\system_elf2.o: ..\..\..\ELF2_BSP\CMSIS\Core\Include\cmsis_version.h
+.\objects\system_elf2.o: ..\..\..\ELF2_BSP\CMSIS\Core\Include\cmsis_compiler.h
+.\objects\system_elf2.o: ..\..\..\ELF2_BSP\CMSIS\Core\Include\cmsis_armcc.h
+.\objects\system_elf2.o: ..\..\..\ELF2_BSP\CMSIS\Core\Include\mpu_armv7.h
+.\objects\system_elf2.o: ..\..\..\ELF2_BSP\Device\ELF2\Include\system_elf2.h
+.\objects\system_elf2.o: ..\..\..\ELF2_BSP\platform.h
+.\objects\system_elf2.o: ..\..\..\ELF2_BSP\Driver\syscon.h
+.\objects\system_elf2.o: D:\keil\ARM\ARMCC\Bin\..\include\stdbool.h

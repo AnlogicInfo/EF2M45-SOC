@@ -1,0 +1,14 @@
+--cpu Cortex-M3
+".\objects\main.o"
+".\objects\test_demo.o"
+".\objects\startup_elf2.o"
+".\objects\system_elf2.o"
+"..\..\..\ELF2_BSP\Driver\ELF2_CM3_Lib.lib"
+".\objects\log.o"
+".\objects\debug.o"
+".\objects\segger_rtt_printf.o"
+".\objects\segger_rtt.o"
+--strict --scatter ".\elf2_example.sct"
+--keep=int_register.o(int_callback_area) --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Quick_Start.map" -o .\Objects\Quick_Start.axf

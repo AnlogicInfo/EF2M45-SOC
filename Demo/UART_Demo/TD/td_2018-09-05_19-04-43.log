@@ -1,0 +1,423 @@
+============================================================
+   Tang Dynasty, V4.2.285
+   Copyright:   Shanghai Anlogic Infotech Co., Ltd.
+                2011 - 2021
+   Executable = C:/Anlogic/TD4.2.285/bin/td.exe
+   Built at =   11:19:28 Jul 25 2018
+   Run by =     Administrator
+   Run Date =   Wed Sep  5 19:04:43 2018
+
+   Run on =     Y1YBFM96WTED81W
+============================================================
+CMD-004 : start command "open_project Quick_Start.al"
+VLG-002 : analyze verilog file G:/ELF2_SOC_Shanghai/trunk/Demo/UART_Demo/TD/al_ip/sys_pll.v
+VLG-002 : analyze verilog file G:/ELF2_SOC_Shanghai/trunk/Demo/UART_Demo/TD/al_ip/AL_MCU.v
+VLG-002 : analyze verilog file G:/ELF2_SOC_Shanghai/trunk/Demo/UART_Demo/TD/src/quick_start.v
+CMD-004 : start command "import_device ef2_4.db -package EF2M45LG48B"
+CMD-005 : finish command "import_device ef2_4.db -package EF2M45LG48B" in  1.183386s wall, 1.185608s user + 0.031200s system = 1.216808s CPU (102.8%)
+
+CMD-006 : used memory is 137 MB, reserved memory is 96 MB, peak memory is 139 MB
+VLG-002 : analyze verilog file G:/ELF2_SOC_Shanghai/trunk/Demo/UART_Demo/TD/al_ip/AL_MCU.v
+VLG-218 WARNING: overwrite current module AL_MCU in G:/ELF2_SOC_Shanghai/trunk/Demo/UART_Demo/TD/al_ip/AL_MCU.v(35)
+VLG-1154 : previous definition of module AL_MCU is here in G:/ELF2_SOC_Shanghai/trunk/Demo/UART_Demo/TD/al_ip/AL_MCU.v(33)
+VLG-002 : analyze verilog file G:/ELF2_SOC_Shanghai/trunk/Demo/UART_Demo/TD/al_ip/AL_MCU.v
+VLG-218 WARNING: overwrite current module AL_MCU in G:/ELF2_SOC_Shanghai/trunk/Demo/UART_Demo/TD/al_ip/AL_MCU.v(35)
+VLG-1154 : previous definition of module AL_MCU is here in G:/ELF2_SOC_Shanghai/trunk/Demo/UART_Demo/TD/al_ip/AL_MCU.v(35)
+VLG-002 : analyze verilog file G:/ELF2_SOC_Shanghai/trunk/Demo/UART_Demo/TD/al_ip/sys_pll.v
+VLG-002 : analyze verilog file G:/ELF2_SOC_Shanghai/trunk/Demo/UART_Demo/TD/al_ip/AL_MCU.v
+VLG-002 : analyze verilog file G:/ELF2_SOC_Shanghai/trunk/Demo/UART_Demo/TD/src/quick_start.v
+CMD-004 : start command "elaborate -top quick_start"
+VLG-004 : elaborate module quick_start in G:/ELF2_SOC_Shanghai/trunk/Demo/UART_Demo/TD/src/quick_start.v(2)
+VLG-004 : elaborate module sys_pll in G:/ELF2_SOC_Shanghai/trunk/Demo/UART_Demo/TD/al_ip/sys_pll.v(23)
+VLG-004 : elaborate module EF2_LOGIC_BUFG in C:/Anlogic/TD4.2.285/arch/ef2_macro.v(8)
+VLG-004 : elaborate module EF2_PHY_PLL(FIN="50.000",REFCLK_DIV=3,FBCLK_DIV=12,CLKC0_DIV=5,CLKC1_DIV=40,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=5,CLKC1_CPHASE=40,GMC_GAIN=6,ICP_CURRENT=3,KVCO=6,LPF_RESISTOR=2,PLLRST_ENA="DISABLE",INTPI=3,HIGH_SPEED_EN="ENABLE",OFFSET_MODE="EXT",CLKC0_DUTY=0.5,CLKC1_DUTY=0.5,CLKC0_DUTY_INT=3,CLKC1_DUTY_INT=20) in C:/Anlogic/TD4.2.285/arch/ef2_macro.v(2644)
+VLG-939 WARNING: port i2s_mst_clk remains unconnected for this instance in G:/ELF2_SOC_Shanghai/trunk/Demo/UART_Demo/TD/al_ip/AL_MCU.v(34)
+VLG-004 : elaborate module AL_MCU in G:/ELF2_SOC_Shanghai/trunk/Demo/UART_Demo/TD/al_ip/AL_MCU.v(14)
+VLG-004 : elaborate module EF2_PHY_MCU(GPIO_L0="ENABLE",GPIO_L1="ENABLE",GPIO_L3="ENABLE",GPIO_L4="ENABLE",GPIO_L6="ENABLE",GPIO_L7="ENABLE") in C:/Anlogic/TD4.2.285/arch/ef2_macro.v(741)
+VIN-1013 WARNING: input port i2s_mst_clk is not connected on this instance in G:/ELF2_SOC_Shanghai/trunk/Demo/UART_Demo/TD/al_ip/AL_MCU.v(34)
+RTL-100 : Current top model is quick_start
+RAM-300 : Inferred 0 RAMs.
+CMD-004 : start command "optimize_rtl"
+RUN-001 : Open license file C:/Anlogic/TD4.2.285/license/Anlogic.lic
+SNT-300 : SanityCheck: Model "quick_start"
+SNT-300 : SanityCheck: Model "AL_MCU"
+SNT-300 : SanityCheck: Model "sys_pll"
+RTL-100 : Mark sys_pll as IO macro for instance bufg_feedback
+FLT-300 : Flatten model quick_start
+FLT-300 : Flatten model AL_MCU
+FLT-300 : Flatten model sys_pll
+MRG-300 : Merged 2 instances.
+OPT-300 : Optimize round 1
+RTL-100 : 62/15 useful/useless nets, 34/7 useful/useless insts
+MUX-301 : Optimized 0 mux instances.
+OPT-301 : Optimize round 1, 24 better
+OPT-300 : Optimize round 2
+RTL-100 : 61/1 useful/useless nets, 33/0 useful/useless insts
+MUX-301 : Optimized 0 mux instances.
+OPT-301 : Optimize round 2, 0 better
+CMD-004 : start command "report_area -file ../../UART_Demo/TD/Quick_Start_rtl.area"
+standard
+IO Statistics
+#IO                     4
+  #input                2
+  #output               1
+  #inout                1
+
+Gate Statistics
+#Basic gates           27
+  #and                  0
+  #nand                 0
+  #or                   0
+  #nor                  0
+  #xor                  0
+  #xnor                 0
+  #buf                  0
+  #not                  1
+  #bufif1               1
+  #MX21                 0
+  #FADD                 0
+  #DFF                 25
+  #LATCH                0
+#MACRO_ADD              1
+
+CMD-004 : start command "read_adc constrs/board.adc"
+CMD-004 : start command "set_pin_assignment fpga_clk_in  LOCATION = P22;  "
+CMD-004 : start command "set_pin_assignment fpga_rst_n  LOCATION = P21;  "
+CMD-004 : start command "set_pin_assignment hw_led  LOCATION = P15;  "
+CMD-004 : start command "set_pin_assignment sw_led  LOCATION = P19;   "
+GUI-001 : export rtl_db failed
+CMD-004 : start command "map_macro"
+RTL-100 : Map 4 IOs to PADs
+GAT-100 : Processed 0 LOGIC_BUF instances.
+GAT-100 : 1 BUFG to GCLK
+RTL-100 : Optimize round 1
+RTL-100 : 65/0 useful/useless nets, 37/0 useful/useless insts
+RTL-100 : Optimize round 1, 0 better
+RTL-100 : Map 1 macro adder
+RTL-100 : 141/50 useful/useless nets, 63/25 useful/useless insts
+CMD-004 : start command "map"
+GAT-100 : Running gate level optimization.
+GAT-100 : LUT mapping.
+GAT-100 : Post mapping optimization.
+GAT-100 : Logic optimization runtime opt =   0.04 sec, map =   0.00 sec
+GAT-100 : Mapping with K=0, #lut = 0 (0.00), #lev = 0 (0.00)
+GAT-100 : Mapper mapped 1 instances into 1 LUTs, name keeping = 100%.
+CMD-004 : start command "pack"
+GAT-100 : Packing top model "quick_start" ...
+PAK-301 : Pack lib has 35 rtl pack models with 12 top pack blocks
+OPT-300 : Optimize round 1
+RTL-100 : 90/0 useful/useless nets, 62/0 useful/useless insts
+OPT-301 : Optimize round 1, 0 better
+PAK-SEQ-305 : Packing 25 DFF/LATCH to SEQ ...
+PAK-RLS : Pack 1 carry chain into lslice
+PAK-BLE-301 : Packing 0 adder to BLE ...
+PAK-BLE-302 : Packed 0 adder and 0 SEQ to BLE.
+PAK-BLE-301 : Packing 0 gate4 to BLE ...
+PAK-BLE-302 : Packed 0 gate4 and 0 SEQ to BLE.
+PAK-309 : Packed 0 FxMUX
+PAK-BLE-301 : Packing 0 MUX to BLE ...
+PAK-BLE-302 : Packed 0 MUX and 0 SEQ to BLE.
+PAK-BLE-301 : Packing 1 LUT to BLE ...
+PAK-BLE-302 : Packed 1 LUT and 0 SEQ to BLE.
+PAK-SEQ-301 : Packing 25 remaining SEQ's ...
+PAK-SEQ-302 : #0: Packed 0 SEQ (25 nodes)...
+PAK-SEQ-302 : #1: Packed 2 SEQ (24 nodes)...
+PAK-SEQ-303 : Packed 2 SEQ with LUT/SLICE
+PAK-SEQ-304 : 1 single LUT's are left
+PAK-SEQ-304 : 25 single SEQ's are left
+PAK-303 : Packing model "quick_start" (AL_USER_NORMAL) with 24/41 primitive instances ...
+CLK-302 : Net U_SYS_PLL/clk0_out driven by BUFG (0 clock/control pins, 1 other pins).
+CLK-311 : Net clk25 is clkc1 of pll U_SYS_PLL/pll_inst.
+CLK-304 : Net fpga_clk_in_pad is refclk of pll U_SYS_PLL/pll_inst.
+CLK-305 : Net fpga_clk_in_pad is fbclk of pll U_SYS_PLL/pll_inst.
+CLK-309 : Tag rtl::Net U_SYS_PLL/clk0_out as clock net
+CLK-309 : Tag rtl::Net clk25 as clock net
+CLK-309 : Tag rtl::Net fpga_clk_in_pad as clock net
+CLK-310 : Tagged 3 rtl::Net as clock net
+CMD-004 : start command "report_area -file ../../UART_Demo/TD/Quick_Start_gate.area"
+standard
+IO Statistics
+#IO                     4
+  #input                2
+  #output               1
+  #inout                1
+
+Utilization Statistics
+#lut                    1   out of   4480    0.02%
+#reg                   25   out of   4480    0.56%
+#le                    26
+  #lut only             1   out of     26    3.85%
+  #reg only            25   out of     26   96.15%
+  #lut&reg              0   out of     26    0.00%
+#dsp                    0   out of     15    0.00%
+#bram                   0   out of     12    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of      6    0.00%
+#mcu                    1   out of      1  100.00%
+#pad                    4   out of     31   12.90%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    1   out of      1  100.00%
+#clknet                 3   out of     16   18.75%
+  #gclk                 1
+
+CMD-004 : start command "export_db ../../UART_Demo/TD/Quick_Start_gate.db"
+RUN-001 : Exported /
+RUN-001 : Exported libs
+RUN-001 : Exported entities
+RUN-001 : Exported ports
+RUN-001 : Exported pins
+RUN-001 : Exported instances
+RUN-001 : Exported nets
+RUN-001 : Exported buses
+RUN-001 : Exported models
+RUN-001 : Exported congestions
+RUN-001 : Exported violations
+RUN-001 : Exported IO constraints
+RUN-001 : Exported Inst constraints
+RUN-001 : Exported flow parameters
+CMD-004 : start command "place"
+RUN-001 : Open license file C:/Anlogic/TD4.2.285/license/Anlogic.lic
+PLC-001 : Placer runs in 4 thread(s).
+RUN-001 : There are total 30 instances
+RUN-001 : 10 mslices, 10 lslices, 4 pads, 0 brams, 0 dsps
+RUN-001 : There are total 71 nets
+RUN-001 : 66 nets have 2 pins
+RUN-001 : 1 nets have [3 - 5] pins
+RUN-001 : 1 nets have [6 - 10] pins
+RUN-001 : 2 nets have [11 - 20] pins
+RUN-001 : 1 nets have [21 - 99] pins
+PLC-001 : Initial placement ...
+PLC-001 : design contains 28 instances, 20 slices, 1 macros(7 instances)
+PLC-001 : Start timing update ...
+CMD-004 : start command "start_timer"
+TMR-611 WARNING: No sdc constraints found while initiating timer.
+TMR-601 : Start building timing graph for model quick_start
+TMR-601 : Build timing graph completely. Port num: 4, tpin num: 164, tnet num: 69, tinst num: 27, tnode num: 217, tedge num: 288.
+
+TMR-601 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-601 : Levelize timing graph completed, there are 18 levels in all.
+TMR-601 : Timing graph initialized successfully.
+
+TMR-601 : Start to update net delay, extr mode = 2.
+TMR-601 : Update delay of 69 nets completely.
+TMR-601 : Annotate delay to tedge completely, extr mode = 2.
+TMR-601 : No user constraint, initiate default constraint.
+TMR-601 : Assign derive clock DeriveClock to 26 clock pins, and constraint 51 relative nodes.
+TMR-601 : Start to map constraints to rules, there are 0 constraints in all.
+TMR-601 : Start to map report constraints to rules, there are 0 constraints in all.
+TMR-601 : Constraints initiated successfully.
+TMR-601 : Forward propagation: start to calculate arrival time...
+TMR-601 : Backward propagation: start to calculate required time...
+TMR-601 : Timing propagation completely!
+PLC-001 : End timing update;  0.028933s wall, 0.031200s user + 0.000000s system = 0.031200s CPU (107.8%)
+
+PLC-001 : Global placement ...
+PLC-001 : Initial: Len = 8261.4
+PLC-001 : Run with size of 3
+PLC-001 : Cell area utilization is 0%, beta_incr = 0.994643
+PLC-001 : :::0::: Try harder cell spreading with beta_ = 0
+PLC-004 : Step(1): len = 4841.2, overlap = 0
+PLC-004 : Step(2): len = 2770.2, overlap = 0
+PLC-004 : Step(3): len = 2398.5, overlap = 0
+PLC-004 : Step(4): len = 2145.7, overlap = 0
+PLC-004 : Step(5): len = 1899.6, overlap = 0
+PLC-004 : Step(6): len = 1801.3, overlap = 0
+PLC-004 : Step(7): len = 1725.2, overlap = 0
+PLC-004 : Step(8): len = 1701.3, overlap = 0
+PLC-004 : Step(9): len = 1717.4, overlap = 0
+PLC-004 : Step(10): len = 1744.3, overlap = 0
+PLC-004 : Step(11): len = 1780.6, overlap = 0
+PLC-004 : Step(12): len = 1724.9, overlap = 0
+PLC-004 : Step(13): len = 1631.1, overlap = 0
+PLC-004 : Step(14): len = 1485.7, overlap = 0
+PLC-004 : Step(15): len = 1429.4, overlap = 0
+PLC-004 : Step(16): len = 1400.9, overlap = 0
+PLC-004 : Step(17): len = 1374.9, overlap = 0
+PLC-004 : Step(18): len = 1257.8, overlap = 0
+PLC-004 : Step(19): len = 1259.5, overlap = 0
+PLC-004 : Step(20): len = 1259.5, overlap = 0
+PLC-001 : Legalization ...
+PLC-001 : Run with size of 3
+PLC-001 : Cell area utilization is 1%, beta_incr = 0.994643
+PLC-001 : :::0::: Try harder cell spreading with beta_ = 0
+PLC-004 : Step(21): len = 1240.6, overlap = 0
+PLC-004 : Step(22): len = 1244.8, overlap = 0
+PLC-004 : Step(23): len = 1244.8, overlap = 0
+PLC-001 : Run with size of 1
+PLC-001 : Cell area utilization is 1%, beta_incr = 0.994643
+PLC-001 : :::0::: Try harder cell spreading with beta_ = 3.06959e-05
+PLC-004 : Step(24): len = 1247, overlap = 1.75
+PLC-004 : Step(25): len = 1272, overlap = 1.5
+PLC-001 : :::1::: Try harder cell spreading with beta_ = 6.13919e-05
+PLC-004 : Step(26): len = 1267.1, overlap = 1.5
+PLC-004 : Step(27): len = 1267.1, overlap = 1.5
+PLC-001 : :::2::: Try harder cell spreading with beta_ = 0.00010567
+PLC-004 : Step(28): len = 1308.4, overlap = 1.5
+PLC-004 : Step(29): len = 1327.2, overlap = 1.25
+PLC-001 : Legalization ...
+PLC-001 : Run with size of 1
+PLC-001 : Cell area utilization is 1%, beta_incr = 0.994643
+PLC-001 : :::0::: Try harder cell spreading with beta_ = 0.00768464
+PLC-004 : Step(30): len = 1681.9, overlap = 0
+PLC-004 : Step(31): len = 1638.4, overlap = 0.25
+PLC-004 : Step(32): len = 1615.1, overlap = 0.25
+PLC-004 : Step(33): len = 1616, overlap = 0.25
+PLC-004 : Step(34): len = 1614, overlap = 0.25
+PLC-001 : Legalization ...
+PLC-001 : Legalized: Len = 1628.4, Over = 0
+PLC-001 : Final: Len = 1628.4, Over = 0
+PLC-001 : Improving timing with driver duplication.
+CMD-004 : start command "start_timer"
+TMR-611 WARNING: No sdc constraints found while initiating timer.
+TMR-601 : Start building timing graph for model quick_start
+TMR-601 : Build timing graph completely. Port num: 4, tpin num: 164, tnet num: 69, tinst num: 27, tnode num: 217, tedge num: 288.
+
+TMR-601 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-601 : Levelize timing graph completed, there are 18 levels in all.
+TMR-601 : Timing graph initialized successfully.
+
+CMD-004 : start command "route"
+RUN-001 : Open license file C:/Anlogic/TD4.2.285/license/Anlogic.lic
+RUN-001 : Pin swapping for better routability
+RUN-001 : Pin misalignment score is improved from 4 to 4
+RUN-001 : Pin local connectivity score is improved from 1 to 1
+RUN-001 : Pin misalignment score is improved from 4 to 4
+RUN-001 : Pin local connectivity score is improved from 1 to 1
+RTE-301 : End pin swap;  0.002037s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+RTE-301 : Route runs in 4 thread(s)
+RUN-001 : There are total 30 instances
+RUN-001 : 10 mslices, 10 lslices, 4 pads, 0 brams, 0 dsps
+RUN-001 : There are total 71 nets
+RUN-001 : 66 nets have 2 pins
+RUN-001 : 1 nets have [3 - 5] pins
+RUN-001 : 1 nets have [6 - 10] pins
+RUN-001 : 2 nets have [11 - 20] pins
+RUN-001 : 1 nets have [21 - 99] pins
+RTE-301 : Start global routing ...
+RTE-301 : Generate routing grids ...
+RTE-301 : Initialize routing nets ...
+RTE-301 : Ripup & Reroute ...
+RTE-302 : len = 1688, over cnt = 3(0%), over = 3, worst = 1
+RTE-302 : len = 1696, over cnt = 2(0%), over = 2, worst = 1
+RTE-302 : len = 1696, over cnt = 2(0%), over = 2, worst = 1
+RTE-302 : len = 1728, over cnt = 0(0%), over = 0, worst = 0
+RTE-301 : Timing updates.
+TMR-601 : Start to update net delay, extr mode = 5.
+TMR-601 : Update delay of 69 nets completely.
+TMR-601 : Annotate delay to tedge completely, extr mode = 5.
+TMR-601 : Start to map report constraints to rules, there are 0 constraints in all.
+TMR-601 : Forward propagation: start to calculate arrival time...
+TMR-601 : Backward propagation: start to calculate required time...
+TMR-601 : Timing propagation completely!
+RTE-301 : Optimize timing.
+RTE-301 : End global routing;  0.012744s wall, 0.031200s user + 0.000000s system = 0.031200s CPU (244.8%)
+
+RTE-301 : Start detail routing ...
+RTE-301 : Generate detailed routing grids ...
+RTE-301 : Generate nets ...
+RTE-301 : clock net U_SYS_PLL/clk0_out will be merged with clock U_SYS_PLL/clk0_buf
+RTE-301 : net clk25 will be routed on clock mesh
+RTE-301 : net fpga_clk_in_pad will be routed on clock mesh
+RTE-301 : Detail Route ...
+RTE-301 : ===== Initial DR =====
+RTE-301 : Routed 47% nets. 
+RTE-301 : Routed 50% nets. 
+RTE-301 : Routed 57% nets. 
+RTE-301 : Routed 57% nets. 
+RTE-301 : Routed 57% nets. 
+RTE-301 : Routed 59% nets. 
+RTE-301 : Routed 63% nets. 
+RTE-301 : Routed 63% nets. 
+RTE-301 :  0.044486s wall, 0.046800s user + 0.000000s system = 0.046800s CPU (105.2%)
+
+RTE-302 : len = 4048, over cnt = 8(0%), over = 8, worst = 1
+RTE-301 : ===== DR Iter 1 =====
+RTE-301 :  0.007078s wall, 0.000000s user + 0.015600s system = 0.015600s CPU (220.4%)
+
+RTE-302 : len = 4064, over cnt = 1(0%), over = 1, worst = 1
+RTE-301 : ===== DR Iter 2 =====
+RTE-301 :  0.003392s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+RTE-302 : len = 4080, over cnt = 0(0%), over = 0, worst = 0
+RTE-303 : Routed, final wirelength = 4080
+RTE-301 : 0 feed throughs used by 0 nets
+RTE-301 : Generate detailed routing grids ...
+RTE-301 : Generate nets ...
+RTE-301 : clock net U_SYS_PLL/clk0_out will be merged with clock U_SYS_PLL/clk0_buf
+RTE-301 : net clk25 will be routed on clock mesh
+RTE-301 : net fpga_clk_in_pad will be routed on clock mesh
+RTE-301 : eco open net = 0
+RTE-301 : End detail routing;  1.069846s wall, 0.998406s user + 0.093601s system = 1.092007s CPU (102.1%)
+
+RTE-301 : Routing violations:
+RTE-301 : End of Routing Violations.
+CMD-005 : finish command "route" in  1.129083s wall, 1.092007s user + 0.093601s system = 1.185608s CPU (105.0%)
+
+CMD-006 : used memory is 192 MB, reserved memory is 143 MB, peak memory is 271 MB
+CMD-004 : start command "report_area -io_info -file ../../UART_Demo/TD/Quick_Start_phy.area"
+standard
+IO Statistics
+#IO                     4
+  #input                2
+  #output               1
+  #inout                1
+
+Utilization Statistics
+#lut                    1   out of   4480    0.02%
+#reg                   25   out of   4480    0.56%
+#le                    26
+  #lut only             1   out of     26    3.85%
+  #reg only            25   out of     26   96.15%
+  #lut&reg              0   out of     26    0.00%
+#dsp                    0   out of     15    0.00%
+#bram                   0   out of     12    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of      6    0.00%
+#mcu                    1   out of      1  100.00%
+#pad                    4   out of     31   12.90%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    1   out of      1  100.00%
+#clknet                 3   out of     16   18.75%
+  #gclk                 1
+
+CMD-004 : start command "export_db ../../UART_Demo/TD/Quick_Start_pr.db"
+RUN-001 : Exported /
+RUN-001 : Exported libs
+RUN-001 : Exported entities
+RUN-001 : Exported ports
+RUN-001 : Exported pins
+RUN-001 : Exported instances
+RUN-001 : Exported nets
+RUN-001 : Exported buses
+RUN-001 : Exported models
+RUN-001 : Exported congestions
+RUN-001 : Exported violations
+RUN-001 : Exported IO constraints
+RUN-001 : Exported Inst constraints
+RUN-001 : Exported flow parameters
+CMD-004 : start command "bitgen -bit ../../UART_Demo/TD/Quick_Start.bit -version 0X00 -svf ../../UART_Demo/TD/Quick_Start.svf -svf_comment_on -128 G:/ELF2_SOC_Shanghai/trunk/Demo/UART_Demo/Keil/Quick_Start.bin -g ucode:00000000000000000000000000000000 -f ../../UART_Demo/TD/Quick_Start.btc"
+BIT-701 : Start to generate bitstream. 
+BIT-701 : Init instances with 4 threads.
+BIT-701 : Init instances completely, inst num: 30
+BIT-701 : Init pips with 4 threads.
+BIT-701 : Init pips completely, net num: 71, pip num: 430
+BIT-701 : Multithreading accelaration with 4 threads.
+BIT-701 : Generate bitstream completely, there are 115 valid insts, and 1103 bits set as '1'.
+BIT-701 : Generate bits file ../../UART_Demo/TD/Quick_Start.bit.
+BIT-701 : Generate svf file ../../UART_Demo/TD/Quick_Start_sram.svf.
+BIT-701 : Generate tde file ../../UART_Demo/TD/Quick_Start_sram.tde
+BIT-701 : Generate tde file ../../UART_Demo/TD/Quick_Start_spi_bk.tde
+BIT-701 : Generate tde file ../../UART_Demo/TD/Quick_Start_spi_norefresh_bk.tde
+BIT-701 : Generate tde file ../../UART_Demo/TD/Quick_Start_refresh.tde
+BIT-701 : Generate tde file ../../UART_Demo/TD/Quick_Start_erase_spi.tde
+BIT-701 : Generate tde file ../../UART_Demo/TD/Quick_Start_readstatus.tde
+CMD-005 : finish command "bitgen -bit ../../UART_Demo/TD/Quick_Start.bit -version 0X00 -svf ../../UART_Demo/TD/Quick_Start.svf -svf_comment_on -128 G:/ELF2_SOC_Shanghai/trunk/Demo/UART_Demo/Keil/Quick_Start.bin -g ucode:00000000000000000000000000000000 -f ../../UART_Demo/TD/Quick_Start.btc" in  2.490191s wall, 2.745618s user + 0.046800s system = 2.792418s CPU (112.1%)
+
+CMD-006 : used memory is 197 MB, reserved memory is 146 MB, peak memory is 271 MB

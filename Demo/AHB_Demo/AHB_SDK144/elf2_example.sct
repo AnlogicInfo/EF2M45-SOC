@@ -1,0 +1,46 @@
+#! armcc -E
+#include "..\..\..\ELF2_BSP\platform.h"
+	
+#if (RUN_ON_FLASH == 0)
+LR_IRAM1 0x00000000  {  ; load address = execution address
+  RO_IRAM1 0x00000000 	{
+   *.o (RESET, +First)
+  }
+  INT_CALLBACK_TBL +0 {
+	*(int_callback_area)
+  }
+  RO_IRAM2 +0 {
+    *(InRoot$$Sections)
+    .ANY (+RO  )
+  }
+ RW_IRAM0 0x20000000 0x00008000  {  ; RW data
+  .ANY (+RW +ZI)
+  }
+}
+ScatterAssert(ImageLimit(RO_IRAM2)<0x00004000) 
+#else
+LR_FLASH 0x10000000 0x00800000  {    ; load region size_region
+  ISR_VECTOR 0x20000000 {
+	*.o (RESET, +First)
+  }
+  INT_CALLBACK_TBL +0 {
+	*(int_callback_area)
+  }
+  ER_FLASH 0x10000000+ImageLength(ISR_VECTOR)+ImageLength(INT_CALLBACK_TBL) 0x00800000  {  ; load address = execution address
+	*(InRoot$$Sections)
+   .ANY (+RO)
+  }
+  CODE_IN_RAM ImageLimit(INT_CALLBACK_TBL)
+  {
+    cache.o(+RO)
+	qspi.o(+RO)
+	flash.o(+RO)
+	dma.o(+RO)
+  }
+  DATA_IN_RAM ImageLimit(CODE_IN_RAM) {  ; RW data
+	.ANY (+RW +ZI)
+  }
+}	
+
+ScatterAssert(ImageLimit(DATA_IN_RAM)<0x20008000) 
+#endif

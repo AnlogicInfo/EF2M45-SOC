@@ -1,0 +1,145 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.15
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: A AutoBVT, Microsoft, LIC=HN08T-RCE1H-8SAYU-SFWR2-ST45E-EQ3HD
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.15.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 2 (build 169)
+Assembler:       Armasm.exe V5.05 update 2 (build 169)
+Linker/Locator:  ArmLink.exe V5.05 update 2 (build 169)
+Library Manager: ArmAr.exe V5.05 update 2 (build 169)
+Hex Converter:   FromElf.exe V5.05 update 2 (build 169)
+CPU DLL:         SARMCM3.DLL V5.15.0
+Dialog DLL:      DCM.DLL V1.13.2.0
+Target DLL:      Segger\JL2CM3.dll V2.99.15.0
+Dialog DLL:      TCM.DLL V1.14.5.0
+ 
+<h2>Project:</h2>
+G:\ELF2_SOC_Shanghai\trunk\Demo\SPIM_Demo\SDK_SPIM\Quick_Start.uvprojx
+Project File Date:  08/09/2018
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.05 update 2 (build 169)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Quick_Start'
+compiling main.c...
+compiling test_gpio.c...
+compiling int_register.c...
+compiling intc.c...
+assembling startup_elf2.s...
+compiling system_elf2.c...
+compiling log.c...
+compiling debug.c...
+compiling SEGGER_RTT_printf.c...
+compiling SEGGER_RTT.c...
+compiling spi_driver_sd.c...
+src\spi_driver_sd.c(60): warning:  #188-D: enumerated type mixed with another type
+      HAL_SYSCON_Function_IO_Set(SPI_SS , gpio1_15   , 1); //Pseudo-Pin,
+src\spi_driver_sd.c(61): warning:  #188-D: enumerated type mixed with another type
+      HAL_SYSCON_Function_IO_Set(SPI_CLK, 
+D_SPI_CLK, 1);
+src\spi_driver_sd.c(62): warning:  #188-D: enumerated type mixed with another type
+      HAL_SYSCON_Function_IO_Set(SPI_SDO, 
+D_SPI_SDO, 1);
+src\spi_driver_sd.c(63): warning:  #188-D: enumerated type mixed with another type
+      HAL_SYSCON_Function_IO_Set(SPI_SDI, 
+D_SPI_SDI, 1);
+src\spi_driver_sd.c(83): warning:  #188-D: enumerated type mixed with another type
+      
+PI_CS_HIGH;  
+src\spi_driver_sd.c(151): warning:  #188-D: enumerated type mixed with another type
+      
+PI_CS_LOW;//片选SD，?偷?平使??
+src\spi_driver_sd.c(162): warning:  #188-D: enumerated type mixed with another type
+      
+PI_CS_HIGH;//?头?????
+src\spi_driver_sd.c(176): warning:  #188-D: enumerated type mixed with another type
+      
+PI_CS_HIGH;  
+src\spi_driver_sd.c(195): warning:  #188-D: enumerated type mixed with another type
+      
+PI_CS_LOW;
+src\spi_driver_sd.c(241): warning:  #188-D: enumerated type mixed with another type
+      
+PI_CS_HIGH;
+src\spi_driver_sd.c(243): warning:  #188-D: enumerated type mixed with another type
+      
+PI_CS_HIGH;
+src\spi_driver_sd.c(257): warning:  #188-D: enumerated type mixed with another type
+      
+PI_CS_LOW; 
+src\spi_driver_sd.c(264): warning:  #188-D: enumerated type mixed with another type
+          
+PI_CS_HIGH;    
+src\spi_driver_sd.c(321): warning:  #188-D: enumerated type mixed with another type
+          
+PI_CS_HIGH;        
+src\spi_driver_sd.c(341): warning:  #188-D: enumerated type mixed with another type
+                  
+PI_CS_HIGH;      
+src\spi_driver_sd.c(356): warning:  #188-D: enumerated type mixed with another type
+              
+PI_CS_HIGH;  
+src\spi_driver_sd.c(227): warning:  #177-D: variable "r1" was declared but never referenced
+      uint8_t r1;    // ?娣?SD卡?姆祷?值
+src\spi_driver_sd.c(408): warning:  #188-D: enumerated type mixed with another type
+      
+PI_CS_LOW;     
+src\spi_driver_sd.c(412): warning:  #188-D: enumerated type mixed with another type
+          
+PI_CS_HIGH;    
+src\spi_driver_sd.c(426): warning:  #188-D: enumerated type mixed with another type
+      
+PI_CS_HIGH;                                                             
+src\spi_driver_sd.c(446): warning:  #188-D: enumerated type mixed with another type
+          
+PI_CS_LOW; 
+src\spi_driver_sd.c(511): warning:  #188-D: enumerated type mixed with another type
+          
+PI_CS_LOW; 
+src\spi_driver_sd.c(521): warning:  #188-D: enumerated type mixed with another type
+          
+PI_CS_LOW;         
+src\spi_driver_sd.c: 23 warnings, 0 errors
+compiling diskio.c...
+..\..\..\ELF2_BSP\FatFs11a\src\diskio.c(101): warning:  #223-D: function "SDReadDisk" declared implicitly
+                        Status = SDReadDisk(buff, sector, count) ;      
+..\..\..\ELF2_BSP\FatFs11a\src\diskio.c(134): warning:  #223-D: function "SDWriteDisk" declared implicitly
+                                Status = SDWriteDisk(buff ,sector, count) ;                             
+..\..\..\ELF2_BSP\FatFs11a\src\diskio.c(143): warning:  #111-D: statement is unreachable
+        return RES_OK;
+..\..\..\ELF2_BSP\FatFs11a\src\diskio.c(165): warning:  #111-D: statement is unreachable
+        break;
+..\..\..\ELF2_BSP\FatFs11a\src\diskio.c(169): warning:  #111-D: statement is unreachable
+        break;
+..\..\..\ELF2_BSP\FatFs11a\src\diskio.c(173): warning:  #111-D: statement is unreachable
+        break;
+..\..\..\ELF2_BSP\FatFs11a\src\diskio.c(176): warning:  #111-D: statement is unreachable
+        break;
+..\..\..\ELF2_BSP\FatFs11a\src\diskio.c(160): warning:  #177-D: variable "stat" was declared but never referenced
+        DRESULT stat;
+..\..\..\ELF2_BSP\FatFs11a\src\diskio.c: 8 warnings, 0 errors
+compiling ff.c...
+..\..\..\ELF2_BSP\FatFs11a\src\ff.c(1653): warning:  #111-D: statement is unreachable
+                        w = (w << 8) + b;                       /* Create a DBC */
+..\..\..\ELF2_BSP\FatFs11a\src\ff.c: 1 warning, 0 errors
+compiling ccsbcs.c...
+linking...
+Program Size: Code=12008 RO-data=1544 RW-data=172 ZI-data=8300  
+After Build - User command #1: fromelf -c -v -a --output=Quick_Start.asm Objects\Quick_Start.axf
+After Build - User command #2: fromelf --bin --output=Quick_Start.bin Objects\Quick_Start.axf
+".\Objects\Quick_Start.axf" - 0 Error(s), 32 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  G:\ELF2_SOC_Shanghai\trunk\Demo\SPIM_Demo\SDK_SPIM\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM3\Include
+
+<h2>Collection of Component Files used:</h2>
+</pre>
+</body>
+</html>

@@ -1,0 +1,17 @@
+ef2_4
+13 0 0 0 0 0 0
+infinity infinity top ef2_4 EF2M45LG48B Detail 9 1
+clock: sys_clk
+13 0 0 0
+
+
+Timing group statistics: 
+	Clock constraints: 
+	  No constraint path
+	Minimum input arrival time before clock: no constraint path
+	Maximum output required time after clock: no constraint path
+	Maximum combinational path delay: no constraint path
+
+Warning: there is 1 clock net without clock constraint.
+	clk_25m
+

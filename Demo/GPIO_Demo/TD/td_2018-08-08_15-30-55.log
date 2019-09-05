@@ -1,0 +1,39 @@
+============================================================
+   Tang Dynasty, V4.2.217
+   Copyright:   Shanghai Anlogic Infotech Co., Ltd.
+                2011 - 2021
+   Executable = C:/Anlogic/TD4.2.217/bin/td.exe
+   Built at =   10:05:48 Jul 16 2018
+   Run by =     Administrator
+   Run Date =   Wed Aug  8 15:30:55 2018
+
+   Run on =     Y1YBFM96WTED81W
+============================================================
+CMD-004 : start command "import_device ef2_4.db -package EF2M45LG48B"
+CMD-004 : start command "open_project F:/SVN_ELF2_SOC/trunk/Basic_Demo/GPIO_Demo/TD/Quick_Start.al"
+VLG-002 : analyze verilog file F:/SVN_ELF2_SOC/trunk/Basic_Demo/GPIO_Demo/TD/al_ip/sys_pll.v
+VLG-002 : analyze verilog file F:/SVN_ELF2_SOC/trunk/Basic_Demo/GPIO_Demo/TD/al_ip/AL_MCU.v
+VLG-002 : analyze verilog file F:/SVN_ELF2_SOC/trunk/Basic_Demo/GPIO_Demo/TD/src/quick_start.v
+CMD-005 : finish command "import_device ef2_4.db -package EF2M45LG48B" in  1.248856s wall, 1.388409s user + 0.156001s system = 1.544410s CPU (123.7%)
+
+CMD-006 : used memory is 111 MB, reserved memory is 83 MB, peak memory is 111 MB
+CMD-004 : start command "download -bit F:\SVN_ELF2_SOC\trunk\Basic_Demo\GPIO_Demo\TD\Quick_Start.bit -mode program_spi -v -wait 60 -spd 6 -sec 64 -cable 0"
+RUN-001 : Chip validation success: EF2M45B
+CMD-004 : start command "bit_to_vec -chip EF2M45B -m program_spi -bit F:/SVN_ELF2_SOC/trunk/Basic_Demo/GPIO_Demo/TD/Quick_Start.bit"
+CMD-005 : finish command "bit_to_vec -chip EF2M45B -m program_spi -bit F:/SVN_ELF2_SOC/trunk/Basic_Demo/GPIO_Demo/TD/Quick_Start.bit" in  1.310482s wall, 1.310408s user + 0.000000s system = 1.310408s CPU (100.0%)
+
+CMD-006 : used memory is 244 MB, reserved memory is 202 MB, peak memory is 247 MB
+CMD-004 : start command "program_spief2 -cable 0 -spd 6"
+CMD-005 : finish command "program_spief2 -cable 0 -spd 6" in  32.981956s wall, 0.702005s user + 0.046800s system = 0.748805s CPU (2.3%)
+
+CMD-006 : used memory is 246 MB, reserved memory is 203 MB, peak memory is 248 MB
+CMD-004 : start command "bit_to_vec -chip EF2M45B -m verify_spi -bit F:/SVN_ELF2_SOC/trunk/Basic_Demo/GPIO_Demo/TD/Quick_Start.bit"
+CMD-004 : start command "program -cable 0 -spd 6"
+CMD-005 : finish command "program -cable 0 -spd 6" in  1.376043s wall, 0.124801s user + 0.015600s system = 0.140401s CPU (10.2%)
+
+CMD-006 : used memory is 191 MB, reserved memory is 148 MB, peak memory is 248 MB
+CMD-004 : start command "program -cable 0 -spd 1"
+CMD-005 : finish command "download -bit F:\SVN_ELF2_SOC\trunk\Basic_Demo\GPIO_Demo\TD\Quick_Start.bit -mode program_spi -v -wait 60 -spd 6 -sec 64 -cable 0" in  36.257549s wall, 2.418016s user + 0.093601s system = 2.511616s CPU (6.9%)
+
+CMD-006 : used memory is 155 MB, reserved memory is 113 MB, peak memory is 248 MB
+GUI-001 : Download success!

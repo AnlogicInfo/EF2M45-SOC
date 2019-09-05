@@ -1,0 +1,10 @@
+.\objects\sleep.o: F:\FreeRTOS_RD\Anlogic_BSP\ELF2_BSP\SOC\driver\sleep.c
+.\objects\sleep.o: ..\..\..\ELF2_BSP\Device\ELF2\Include\elf2.h
+.\objects\sleep.o: ..\..\..\ELF2_BSP\CMSIS\Core\Include\core_cm3.h
+.\objects\sleep.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\sleep.o: ..\..\..\ELF2_BSP\CMSIS\Core\Include\cmsis_version.h
+.\objects\sleep.o: ..\..\..\ELF2_BSP\CMSIS\Core\Include\cmsis_compiler.h
+.\objects\sleep.o: ..\..\..\ELF2_BSP\CMSIS\Core\Include\cmsis_armcc.h
+.\objects\sleep.o: ..\..\..\ELF2_BSP\CMSIS\Core\Include\mpu_armv7.h
+.\objects\sleep.o: ..\..\..\ELF2_BSP\Device\ELF2\Include\system_elf2.h
+.\objects\sleep.o: F:\FreeRTOS_RD\Anlogic_BSP\ELF2_BSP\SOC\driver\sleep.h

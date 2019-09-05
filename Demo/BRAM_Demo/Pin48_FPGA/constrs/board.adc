@@ -1,0 +1,17 @@
+
+set_pin_assignment {fpga_clk_in} { LOCATION = P22;  }
+set_pin_assignment {fpga_rst_n} { LOCATION = P21;  } 
+
+set_pin_assignment {hw_led} { LOCATION = P19;  }
+set_pin_assignment {sw_led} { LOCATION = P18;   }
+ 
+ 
+
+
+
+  
+#set_pin_assignment {fpga_clk_in} { LOCATION = P20;  }
+#set_pin_assignment {fpga_rst_n} { LOCATION = P38;  } 
+#
+#set_pin_assignment {hw_led} { LOCATION = P81;  }
+#set_pin_assignment {sw_led} { LOCATION = P82;   }  
