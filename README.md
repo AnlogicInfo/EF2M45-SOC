@@ -10,19 +10,19 @@ MCU Brief
 ----------------------
 The ELF2 SOCs contain FPGA and MCU-Cortex M3, the Max Frequency is 125MHz.<br>
 The MCU Feature
-######NVIC 
-######System Bus:AHB Bus 
-######2 Timers;
-######1 WDT;
-######2 Channel DMA,support M2P,M2M and P2M(M:Memory, P:Peripherals);
-######1 Qspi Controller;
-######On-Chip SRAM resoures:16KByte + 32KByte;
-######16-bit user register (MCU-> FPGA);
-######RTC clock input -32.768kHz;
-######2 8-channel 1MSPS 12bit SAR ADCs (shared with Fabric);
-######32 GPIOs (High 16-bit GPIO, Low 16-bit GPIO);
-######GPIO supports up to 1 SPIM, 2 I2C, 1 I2S, 1 UART;
-######Support SWD debugging;
+* NVIC 
+* System Bus:AHB Bus 
+* 2 Timers;
+* 1 WDT;
+* 2 Channel DMA,support M2P,M2M and P2M(M:Memory, P:Peripherals);
+* 1 Qspi Controller;
+* On-Chip SRAM resoures:16KByte + 32KByte;
+* 16-bit user register (MCU-> FPGA);
+* RTC clock input -32.768kHz;
+* 2 8-channel 1MSPS 12bit SAR ADCs (shared with Fabric);
+* 32 GPIOs (High 16-bit GPIO, Low 16-bit GPIO);
+* GPIO supports up to 1 SPIM, 2 I2C, 1 I2S, 1 UART;
+* Support SWD debugging;
 
 MCU and FPGA communication
 AHB slave;
