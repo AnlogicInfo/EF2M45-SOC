@@ -1,6 +1,6 @@
 
 ![Anlogic](https://0.rc.xiniu.com/g2/M00/1A/CA/CgAGe1yCYjWAQjUDAAAXmE88dpg262.png?d=20181205152921)<br>
-Anlogic ELF2 Serial SOC
+Anlogic ELF2 Serial 
 ======================
 Device Brief 
 ----------------
@@ -15,12 +15,14 @@ Family Selection Guide
 |L     |ELF2L45	|4480  |4480   |35 Kbits |700 Kbits|15 |1  |4Mb	 |-	 |207|
 |M	   |ELF2M45	|4480  |4480   |35 Kbits |700 Kbits|15 |1  |4Mb	 | Cortex-M3  |207|	
 		
-ELF2M45 SOC Brief
+ELF2 Device Package Info
 ----------------------
-|Packages                      | ELF2M45  |
-|---                           |---       |
-|48 LQFP (10x10, 0.5mm pitch)  |36(6+9)   |
-|144 LQFP (20x20, 0.5mm pitch) |114(24+25)|
-|256 fpBGA (17x17, 1.0mm pitch)|207(31+64)|
-
-####Notes:207(31+64) means the number of IO users can use (Ture LVDS +Emulated LVDS).
+|Packages                       | ELF2M45  | ELF2M45  | ELF2M45  | ELF2M45  |
+|---                            |---       |---       |---       |---       |
+|42 XWFN (4.2x4.2, 0.35mm pitch)|          |29(10+1)  |          |          |
+|48 LQFP (10x10, 0.5mm pitch)   |          |          |          |36(6+9)   |
+|100 LQFP (14x14, 0.5mm pitch)  |81(15+17) |          |          |          |
+|144 LQFP (20x20, 0.5mm pitch)  |114(24+25)|          |114(24+25)|114(24+25)|
+|256 fpBGA (17x17, 1.0mm pitch) |207(31+64)|207(31+64)|207(31+64)|          |
+<br>
+Notes:207(31+64) means the number of IO users can use (Ture LVDS +Emulated LVDS).
