@@ -17,8 +17,6 @@ Family Selection Guide
 		
 ELF2M45 SOC Brief
 ----------------------
-The ELF2M45 
-<br>
 |Packages                      | ELF2M45  |
 |---                           |---       |
 |48 LQFP (10x10, 0.5mm pitch)  |36(6+9)   |
