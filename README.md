@@ -1,6 +1,6 @@
 
 ![Anlogic](https://0.rc.xiniu.com/g2/M00/1A/CA/CgAGe1yCYjWAQjUDAAAXmE88dpg262.png?d=20181205152921)<br>
-Anlogic ELF2 Serial 
+Anlogic ELF2 Brief 
 ======================
 Device Brief 
 ----------------
@@ -9,14 +9,14 @@ The ELF2 family have four devices, which locate the low-cost, low-power programm
 MCU Brief
 ----------------------
 The ELF2 SOCs contain FPGA and MCU-Cortex M3, the Max Frequency is 125MHz.<br>
-The MCU Feature
+The MCU Features can list as follows
 * NVIC 
-* System Bus:AHB Bus 
+* AHB Bus 
 * 2 Timers;
 * 1 WDT;
 * 2 Channel DMA,support M2P,M2M and P2M(M:Memory, P:Peripherals);
 * 1 Qspi Controller;
-* On-Chip SRAM resoures:16KByte + 32KByte;
+* On-Chip SRAM resoures(16KByte + 32KByte);
 * 16-bit user register (MCU-> FPGA);
 * RTC clock input -32.768kHz;
 * 2 8-channel 1MSPS 12bit SAR ADCs (shared with Fabric);
@@ -39,7 +39,7 @@ Family Selection Guide
 |L     |ELF2L45	|4480  |4480   |35 Kbits |700 Kbits|15 |1  |4Mb	 |-	 |207|
 |M	   |ELF2M45	|4480  |4480   |35 Kbits |700 Kbits|15 |1  |4Mb	 | Cortex-M3  |207|	
 		
-Device Package Info
+Package Info.
 ----------------------
 |Packages                       | ELF2M45  | ELF2M45  | ELF2M45  | ELF2M45  |
 |---                            |---       |---       |---       |---       |
@@ -49,3 +49,47 @@ Device Package Info
 |144 LQFP (20x20, 0.5mm pitch)  |114(24+25)|          |114(24+25)|114(24+25)|
 |256 fpBGA (17x17, 1.0mm pitch) |207(31+64)|207(31+64)|207(31+64)|          |
 	Notes:207(31+64) means the number of IO users can use (Ture LVDS +Emulated LVDS).
+
+BSP and Project
+======================
+Demo Folder 
+----------------------
+* [ADC_Demo	    ](#ADC_Demo	    )
+* [AHB_Demo	    ](#AHB_Demo	    )
+* [BRAM_Demo	](#BRAM_Demo	)
+* [CLOCK_Demo	](#CLOCK_Demo	)
+* [DMA_Demo	    ](#DMA_Demo	    )
+* [EXTI_Demo	](#EXTI_Demo	)
+* [FLASH_Demo	](#FLASH_Demo	)
+* [GPIO_Demo	](#GPIO_Demo	)
+* [I2C_Demo	    ](#I2C_Demo	    )
+* [I2S_Demo	    ](#I2S_Demo	    )
+* [RESET_Demo	](#RESET_Demo	)
+* [RTC_Demo	    ](#RTC_Demo	    )
+* [SPIM_Demo	](#SPIM_Demo	)
+* [TIMER_Demo	](#TIMER_Demo	)
+* [UART_Demo	](#UART_Demo	)
+* [USR_REG_Demo ](#USR_REG_Demo )
+* [WDT_Demo     ](#WDT_Demo     )
+Document Folder 
+----------------------
+* Anlogic ELF2 SDK.chm		
+* Anlogic SOC介绍及其应用.pdf		
+* EF2M45_SCH.pdf		
+* SUG401_ELF2系列SOC入门手册_V1.2.pdf		
+* SUG402_ELF2系列SOC外设实验指导_V1.1.pdf
+
+ELF2_BSP Folder 
+----------------------
+* CMSIS/Core/Include		
+* Debug		
+* Device/ELF2		
+* Driver		
+* FatFs		
+* FatFs11a		
+* FreeRTOSv9.0.0		
+* platform.h
+
+FreeRTOS_Demo
+----------------------
+* HelloDemo
