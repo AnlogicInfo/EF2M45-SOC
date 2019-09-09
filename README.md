@@ -13,15 +13,16 @@ Family Selection Guide
 |L	   |ELF2L15	|1500  |1500   |12 Kbits |546 Kbits|8  |1  |4Mb	 |-	 |207| 
 |L	   |ELF2L25	|2500  |2500   |20 Kbits |607 Kbits|12 |1  |4Mb	 |-	 |207|
 |L     |ELF2L45	|4480  |4480   |35 Kbits |700 Kbits|15 |1  |4Mb	 |-	 |207|
-|M	   |ELF2M45	|4480  |4480   |35 Kbits |700 Kbits|15 |1  |4Mb	 |'Cortex-M3' |207|	
+|M	   |ELF2M45	|4480  |4480   |35 Kbits |700 Kbits|15 |1  |4Mb	 | Cortex-M3  |207|	
 		
 ELF2M45 SOC Brief
 ----------------------
 The ELF2M45 
-Packages                       | ELF2M45  |
+<br>
+|Packages                      | ELF2M45  |
 |---                           |---       |
 |48 LQFP (10x10, 0.5mm pitch)  |36(6+9)   |
 |144 LQFP (20x20, 0.5mm pitch) |114(24+25)|
 |256 fpBGA (17x17, 1.0mm pitch)|207(31+64)|
 
-Notes:207(31+64) means the number of IO users can use (Ture LVDS +Emulated LVDS).
+####Notes:207(31+64) means the number of IO users can use (Ture LVDS +Emulated LVDS).
