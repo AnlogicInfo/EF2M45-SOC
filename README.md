@@ -25,10 +25,10 @@ The MCU Feature
 * Support SWD debugging;
 
 MCU and FPGA communication
-AHB slave;
-Shared SRAM (SRAM: 32K bytes);
-16 High-GPIOs;
-16-bit user register (MCU-> FPGA);
+* AHB slave;
+* Shared SRAM (SRAM: 32K bytes);
+* 16 High-GPIOs;
+* 16-bit user register (MCU-> FPGA);
 
 Family Selection Guide
 ----------------------
@@ -48,4 +48,4 @@ Device Package Info
 |100 LQFP (14x14, 0.5mm pitch)  |81(15+17) |          |          |          |
 |144 LQFP (20x20, 0.5mm pitch)  |114(24+25)|          |114(24+25)|114(24+25)|
 |256 fpBGA (17x17, 1.0mm pitch) |207(31+64)|207(31+64)|207(31+64)|          |
-Notes:207(31+64) means the number of IO users can use (Ture LVDS +Emulated LVDS).
+	Notes:207(31+64) means the number of IO users can use (Ture LVDS +Emulated LVDS).
