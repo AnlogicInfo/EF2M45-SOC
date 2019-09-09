@@ -71,6 +71,7 @@ Demo Folder
 * [UART_Demo	](#UART_Demo	)
 * [USR_REG_Demo ](#USR_REG_Demo )
 * [WDT_Demo     ](#WDT_Demo     )
+
 Document Folder 
 ----------------------
 * Anlogic ELF2 SDK.chm		
@@ -93,3 +94,14 @@ ELF2_BSP Folder
 FreeRTOS_Demo
 ----------------------
 * HelloDemo
+
+Developerment Enviroment
+======================
+* Hardware: TD 
+* Software: Keil 
+* Debug Tool: JTAG and J-Link
+
+Contact Us 
+======================
+* Website: http://www.anlogic.com/
+* E-mail : liguang.chen@anlogic.com
