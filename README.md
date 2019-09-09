@@ -8,16 +8,9 @@ The ELF2 family have four devices, which locate the low-cost, low-power programm
 
 Family Selection Guide
 ----------------------
-
-|Author|¹û¶³ÏºÈÊ|
-|---|---
-|E-mail|Jelly.K.Wang@qq.com
-
-
-|Series|Device|LUTs|DFFs|Dis-RAM(Kbs)|Total(KBits)|DSP|PLL|Flash|MCU|User IO|
-|---   |---   |--- |--- |---         |---         |---|---|---  |---|---    | 				
-|L	   |ELF2L15	|1500	|1500	|546	|8	|1	|4Mb	|-	|207|
-|	   |ELF2L25	|2500	|2500	|607	|12	|1	|4Mb	|-	|207|
-|	   |ELF2L45	|4480	|4480	|700	|15	|1	|4Mb	|-	|207|
-|---   |---   |--- |--- |---         |---         |---|---|---  |---|---    |
-|M	   |ELF2M45	|4480	|4480	|35	12	6	1	1	700	15	1	4Mb	M3	207			
+|Series|Device  |LUTs  |DFFs   |Dis-RAM(Kbits)|Total(Kbits)|DSP|PLL|Flash|MCU|User IO|
+|---   |---     |---   |---    |---           |---         |---|---|---  |---|---    | 				
+|L	   |ELF2L15	|1500  |1500   |12            |546	       |8  |1  |4Mb	 |-	 |207| 
+|L	   |ELF2L25	|2500  |2500   |20            |607	       |12 |1  |4Mb	 |-	 |207|
+|L     |ELF2L45	|4480  |4480   |35            |700	       |15 |1  |4Mb	 |-	 |207|
+|M	   |ELF2M45	|4480  |4480   |35            |700         |15 |1  |4Mb	 |Cortex-M3 |207|			
