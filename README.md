@@ -100,7 +100,8 @@ Developerment Enviroment
 * Hardware: TD 
 * Software: Keil 
 * Debug Tool: JTAG and J-Link
-
+* Demo Platform
+![Anlogic](https://github.com/AnlogicInfo/EF2M45duino/blob/master/EF2M45duinoBoard.jpg)<br>
 Contact Us 
 ======================
 * Website: http://www.anlogic.com/
