@@ -32,7 +32,7 @@ MCU and FPGA communication
 
 Family Selection Guide
 ----------------------
-|Series|Device  |LUTs  |DFFs   |Dis-RAM   |Total    |DSP|PLL|Flash|MCU|User IO|
+|Series|Device  |LUTs  |DFFs   |Dis-RAM   |Total    |DSP|PLL|Flash|MCU|Max User IO|
 |---   |---     |---   |---    |---      |---      |---|---|---  |---|---    | 				
 |L	   |ELF2L15	|1500  |1500   |12 Kbits |546 Kbits|8  |1  |4Mb	 |-	 |207| 
 |L	   |ELF2L25	|2500  |2500   |20 Kbits |607 Kbits|12 |1  |4Mb	 |-	 |207|
